@@ -9,49 +9,81 @@ body{
 	font-family: 'Poppins', sans-serif;
 }
 
+
+
+
 /***********************************************************HEADER***************************************************************/
+
+
+
+
 header{
-	background-color: #98aaca;
+	/*background-color: #98aaca;*/
 }
 
 nav{
+	top: 0;
 	min-height: 10vh;
 	display: flex;
-	background: linear-gradient(to right, #305a82, transparent);
+	/*background: #c19cb3;*/
+	
 	justify-content: space-around;
 	align-items: center;
 	display: grid;
-	grid-template-columns: 10% 12% 1fr;
+	grid-template-columns: 10% 5% 1fr 10%;
 	width: 100%;
 	margin: auto;
+	position: fixed;
+	z-index: 3;
+	/*transform: translateX(-100%);*/
+}
+nav::after{
+	content: "";
+	background: linear-gradient(to right, #4f8a96, #c19cb3);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0.5;
+	z-index: -1;
 }
 .logo{
+	height: 100%;
 	display: flex;
 	align-items: center;
-	justify-self: center;
-	grid-column: 2/3;
+	justify-self: end;
+	grid-column: 3/4;
 }
-.logo img{
-	height: 8vh;
+.logo h3{
+	font-size: 30px;
+	color: white;
 }
 
 
 .dropdown{
+	display: flex;
+	flex-direction: column;
 	position: relative;
-	grid-column: 3/4;
+	grid-column: 2/3;
+	justify-content: space-between;
+}
+.hamburger{
+	width: 40%;
+	align-self: center;
 }
 .options{
-	margin-top: 10px;
+	margin-top: 40px;
 	width: 200px;
 	height: 300px;
 	position: absolute;
-	background-color: #305a82;
+	background-color: #c19cb3;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 	border-radius: 5px;
-	z-index: 3;
+	z-index: 4;
 	/*Make drop-down invisible to allow for 'animation'*/
 	opacity: 0;
 	pointer-events: none;
@@ -63,7 +95,7 @@ nav{
 	height: 100%;
 }
 .options li:hover{
-	background-color: #3b7aa0;
+	background-color: #4f8a96;
 	border-radius: 5px;
 }
 .options a{
@@ -71,7 +103,7 @@ nav{
 	width: 100%;
 	height: 100%;
 	text-decoration: none;
-	color: #cadff5;
+	color: white;
 	justify-content: center;
 	align-items: center;
 }
@@ -84,7 +116,8 @@ nav{
 	transition: 0.4s ease;
 }
 
-section{
+header section{
+	margin-top: 10vh;
 	height: 90vh;
 	width: 100%;
 	display: flex;
@@ -93,8 +126,8 @@ section{
 }
 
 .cover{
-	height: 100%;
-	width: 50%;
+	height: 0%;
+	width: 100%;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -112,3 +145,142 @@ section{
 	bottom: 100px;
 	font-size: 10vh;
 }
+
+.slider{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	transform: translateX(-100%);
+	background: linear-gradient(to right, #4f8a96, #c19cb3);
+	z-index: -1;
+}
+
+
+
+
+/****************************************************ABOUT ME**************************************************8*/
+
+
+
+
+#section1{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+
+}
+.block{
+	height: 60vh;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	grid-template-columns: 10% 1fr 1fr 10%;
+	background-color: #76c0c9;
+	/*background: linear-gradient(to right, #76c0c9, transparent);*/
+	/*background-color: transparent;*/
+}
+
+#pfp{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	background: linear-gradient(to right, #76c0c9, white);
+}
+#pfp .caption{
+	position: absolute;
+	color: white;
+	bottom: 1%;
+	right: 1%;
+	font-size: 10px;
+}
+#pfp img{
+	grid-column: 3/4;
+	height: 120%;
+	position: absolute;
+	bottom: 0;
+}
+
+.left-col{
+	grid-column: 2/3;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	height: 90%;
+	align-items: center;
+	justify-content: center;
+}
+.left-col h1{
+	font-size: 40px;
+	color: white;
+}
+.left-col .text-content{
+	margin-top: 2%;
+	width: 80%;
+}
+.left-col p{
+	color: white;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+
+
+
+/***************************************************UNIVERSITY*****************************************************************/
+
+
+
+
+#section2{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: linear-gradient(to bottom, #a8ab98, transparent);
+}
+#sun-heading{
+	width: 80%;
+	height: 20vh;
+	display: flex;
+	position: relative;
+}
+#sun-heading img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#sun-heading caption{
+	position: absolute;
+}
+
+#sun-bottom-half{
+	height: 50vh;
+	width: 80%;
+	display: flex;
+	background-color: grey;
+}
+#sun-logo{
+	height: 100%;
+	flex-basis: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#sun-logo img{
+	width: 80%;
+}
+#sun-content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: pink;
+	width: 80%;

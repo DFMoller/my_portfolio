@@ -6,24 +6,20 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<script scr="my_app.js"></script>
 		<script src="jquery-3.4.1.min.js"></script>
-		
-
+		<script src="jquery.transit.min.js"></script>
+		<script src="my_app.js"></script>
 		<title>My Portfolio</title>
 	</head>
 	<body>
 
 		<header>
 			<nav>
-				<div class="logo">
-					<img src="img/gimp_logo_design/portfolio-logo1.png">
-				</div>
 				<div class="dropdown">
 					<!-- The one line below is very powerful, makes an image act like a button. -->
-					<input class="hamburger" type="image" name="imgbtn" src="img/hamburger.svg" alt="hamburger">
+					<input class="hamburger" type="image" name="imgbtn" src="img/hamburger-white.png" alt="hamburger">
 					<ul class="options">
-						<li id="about-me"><a href="#">About Me</a></li>
+						<li id="about-me"><a href="#aboutmeanchor">About Me</a></li>
 						<li id="university"><a href="#">University</a></li>
 						<li id="projects"><a href="#">Projects</a></li>
 						<li id="past-work-experience"><a href="#">Past Work Experience</a></li>
@@ -33,6 +29,10 @@
 					</ul>
 
 				</div>
+				
+				<div class="logo">
+					<h3>Daniel Moller</h3>
+				</div>
 			</nav>
 			<section>
 				<div class="cover">
@@ -41,7 +41,44 @@
 				</div>
 				
 			</section>
+			<div class="slider"></div>
 		</header>
+
+		<main>
+			<section id="section1">
+				<div class="block">
+					<div class="left-col">
+						<div class="head1">
+							<h1>About Me</h1>
+						</div>
+						<div class="text-content">
+							<p><a id="aboutmeanchor"></a>I am a 3rd year Mechatronic Engineering Student at Stellenbosch University. This degree takes up most of what I do currently, but I enjoy learning new things on the side in my own time. This webpage that I built from scrath is just one example of my side projects. </p>
+						</div>
+					</div>
+					
+					<div id="pfp">
+						<img src="img/gimp_logo_design/pfp1.png">
+						<p class="caption">Daniel Moller</p>
+					</div>
+				</div>
+			</section>
+			<section id="section2">
+				<div id="sun-heading">
+					<img src="img/stellenbosch-university2-wide.jpg">
+					<caption>The 'Rooiplein'</caption>
+				</div>
+				<div id="sun-bottom-half">
+					<div id="sun-logo">
+						<img src="img/stellenbosch-university-crest.png" alt="crest">
+					</div>
+					<div id="sun-content">
+						<h1>Stellenbosch University</h1>
+						<p>This is where some things will be said about SUN.</p>
+					</div>
+				</div>
+			</section>
+			
+		</main>
 
 	</body>
 </html>
