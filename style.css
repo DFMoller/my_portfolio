@@ -10,10 +10,14 @@ body{
 }
 
 /***********************************************************HEADER***************************************************************/
+header{
+	background-color: #98aaca;
+}
+
 nav{
 	min-height: 10vh;
 	display: flex;
-	background: linear-gradient(to right, #305a82, #98aaca);
+	background: linear-gradient(to right, #305a82, transparent);
 	justify-content: space-around;
 	align-items: center;
 	display: grid;
@@ -80,13 +84,21 @@ nav{
 	transition: 0.4s ease;
 }
 
-.cover{
-	height: 80vh;
+section{
+	height: 90vh;
 	width: 100%;
-	background-color: #98aaca;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.cover{
+	height: 100%;
+	width: 50%;
 	position: relative;
 	display: flex;
 	align-items: center;
+	justify-content: space-around;
 }
 .cover img{
 	width: 100%;
@@ -96,4 +108,7 @@ nav{
 .cover h1{
 	position: absolute;
 	color: white;
+	right: 100px;
+	bottom: 100px;
+	font-size: 10vh;
 }
