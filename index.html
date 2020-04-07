@@ -8,10 +8,13 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="jquery-3.4.1.min.js"></script>
 		<script src="jquery.transit.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/jquery.ScrollMagic.min.js" integrity="sha256-vMplzCSo+pO4wcmz/as8FVtabF5gE9Gwqk5ER8jux3w=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script>
 		<script src="my_app.js"></script>
 		<title>My Portfolio</title>
 	</head>
-	<body>
+	<body id="top">
 
 		<header>
 			<nav>
@@ -19,8 +22,8 @@
 					<!-- The one line below is very powerful, makes an image act like a button. -->
 					<input class="hamburger" type="image" name="imgbtn" src="img/hamburger-white.png" alt="hamburger">
 					<ul class="options">
-						<li id="about-me"><a href="#aboutmeanchor">About Me</a></li>
-						<li id="university"><a href="#">University</a></li>
+						<li id="about-me"><a href="#section1">About Me</a></li>
+						<li id="university"><a href="#section2">University</a></li>
 						<li id="projects"><a href="#">Projects</a></li>
 						<li id="past-work-experience"><a href="#">Past Work Experience</a></li>
 						<li id="idea-of-the-week"><a href="#">Idea Of The Week</a></li>
@@ -31,7 +34,7 @@
 				</div>
 				
 				<div class="logo">
-					<h3>Daniel Moller</h3>
+					<h3><a href="#">Daniel Moller</a></h3>
 				</div>
 			</nav>
 			<section>
@@ -41,7 +44,7 @@
 				</div>
 				
 			</section>
-			<div class="slider"></div>
+			<div id="slider1"></div>
 		</header>
 
 		<main>
@@ -52,7 +55,7 @@
 							<h1>About Me</h1>
 						</div>
 						<div class="text-content">
-							<p><a id="aboutmeanchor"></a>I am a 3rd year Mechatronic Engineering Student at Stellenbosch University. This degree takes up most of what I do currently, but I enjoy learning new things on the side in my own time. This webpage that I built from scrath is just one example of my side projects. </p>
+							<p><a id="aboutmeanchor"></a>I am a 3rd year Mechatronic Engineering Student at Stellenbosch University. This degree takes up most of what I do currently, but I enjoy learning new things on the side in my own time. This webpage that I built from scratch is just one example of my side projects. </p>
 						</div>
 					</div>
 					
@@ -63,11 +66,7 @@
 				</div>
 			</section>
 			<section id="section2">
-				<div id="sun-heading">
-					<img src="img/stellenbosch-university2-wide.jpg">
-					<caption>The 'Rooiplein'</caption>
-				</div>
-				<div id="sun-bottom-half">
+				<div id="sun-top-half">
 					<div id="sun-logo">
 						<img src="img/stellenbosch-university-crest.png" alt="crest">
 					</div>
@@ -75,6 +74,10 @@
 						<h1>Stellenbosch University</h1>
 						<p>This is where some things will be said about SUN.</p>
 					</div>
+				</div>
+				<div id="sun-rooiplein">
+					<img src="img/stellenbosch-university2-wide.jpg">
+					<p>The 'Rooiplein'</p>
 				</div>
 			</section>
 			
