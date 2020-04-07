@@ -55,7 +55,8 @@ nav::after{
 	justify-self: end;
 	grid-column: 3/4;
 }
-.logo h3{
+.logo a{
+	text-decoration: none;
 	font-size: 30px;
 	color: white;
 }
@@ -85,9 +86,12 @@ nav::after{
 	border-radius: 5px;
 	z-index: 4;
 	/*Make drop-down invisible to allow for 'animation'*/
-	opacity: 0;
-	pointer-events: none;
+	visibility: hidden;
+	transition: 0.4s ease;
 	transform: translateY(-10px);
+
+	/*Quick Note: At first I used opacity: 0; and pointer-events: none; here and reversed it below.
+	This however causes the anchor tags to stop working. I used visibility instead and it worked well.*/
 }
 .options li{
 	list-style: none;
@@ -110,8 +114,7 @@ nav::after{
 
 
 .hamburger:focus + ul{
-	opacity: 1;
-	pointer-events: all;
+	visibility: visible;
 	transform: translateY(0px);
 	transition: 0.4s ease;
 }
@@ -146,7 +149,7 @@ header section{
 	font-size: 10vh;
 }
 
-.slider{
+#slider1{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -195,7 +198,7 @@ header section{
 }
 #pfp .caption{
 	position: absolute;
-	color: white;
+	color: transparent;
 	bottom: 1%;
 	right: 1%;
 	font-size: 10px;
@@ -245,42 +248,57 @@ header section{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: linear-gradient(to bottom, #a8ab98, transparent);
+	background: linear-gradient(to bottom, transparent, #569684);
+	justify-content: center;
 }
-#sun-heading{
+#sun-rooiplein{
 	width: 80%;
-	height: 20vh;
+	height: 40vh;
 	display: flex;
 	position: relative;
 }
-#sun-heading img{
+#sun-rooiplein img{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
-#sun-heading caption{
+#sun-rooiplein p{
 	position: absolute;
+	color: white;
+	bottom: 2%;
+	right: 1%;
 }
 
-#sun-bottom-half{
-	height: 50vh;
+#sun-top-half{
+	height: 40vh;
 	width: 80%;
 	display: flex;
-	background-color: grey;
+	/*background-color: grey;*/
+	/*background: linear-gradient(to top, transparent, #569684);*/
+	/* Fade-n animation stuff below:*/
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 1s ease-out;
 }
+#sun-top-half.fade-in{
+	opacity: 1;
+	transform: translateY(0);
+}
+
 #sun-logo{
 	height: 100%;
-	flex-basis: 20%;
+	width: 20%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 #sun-logo img{
-	width: 80%;
+	height: 90%;
 }
 #sun-content{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	background-color: pink;
+	align-items: left;
+	justify-content: center;
 	width: 80%;
+}
