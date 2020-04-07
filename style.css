@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	/*overflow: hidden;*/
 }
 
 body{
@@ -9,6 +10,10 @@ body{
 	font-family: 'Poppins', sans-serif;
 }
 
+h1{
+	font-size: 50px;
+	color: white;
+}
 
 
 
@@ -85,6 +90,8 @@ nav::after{
 	align-items: center;
 	border-radius: 5px;
 	z-index: 4;
+	border-style: solid;
+	border-color: white;
 	/*Make drop-down invisible to allow for 'animation'*/
 	visibility: hidden;
 	transition: 0.4s ease;
@@ -172,6 +179,7 @@ header section{
 	height: 100vh;
 	display: flex;
 	align-items: center;
+	background-color: white;
 
 }
 .block{
@@ -220,7 +228,6 @@ header section{
 	justify-content: center;
 }
 .left-col h1{
-	font-size: 40px;
 	color: white;
 }
 .left-col .text-content{
@@ -248,15 +255,23 @@ header section{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: linear-gradient(to bottom, transparent, #569684);
 	justify-content: center;
+	position: relative;
 }
 #sun-rooiplein{
 	width: 80%;
 	height: 40vh;
 	display: flex;
 	position: relative;
+
+	/*Animation:*/
+	/*width: 0;*/
+	/*transition: all 1s ease-out;*/
 }
+/*The below part is for animation*/
+/*#sun-rooiplein.enter-to-right{*/
+	/*width: 80%;*/
+/*}*/
 #sun-rooiplein img{
 	width: 100%;
 	height: 100%;
@@ -275,6 +290,7 @@ header section{
 	display: flex;
 	/*background-color: grey;*/
 	/*background: linear-gradient(to top, transparent, #569684);*/
+
 	/* Fade-n animation stuff below:*/
 	opacity: 0;
 	transform: translateY(100px);
@@ -302,3 +318,176 @@ header section{
 	justify-content: center;
 	width: 80%;
 }
+#sun-content p{
+	color: white;
+}
+
+#slider2{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, transparent, #569684);
+	z-index: -1;
+
+	/*animation*/
+	transform: translateY(-100%);
+	/*opacity: 0;*/
+	transition: all 1s ease;
+}
+#slider2.slide-down{
+	transform: translateY(0);
+	/*opacity: 1;*/
+}
+
+
+
+
+/************************************************PROJECTS********************************************************/
+
+
+
+
+#section3{
+	height:	100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: transparent;
+	position: relative;
+	overflow: hidden;
+}
+#section3-title{
+	margin-top: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to right, #4f8a96, #c19cb3);
+	width: 40%;
+	height: 150px;
+	border-radius: 75px; 
+}
+#section3-title h1{
+	color: white;
+	margin-left: 5%;
+	font-size: 100px;
+}
+#section3-icon{
+	height: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+#section3-icon img{
+	height: 100%;
+}
+#project01{
+	height: 60%;
+	width: 80%;
+	display: flex;
+	align-items: center;
+	/*background-color: yellow;*/
+	position: relative;
+}
+.project-text{
+	width: 60%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/*background-color: pink;*/
+	position: relative;
+}
+.project-image{
+	height: 80%;
+	width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*background-color: yellow;*/
+	position: relative;
+}
+.project-image img{
+	width: 100%;
+	position: absolute;
+	right: 0;
+	top: 20%;
+}
+.project-title{
+	margin-bottom: 2vh;
+	width: 95%;
+	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.project-title img{
+	height: 100%;
+	margin-right: 2%;
+}
+.project-title h2{
+	font-size: 30px;
+	color: #4f8a96;
+}
+.project-description p{
+	color: #4f8a96;
+	font-size: 20px;
+	text-align: center;
+}
+.project-description a{
+	text-decoration: none;
+	color: #4f8a96;
+}
+.project-description a:hover{
+	color: white;
+}
+.project-description img{
+	width: 4vh;
+}
+#slider3{
+	position: absolute;
+	top: 20%;
+	right: 0;
+	background-color: transparent;
+	width: 100%;
+	height:	60%;
+	z-index: -1;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	/*animation*/
+	transform: translateX(100%);
+	transition: all 1s ease;
+}
+#slider3.slide-from-right{
+	transform: translateX(0);
+}
+#slider3b{
+	width: 100%;
+	height: 100%;
+	background-color: #4f8a96;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;
+}
+#slider3-left{
+	width: 50%;
+	height: 100%;
+	background-color: #c19cb3;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	opacity: 1;
+}
+#slider3-right{
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to right, #c19cb3, transparent);
+}
+
