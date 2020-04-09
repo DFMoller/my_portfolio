@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/*overflow: hidden;*/
 }
 
 body{
@@ -90,8 +89,7 @@ nav::after{
 	align-items: center;
 	border-radius: 5px;
 	z-index: 4;
-	border-style: solid;
-	border-color: white;
+
 	/*Make drop-down invisible to allow for 'animation'*/
 	visibility: hidden;
 	transition: 0.4s ease;
@@ -357,7 +355,7 @@ header section{
 
 
 #section3{
-	height:	200vh;
+	height:	150vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -424,8 +422,8 @@ header section{
 	/*background-color: yellow;*/
 }
 .project-image img{
-	width: 100%;
-	border-radius: 10px;
+	width: 90%;
+	border-radius: 5px;
 }
 .project-title{
 	margin-bottom: 2vh;
