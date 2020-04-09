@@ -1,0 +1,58 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main{
+	height: 100vh;
+	font-family: 'Poppins', sans-serif;
+	background-color: #f4ad31;
+	display: grid;
+	grid-template-rows: 1fr 10vh 40vh 20vh;
+}
+#construction-vehicle{
+	grid-row: 3/4;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#icon{
+	height: 30vh;
+}
+#icon img{
+	height: 100%;
+}
+#road{
+	height: 10px;
+	width: 80%;
+	background: black;
+	border-radius: 5px;
+}
+#title{
+	grid-row: 1/2;
+	display: flex;
+	/*flex-direction: column;*/
+	justify-content: center;
+	align-items: center;
+}
+#cone{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background-color: lightgrey;*/
+	height: 10vh;
+}
+#cone img{
+	height: 100%;
+}
+#text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background-color: pink;*/
+}
+#text h1{
+	font-size: 5vh;
+}
