@@ -28,13 +28,22 @@ $(document).ready(function(){
 
 
 
-	var slider3 = new ScrollMagic.Scene({
-		triggerElement: '#section3',
+	var project01Slider = new ScrollMagic.Scene({
+		triggerElement: '#project01-slider',
 		// reverse: false
-		triggerHook: 0.25
+		triggerHook: 0.9
 	})
-	.setClassToggle('#slider3', 'slide-from-right') //add class to sun-top-half
-	// .addIndicators({})
+	.setClassToggle('#project01-slider', 'slide-from-right') //add class to sun-top-half
+	.addTo(controller);
+
+
+
+	var project02Slider = new ScrollMagic.Scene({
+		triggerElement: '#project02-slider',
+		// reverse: false
+		triggerHook: 0.9
+	})
+	.setClassToggle('#project02-slider', 'slide-from-left') //add class to sun-top-half
 	.addTo(controller);
 
 });

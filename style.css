@@ -321,6 +321,13 @@ header section{
 #sun-content p{
 	color: white;
 }
+#sun-content a{
+	text-decoration: none;
+	color: #76c0c9;
+}
+#sun-content a:hover{
+	color: white;
+}
 
 #slider2{
 	position: absolute;
@@ -328,7 +335,7 @@ header section{
 	right: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(to top, transparent, #569684);
+	background: linear-gradient(to top, transparent, #702632);
 	z-index: -1;
 
 	/*animation*/
@@ -350,11 +357,11 @@ header section{
 
 
 #section3{
-	height:	100vh;
+	height:	200vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: flex-start;
 	align-items: center;
 	background-color: transparent;
 	position: relative;
@@ -362,6 +369,7 @@ header section{
 }
 #section3-title{
 	margin-top: 20vh;
+	margin-bottom: 10vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -384,8 +392,12 @@ header section{
 #section3-icon img{
 	height: 100%;
 }
-#project01{
-	height: 60%;
+
+
+
+
+.project{
+	height: 40vh;
 	width: 80%;
 	display: flex;
 	align-items: center;
@@ -408,14 +420,12 @@ header section{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
 	/*background-color: yellow;*/
-	position: relative;
 }
 .project-image img{
 	width: 100%;
-	position: absolute;
-	right: 0;
-	top: 20%;
+	border-radius: 10px;
 }
 .project-title{
 	margin-bottom: 2vh;
@@ -448,13 +458,14 @@ header section{
 .project-description img{
 	width: 4vh;
 }
-#slider3{
+.project-slider{
 	position: absolute;
-	top: 20%;
+	/*I did the math to center the slider in the project with the 20%*/
+	top: 5vh;
 	right: 0;
 	background-color: transparent;
 	width: 100%;
-	height:	60%;
+	height:	30vh;
 	z-index: -1;
 	border-radius: 10px;
 	display: flex;
@@ -465,10 +476,23 @@ header section{
 	transform: translateX(100%);
 	transition: all 1s ease;
 }
-#slider3.slide-from-right{
+.project-slider.slide-from-right{
 	transform: translateX(0);
 }
-#slider3b{
+.project-slider-left{
+	width: 50%;
+	height: 100%;
+	background-color: #c19cb3;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	opacity: 1;
+}
+.project-slider-right{
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to right, #c19cb3, transparent);
+}
+#slider3{
 	width: 100%;
 	height: 100%;
 	background-color: #4f8a96;
@@ -477,17 +501,52 @@ header section{
 	left: 0;
 	z-index: -2;
 }
-#slider3-left{
+#project01{
+	/*background-color: lightgrey;*/
+}
+
+
+
+
+
+#project02{
+	justify-content: flex-end;
+	/*background-color: pink;*/
+}
+#project02-image img{
+	-webkit-filter: drop-shadow(2px 2px 5px);
+	width: 80%;
+}
+.project-slider-L{
+	position: absolute;
+	top: 5vh;
+	right: 0;
+	background-color: transparent;
+	width: 100%;
+	height:	30vh;
+	z-index: -1;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	/*animation*/
+	transform: translateX(-100%);
+	transition: all 1s ease;
+}
+.project-slider-L.slide-from-left{
+	transform: translateX(0);
+}
+.project-slider-left-L{
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left, #c19cb3, transparent);
+}
+.project-slider-right-L{
 	width: 50%;
 	height: 100%;
 	background-color: #c19cb3;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 	opacity: 1;
 }
-#slider3-right{
-	width: 50%;
-	height: 100%;
-	background: linear-gradient(to right, #c19cb3, transparent);
-}
-
