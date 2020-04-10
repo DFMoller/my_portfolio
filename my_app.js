@@ -1,7 +1,11 @@
 $(document).ready(function(){
-	$('.cover').animate({height: '100%'}, 1000, 'swing')
-		.animate({width: '80%'}, 1200, 'swing')
-	$('#slider1').delay(1000).animate({left: '100%'}, 1200, 'swing')
+//The following line comes from the imagesloaded.pkgd.min.js library. It checks that the cover image is loaded before animations start.
+	$('.cover').imagesLoaded(function(){ 
+		$('.cover').animate({height: '100%'}, 1000, 'swing')
+			.animate({width: '80%'}, 1200, 'swing')
+		$('#slider1').delay(1000).animate({left: '100%'}, 1200, 'swing')
+	})
+	
 
 	// Init Scroll Magic
 	var controller = new ScrollMagic.Controller();
