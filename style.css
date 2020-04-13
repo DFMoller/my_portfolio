@@ -26,6 +26,8 @@ h1{
 
 header{
 	/*background-color: #98aaca;*/
+	height: 100vh;
+	overflow: hidden;
 }
 
 nav{
@@ -134,6 +136,8 @@ header section{
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	position: relative;
+	overflow: hidden;
 }
 
 .cover{
@@ -166,6 +170,37 @@ header section{
 	transform: translateX(-100%);
 	background: linear-gradient(to right, #4f8a96, #c19cb3);
 	z-index: -1;
+}
+
+#disclaimer{
+	position: absolute;
+	left: 2%;
+	bottom: 5%;
+	height: 20vh;
+	width: 10%;
+	background-color: #d6b757;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	border-radius: 5px;
+
+	/*Animation*/
+	/*opacity: 0;*/
+	transform: translateY(130%);
+}
+#disclaimer h3{
+	text-align: center;
+	color: #eaeaea;
+	margin-bottom: 5%;
+}
+#disclaimer p{
+	color: #eaeaea;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	font-size: 0.75vw;
+	text-align: center;
 }
 
 
@@ -666,6 +701,12 @@ header section{
 	color: #474747;
 	text-align: right;
 	line-height: 100%;
+	border-top-style: solid;
+	border-top-color: #474747;
+	padding-top: 1%;
+	border-bottom-style: solid;
+	border-bottom-color: #474747;
+	padding-bottom: 1%;
 }
 #s3-description{
 	width: 90%;
@@ -738,6 +779,12 @@ header section{
 	color: #474747;
 	text-align: right;
 	line-height: 100%;
+	border-top-style: solid;
+	border-top-color: #474747;
+	padding-top: 1%;
+	border-bottom-style: solid;
+	border-bottom-color: #474747;
+	padding-bottom: 1%;
 }
 #yt-description{
 	width: 90%;
@@ -769,7 +816,7 @@ header section{
 	top: 13vh;
 	left: 5%;
 	width: 90%;
-	height: 50%;
+	height: 52%;
 	background-color: #4f8a96;
 	border-radius: 10px;
 
@@ -815,6 +862,12 @@ header section{
 	font-size: 15px;
 	color: #474747;
 	text-align: right;
+	border-top-style: solid;
+	border-top-color: #474747;
+	padding-top: 1%;
+	border-bottom-style: solid;
+	border-bottom-color: #474747;
+	padding-bottom: 1%;
 }
 #wildclover-description{
 	width: 90%;
