@@ -6,6 +6,8 @@
 
 body{
 	height: 100vh;
+	/*width: 100vw;*/
+	/*overflow-x: hidden;*/
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -16,7 +18,8 @@ h1{
 
 
 
-/***********************************************************HEADER***************************************************************/
+/******************************************************HEADER*****************************************************
+******************************************************************************************************************/
 
 
 
@@ -82,7 +85,7 @@ nav::after{
 	width: 200px;
 	height: 300px;
 	position: absolute;
-	background-color: #c19cb3;
+	background-color: #d6b757;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -168,7 +171,8 @@ header section{
 
 
 
-/****************************************************ABOUT ME**************************************************8*/
+/****************************************************ABOUT ME*****************************************************
+******************************************************************************************************************/
 
 
 
@@ -183,13 +187,15 @@ header section{
 .block{
 	height: 60vh;
 	width: 80%;
+	margin-top: 10vh;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	grid-template-columns: 10% 1fr 1fr 10%;
-	background-color: #76c0c9;
+	/*background-color: #76c0c9;*/
+	background-color: #eaeaea
 	/*background: linear-gradient(to right, #76c0c9, transparent);*/
 	/*background-color: transparent;*/
 }
@@ -200,7 +206,7 @@ header section{
 	display: flex;
 	justify-content: space-around;
 	position: relative;
-	background: linear-gradient(to right, #76c0c9, white);
+	background: linear-gradient(to right, #eaeaea, white);
 }
 #pfp .caption{
 	position: absolute;
@@ -226,14 +232,14 @@ header section{
 	justify-content: center;
 }
 .left-col h1{
-	color: white;
+	color: #4f8a96;
 }
 .left-col .text-content{
 	margin-top: 2%;
 	width: 80%;
 }
 .left-col p{
-	color: white;
+	color: #4f8a96;
 	width: 100%;
 	height: 100%;
 	text-align: center;
@@ -242,7 +248,8 @@ header section{
 
 
 
-/***************************************************UNIVERSITY*****************************************************************/
+/***************************************************UNIVERSITY********************************************************
+**********************************************************************************************************************/
 
 
 
@@ -261,15 +268,7 @@ header section{
 	height: 40vh;
 	display: flex;
 	position: relative;
-
-	/*Animation:*/
-	/*width: 0;*/
-	/*transition: all 1s ease-out;*/
 }
-/*The below part is for animation*/
-/*#sun-rooiplein.enter-to-right{*/
-	/*width: 80%;*/
-/*}*/
 #sun-rooiplein img{
 	width: 100%;
 	height: 100%;
@@ -286,8 +285,6 @@ header section{
 	height: 40vh;
 	width: 80%;
 	display: flex;
-	/*background-color: grey;*/
-	/*background: linear-gradient(to top, transparent, #569684);*/
 
 	/* Fade-n animation stuff below:*/
 	opacity: 0;
@@ -316,12 +313,15 @@ header section{
 	justify-content: center;
 	width: 80%;
 }
+#sun-content h1{
+	color: #eaeaea;
+}
 #sun-content p{
-	color: white;
+	color: #eaeaea;
 }
 #sun-content a{
 	text-decoration: none;
-	color: #76c0c9;
+	color: #d6b757;
 }
 #sun-content a:hover{
 	color: white;
@@ -333,11 +333,14 @@ header section{
 	right: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(to top, transparent, #702632);
+	/*background: linear-gradient(to top, transparent, #a8ab98);*/
+	/*background: linear-gradient(to top, transparent, #474747);*/
+	background-color: #474747;
+
 	z-index: -1;
 
 	/*animation*/
-	transform: translateY(-100%);
+	/*transform: translateY(-100%);*/
 	/*opacity: 0;*/
 	transition: all 1s ease;
 }
@@ -349,7 +352,8 @@ header section{
 
 
 
-/************************************************PROJECTS********************************************************/
+/************************************************PROJECTS********************************************************
+*****************************************************************************************************************/
 
 
 
@@ -371,13 +375,14 @@ header section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(to right, #4f8a96, #c19cb3);
+	/*background: linear-gradient(to right, #4f8a96, #c19cb3);*/
+	background-color: #eaeaea;
 	width: 40%;
 	height: 150px;
 	border-radius: 75px; 
 }
 #section3-title h1{
-	color: white;
+	color: #4f8a96;
 	margin-left: 5%;
 	font-size: 100px;
 }
@@ -391,8 +396,7 @@ header section{
 	height: 100%;
 }
 
-
-
+/*************************Project01*****************************/
 
 .project{
 	height: 40vh;
@@ -451,7 +455,7 @@ header section{
 	color: #4f8a96;
 }
 .project-description a:hover{
-	color: white;
+	color: #d6b757;
 }
 .project-description img{
 	width: 4vh;
@@ -461,7 +465,7 @@ header section{
 	/*I did the math to center the slider in the project with the 20%*/
 	top: 5vh;
 	right: 0;
-	background-color: transparent;
+	background-color: #eaeaea;
 	width: 100%;
 	height:	30vh;
 	z-index: -1;
@@ -477,19 +481,6 @@ header section{
 .project-slider.slide-from-right{
 	transform: translateX(0);
 }
-.project-slider-left{
-	width: 50%;
-	height: 100%;
-	background-color: #c19cb3;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-	opacity: 1;
-}
-.project-slider-right{
-	width: 50%;
-	height: 100%;
-	background: linear-gradient(to right, #c19cb3, transparent);
-}
 #slider3{
 	width: 100%;
 	height: 100%;
@@ -503,9 +494,7 @@ header section{
 	/*background-color: lightgrey;*/
 }
 
-
-
-
+/**************************Project02************************/
 
 #project02{
 	justify-content: flex-end;
@@ -519,7 +508,7 @@ header section{
 	position: absolute;
 	top: 5vh;
 	right: 0;
-	background-color: transparent;
+	background-color: #eaeaea;
 	width: 100%;
 	height:	30vh;
 	z-index: -1;
@@ -535,41 +524,30 @@ header section{
 .project-slider-L.slide-from-left{
 	transform: translateX(0);
 }
-.project-slider-left-L{
-	width: 50%;
-	height: 100%;
-	background: linear-gradient(to left, #c19cb3, transparent);
-}
-.project-slider-right-L{
-	width: 50%;
-	height: 100%;
-	background-color: #c19cb3;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	opacity: 1;
-}
 
 
 
 
-/******************************************PAST WORK EXPERIENCE************************************************/
+/******************************************PAST WORK EXPERIENCE************************************************
+***************************************************************************************************************/
 
 
 
 
 #section4{
-	height: 150vh;
+	height: 200vh;
+	width: 100%;
 	/*background-color: #313131;*/
 	display: flex;
 	justify-content: center;
 	position: relative;
 }
-#content{
+#experience-content{
 	height: 100%;
 	width: 80%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 10vh 20vh 10vh 1fr;
+	grid-template-rows: 20vh 20vh 15vh 1fr;
 }
 #work-title{
 	grid-column: 1/4;
@@ -577,86 +555,232 @@ header section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/*background-color: black;*/
-	width: 100%;
+	background-color: transparent;
+	width: 95%;
+	margin: auto;
 	height: 18vh;
 	border-radius: 9vh;
 	border-style: solid;
-	border-color: white;
+	border-color: #eaeaea;
+}
+#work-icon{
+	height: 6vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#work-icon img{
+	height: 100%;
 }
 #work-title h1{
-	font-size: 100px;
-	color: white;
-}
-
-#stonethree{
-	grid-column: 1/2;
-	grid-row: 4/5;
-	/*background-color: #4f8a96;*/
-	width: 90%;
-	height: 90%;
-	/*margin-top: 10%;*/
-	justify-self: center;
-	margin-top: 5%;
-	border-radius: 10px;
-	background-color: #4f8a96;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	position: relative;
-}
-#stone3-background{
-	margin-top: -10%;
-	margin-bottom: 15%;
-	width: 90%;
-	border-radius: 10px;
-}
-#stone3-logo{
-	width: 40%;
-	position: absolute;
-	top: 14vh;
-	left: 8%;
-	border-radius: 5px;
-}
-#stonethree h2{
-	font-size: 40px;
-	text-align: center;
-	color: white;
-	margin-bottom: 3%;
-}
-#stonethree p{
-	width: 90%;
-	color: white;
-}
-#yellowtail{
-	grid-column: 2/3;
-	grid-row: 4/5;
-	width: 90%;
-	height: 90%;
-	justify-self: center;
-	margin-top: 5%;
-	border-radius: 10px;
-	background-color: #4f8a96;
-
-}
-#wildclover{
-	grid-column: 3/4;
-	grid-row: 4/5;
-	width: 90%;
-	height: 90%;
-	justify-self: center;
-	margin-top: 5%;
-	border-radius: 10px;
-	background-color: #4f8a96;
-
+	font-size: 5.5vw;
+	color: #eaeaea;
+	white-space: nowrap;
+	margin-left: 2%;
 }
 #slider4{
-	background-color: #313131;
+	background-color: #474747;
+	/*background-color: #76c0c9;*/
 	position: absolute;
 	top: 0;
 	right: 0;
 	width: 100%;
 	height: 100%;
 	z-index: -3;
+}
+
+/******************************Stone3**************************/
+
+
+#stonethree{
+	grid-column: 1/2;
+	grid-row: 4/5;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+}
+#stone3-slider{
+	position: absolute;
+	top: 5vh;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	background-color: #4f8a96;
+	border-radius: 10px;
+
+	/*Animation*/
+	transform: translateY(-5vh);
+	opacity: 0;
+	transition: all 0.8s ease;
+}
+#stone3-slider.slide-down{
+	transform: translateY(0);
+	opacity: 1;
+}
+#stone3-content{
+	position: absolute;
+	width: 90%;
+	top: 2vh;
+	left: 5%;
+	/*background-color: lightgrey;*/
+	/*opacity: 0.5;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	/*Animation*/
+	transform: translateY(15vh);
+	opacity: 0;
+	transition: all 0.8s ease;
+}
+#stone3-content.slide-up{
+	transform: translateY(0);
+	opacity: 1;
+}
+#stone3-background{
+	/*margin-top: -10%;*/
+	margin-bottom: 10%;
+	width: 90%;
+	border-radius: 10px;
+}
+#s3-heading{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	flex-direction: column;
+	width: 90%;
+	margin-bottom: 3vh;
+}
+#s3-heading h3{
+	font-size: 40px;
+	white-space: nowrap;
+	color: white;
+	margin-bottom: 1vh;
+	text-align: center;
+}
+#s3-heading p{
+	font-size: 15px;
+	color: #d6b757;
+	text-align: right;
+}
+#s3-description{
+	width: 90%;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+}
+
+/***************************YellowTail*************************/
+
+#yellowtail{
+	grid-column: 2/3;
+	grid-row: 4/5;
+	position: relative;
+}
+#yt-slider{
+	position: absolute;
+	top: -2vh;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	background-color: #4f8a96;
+	border-radius: 10px;
+
+	/*Animation*/
+	transform: translateY(10vh);
+	opacity: 0;
+	transition: all 0.8s ease;
+}
+#yt-slider.slide-up{
+	transform: translateY(0);
+	opacity: 1;
+}
+#yt-content{
+	position: absolute;
+	width: 90%;
+	top: 5vh;
+	left: 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	/*animation*/
+	transform: translateY(-5vh);
+	opacity: 0;
+	transition: all 0.8s ease;
+}
+#yt-content.slide-down{
+	transform: translateY(0);
+	opacity: 1;
+}
+#yt-logo{
+	width: 80%;
+	margin-bottom: 10%;
+}
+#yt-content p{
+	width: 90%;
+	color: white;
+}
+
+/*************************WildClover************************/
+
+#wildclover{
+	grid-column: 3/4;
+	grid-row: 4/5;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+}
+#wildclover-slider{
+	position: absolute;
+	top: 13vh;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	background-color: #4f8a96;
+	border-radius: 10px;
+
+	/*Animation*/
+	transform: translateY(-13vh);
+	opacity: 0;
+	transition: all 0.8s ease;
+}
+#wildclover-slider.slide-down{
+	transform: translateY(0);
+	opacity: 1;
+}
+#wildclover-content{
+	position: absolute;
+	width: 90%;
+	top: -5vh;
+	left: 5%;
+	/*background-color: lightgrey;*/
+	/*opacity: 0.5;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	/*Animation*/
+	transform: translateY(10vh);
+	opacity: 0;
+	transition: all 0.8s ease;
+}
+#wildclover-content.slide-up{
+	transform: translateY(0);
+	opacity: 1;
+}
+#wildclover p{
+	width: 90%;
+	color: white;
+}
+#wildclover-logo{
+	width: 90%;
+	margin-bottom: 10%;
 }
