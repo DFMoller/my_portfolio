@@ -10,7 +10,7 @@ $(document).ready(function(){
 	// Init Scroll Magic
 	var controller = new ScrollMagic.Controller();
 
-	//  Build a scene--SUN-LOGO
+	 // Build a scene--SUN-LOGO
 	var sunTopHalfScene = new ScrollMagic.Scene({
 		triggerElement: '#section2',
 		triggerHook: 0.6
@@ -19,15 +19,6 @@ $(document).ready(function(){
 	})
 	.setClassToggle('#sun-top-half', 'fade-in') //add class to sun-top-half
 	// .addIndicators({})
-	.addTo(controller);
-
-	// SUN-SLIDER
-	var sunSlider = new ScrollMagic.Scene({
-		triggerElement: '#section2',
-		// reverse: false
-		triggerHook: 0.6
-	})
-	.setClassToggle('#slider2', 'slide-down') //add class to sun-top-half
 	.addTo(controller);
 
 
@@ -50,4 +41,47 @@ $(document).ready(function(){
 	.setClassToggle('#project02-slider', 'slide-from-left') //add class to sun-top-half
 	.addTo(controller);
 
+
+// 	WORK EXPERIENCE
+	// Stone3
+	var stone3Slider = new ScrollMagic.Scene({
+		triggerElement: '#stonethree',
+		triggerHook: 0.7
+	})
+	.setClassToggle('#stone3-slider', 'slide-down')
+	.addTo(controller);
+	var stone3Content = new ScrollMagic.Scene({
+		triggerElement: '#stonethree',
+		triggerHook: 0.7
+	})
+	.setClassToggle('#stone3-content', 'slide-up')
+	.addTo(controller);
+
+	// YellowTail
+	var ytSlider = new ScrollMagic.Scene({
+		triggerElement: '#yellowtail',
+		triggerHook: 0.7
+	})
+	.setClassToggle('#yt-slider', 'slide-up')
+	.addTo(controller);
+	var ytContent = new ScrollMagic.Scene({
+		triggerElement: '#yellowtail',
+		triggerHook: 0.7
+	})
+	.setClassToggle('#yt-content', 'slide-down')
+	.addTo(controller);
+
+	// WildClover
+	var wildCloverSlider = new ScrollMagic.Scene({
+		triggerElement: '#wildclover',
+		triggerHook: 0.7
+	})
+	.setClassToggle('#wildclover-slider', 'slide-down')
+	.addTo(controller);
+	var wildCloverContent = new ScrollMagic.Scene({
+		triggerElement: '#wildclover',
+		triggerHook: 0.7
+	})
+	.setClassToggle('#wildclover-content', 'slide-up')
+	.addTo(controller);
 });
