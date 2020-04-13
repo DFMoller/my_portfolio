@@ -107,7 +107,7 @@ nav::after{
 	height: 100%;
 }
 .options li:hover{
-	background-color: #4f8a96;
+	background-color: #c9ac54;
 	border-radius: 5px;
 }
 .options a{
@@ -606,7 +606,7 @@ header section{
 	top: 5vh;
 	left: 5%;
 	width: 90%;
-	height: 90%;
+	height: 67%;
 	background-color: #4f8a96;
 	border-radius: 10px;
 
@@ -663,14 +663,22 @@ header section{
 }
 #s3-heading p{
 	font-size: 15px;
-	color: #d6b757;
+	color: #474747;
 	text-align: right;
+	line-height: 100%;
 }
 #s3-description{
 	width: 90%;
 	color: white;
 	text-align: center;
 	font-size: 18px;
+}
+#s3-description a{
+	text-decoration: none;
+	color: #d6b757;
+}
+#s3-description a:hover{
+	color: white;
 }
 
 /***************************YellowTail*************************/
@@ -685,7 +693,7 @@ header section{
 	top: -2vh;
 	left: 5%;
 	width: 90%;
-	height: 90%;
+	height: 78%;
 	background-color: #4f8a96;
 	border-radius: 10px;
 
@@ -721,8 +729,27 @@ header section{
 	width: 80%;
 	margin-bottom: 10%;
 }
-#yt-content p{
+#yt-dates{
 	width: 90%;
+	margin-bottom: 3vh;
+}
+#yt-dates p{
+	font-size: 15px;
+	color: #474747;
+	text-align: right;
+	line-height: 100%;
+}
+#yt-description{
+	width: 90%;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+}
+#yt-description a{
+	text-decoration: none;
+	color: #d6b757;
+}
+#yt-description a:hover{
 	color: white;
 }
 
@@ -742,7 +769,7 @@ header section{
 	top: 13vh;
 	left: 5%;
 	width: 90%;
-	height: 90%;
+	height: 50%;
 	background-color: #4f8a96;
 	border-radius: 10px;
 
@@ -776,11 +803,29 @@ header section{
 	transform: translateY(0);
 	opacity: 1;
 }
-#wildclover p{
-	width: 90%;
-	color: white;
-}
 #wildclover-logo{
 	width: 90%;
 	margin-bottom: 10%;
+}
+#wildclover-dates{
+	width: 90%;
+	margin-bottom: 3vh;
+}
+#wildclover-dates p{
+	font-size: 15px;
+	color: #474747;
+	text-align: right;
+}
+#wildclover-description{
+	width: 90%;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+}
+#wildclover-description a{
+	text-decoration: none;
+	color: #d6b757;
+}
+#wildclover-description a:hover{
+	color: white;
 }
