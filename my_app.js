@@ -5,10 +5,17 @@ $(document).ready(function(){
 			.animate({width: '80%'}, 1200, 'swing')
 		$('#slider1').delay(1000).animate({left: '100%'}, 1200, 'swing')
 		$('#disclaimer').delay(2000).animate({top: '45%'}, 1000, 'swing')
-	})
+	});
 
-	// .delay(5000).alert($("#cover-photo").height())
-	// .delay(5000).alert($("#cover-photo").width())
+
+	// Dropdown Menu
+	// const hamburger = document.querySelector('.hamburger');
+	// const navLinks = document.querySelector('.options');
+	// const links = document.querySelectorAll('options li');
+
+	// hamburger.addEventListener('click', () => {
+	// 	navLinks.classList.toggle('open');
+	// });
 	
 
 	// Init Scroll Magic
