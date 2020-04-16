@@ -1,21 +1,19 @@
 $(document).ready(function(){
 //The following line comes from the imagesloaded.pkgd.min.js library. It checks that the cover image is loaded before animations start.
 	$('.cover').imagesLoaded(function(){ 
-		$('.cover').animate({height: '100%'}, 1000, 'swing')
-			.animate({width: '80%'}, 1200, 'swing')
+		$('.cover').animate({height: '80%'}, 1000, 'swing')
+
+		function widthLimiter() {
+			if (x.matches){
+				$('.cover').animate({width: '80%'}, 1200, 'swing')
+			}
+		}
+		var x = window.matchMedia("(min-width: 700px)")
+		widthLimiter(x)
+		x.addListener(widthLimiter)
+
 		$('#slider1').delay(1000).animate({left: '100%'}, 1200, 'swing')
-		$('#disclaimer').delay(2000).animate({top: '45%'}, 1000, 'swing')
 	});
-
-
-	// Dropdown Menu
-	// const hamburger = document.querySelector('.hamburger');
-	// const navLinks = document.querySelector('.options');
-	// const links = document.querySelectorAll('options li');
-
-	// hamburger.addEventListener('click', () => {
-	// 	navLinks.classList.toggle('open');
-	// });
 	
 
 	// Init Scroll Magic
