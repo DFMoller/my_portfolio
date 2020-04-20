@@ -156,7 +156,7 @@ nav::after{
 	top: 0;
 }
 .dropdown .menu-btn:checked ~ .menu-icon{
-	transform: translate(7vw, -5vh);
+	transform: translate(7vw, -5vh) rotate(360deg);
 }
 
 .options{
@@ -174,7 +174,7 @@ nav::after{
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
-	border-radius: 5px;
+	/*border-radius: 5px;*/
 	z-index: 4;
 
 	/*Make drop-down invisible to allow for 'animation'*/
@@ -191,10 +191,6 @@ nav::after{
 	width: 100%;
 	height: 10vh;
 }
-.options li:hover{
-	background-color: #c9ac54;
-	border-radius: 5px;
-}
 .options a{
 	display: flex;
 	width: 100%;
@@ -206,12 +202,6 @@ nav::after{
 	font-size: 3vw;
 	line-height: 95%;
 	padding-right: 5%;
-}
-.options a img{
-	display: inline;
-	width: 5vw;
-	margin-left: 5%;
-	margin-right: 5%;
 }
 
 header section{
@@ -341,7 +331,9 @@ header section{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: white;
+	background-color: transparent;
+	position: relative;
+	overflow: hidden;
 
 }
 .block{
