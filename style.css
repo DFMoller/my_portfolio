@@ -81,10 +81,6 @@ nav::after{
 	color: white;
 	font-size: 1.1vw;
 }
-.selection a img{
-	display: inline;
-	width: 1.1vw;
-}
 .dropdown{
 	height: 100%;
 	display: flex;
@@ -202,6 +198,12 @@ nav::after{
 	font-size: 3vw;
 	line-height: 95%;
 	padding-right: 5%;
+}
+.options a img{
+	display: inline;
+	width: 4vw;
+	margin-right: 5%;
+	margin-left: 10%;
 }
 
 header section{
