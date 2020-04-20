@@ -75,12 +75,15 @@ nav::after{
 	list-style: none;
 }
 .selection li{
-	/*background-color: lightgrey;*/
 }
 .selection a{
 	text-decoration: none;
 	color: white;
 	font-size: 1.1vw;
+}
+.selection a img{
+	display: inline;
+	width: 1.1vw;
 }
 .dropdown{
 	height: 100%;
@@ -102,6 +105,8 @@ nav::after{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	z-index: 10;
+	transition: all 0.4s ease;
 }
 .menu-icon .menu-lines{
 	background-color: white;
@@ -136,7 +141,7 @@ nav::after{
 }
 .dropdown .menu-btn:checked ~ .options{
 	visibility: visible;
-	transform: translateY(0px);
+	transform: translateX(0px);
 	transition: 0.4s ease;
 }
 .dropdown .menu-btn:checked ~ .menu-icon .menu-lines{
@@ -150,28 +155,32 @@ nav::after{
 	transform: rotate(45deg);
 	top: 0;
 }
+.dropdown .menu-btn:checked ~ .menu-icon{
+	transform: translate(7vw, -5vh);
+}
 
 .options{
 	position: absolute;
 	/*margin-top: 40px;*/
-	width: 200px;
-	height: 300px;
+	width: 40vw;
+	height: 100vh;
+	padding-bottom: 10vh;
 
-	top: 11vh;
-	right: 0;
+	top: 0;
+	right: -10vw;
 	
 	background-color: #d6b757;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: flex-end;
 	align-items: center;
 	border-radius: 5px;
 	z-index: 4;
 
 	/*Make drop-down invisible to allow for 'animation'*/
 	visibility: hidden;
-	transition: 0.4s ease;
-	transform: translateY(-10px);
+	transition: all 0.4s ease;
+	transform: translateX(100%);
 
 	/*Quick Note: At first I used opacity: 0; and pointer-events: none; here and reversed it below.
 	This however causes the anchor tags to stop working. I used visibility instead and it worked well.*/
@@ -180,7 +189,7 @@ nav::after{
 .options li{
 	list-style: none;
 	width: 100%;
-	height: 100%;
+	height: 10vh;
 }
 .options li:hover{
 	background-color: #c9ac54;
@@ -192,8 +201,17 @@ nav::after{
 	height: 100%;
 	text-decoration: none;
 	color: white;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
+	font-size: 3vw;
+	line-height: 95%;
+	padding-right: 5%;
+}
+.options a img{
+	display: inline;
+	width: 5vw;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 header section{
@@ -288,7 +306,7 @@ header section{
 		display: none;
 	}
 	.options{
-		top: 15vh;
+		/*top: 15vh;*/
 	}
 	.cover img{
 		height: 80%;
