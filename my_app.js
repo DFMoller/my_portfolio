@@ -54,42 +54,42 @@ $(document).ready(function(){
 // 	WORK EXPERIENCE
 	// Stone3
 	var stone3Slider = new ScrollMagic.Scene({
-		triggerElement: '#stonethree',
-		triggerHook: 0.7
+		triggerElement: '#section4',
+		triggerHook: 0.2
 	})
 	.setClassToggle('#stone3-slider', 'slide-down')
 	.addTo(controller);
 	var stone3Content = new ScrollMagic.Scene({
-		triggerElement: '#stonethree',
-		triggerHook: 0.7
+		triggerElement: '#section4',
+		triggerHook: 0.2
 	})
 	.setClassToggle('#stone3-content', 'slide-up')
 	.addTo(controller);
 
 	// YellowTail
 	var ytSlider = new ScrollMagic.Scene({
-		triggerElement: '#yellowtail',
-		triggerHook: 0.7
+		triggerElement: '#section4',
+		triggerHook: 0.2
 	})
 	.setClassToggle('#yt-slider', 'slide-up')
 	.addTo(controller);
 	var ytContent = new ScrollMagic.Scene({
-		triggerElement: '#yellowtail',
-		triggerHook: 0.7
+		triggerElement: '#section4',
+		triggerHook: 0.2
 	})
 	.setClassToggle('#yt-content', 'slide-down')
 	.addTo(controller);
 
 	// WildClover
 	var wildCloverSlider = new ScrollMagic.Scene({
-		triggerElement: '#wildclover',
-		triggerHook: 0.7
+		triggerElement: '#section4',
+		triggerHook: 0.2
 	})
 	.setClassToggle('#wildclover-slider', 'slide-down')
 	.addTo(controller);
 	var wildCloverContent = new ScrollMagic.Scene({
-		triggerElement: '#wildclover',
-		triggerHook: 0.7
+		triggerElement: '#section4',
+		triggerHook: 0.2
 	})
 	.setClassToggle('#wildclover-content', 'slide-up')
 	.addTo(controller);
