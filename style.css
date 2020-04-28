@@ -905,7 +905,6 @@ header section{
 
 
 #section4{
-	height: 1300px;
 	width: 100%;
 	/*background-color: #313131;*/
 	display: flex;
@@ -1277,5 +1276,323 @@ header section{
 		white-space: normal;
 		text-align: center;
 		line-height: 100%;
+	}
+}
+
+
+
+/************************************************Idea of the Week**************************************************
+*******************************************************************************************************************/
+
+
+
+
+#section5{
+	height: 200vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #474747;
+}
+.iotw-title-container{
+	width: 100%;
+	height: 7vw;
+	margin-top: 12vh;
+	background-color: #4f8a96;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 5px;
+}
+#iotw-title{
+	color: white;
+	white-space: nowrap;
+	font-size: 4.5vw;
+}
+#iotw-title img{
+	vertical-align: -10%;
+	height: 5vw;
+	margin-right: 1vw;
+}
+.iotw-content{
+	width: 100%;
+	/*flex-grow: 1;*/
+	/*background-color: pink;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.recent-topics{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+	position: relative;
+}
+.recent-topics .recent-title{
+	height: 2.5vw;
+	width: 70%;
+	/*background-color: blue;*/
+	position: relative;
+}
+.recent-topics .recent-title h2{
+	color: #eaeaea;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 1.5vw;
+}
+.carousel{
+	height: 20vw;
+	width: 100%;
+	/*background-color: grey;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+}
+.carousel-slider{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.carousel-slider .element{
+	height: 95%;
+	width: 70vw;
+	margin: 40px;
+	background-color: #5b5b5b;
+	border-radius: 10px;
+}
+.recent-topics .buttons{
+	width: 100%;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background-color: blue;*/
+}
+#nextButton{
+	height: 25px;
+	margin: 30px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+#prevButton{
+	height: 25px;
+	margin: 30px;
+	cursor: pointer;
+	transform: scaleX(-1);
+	opacity: 0.5;
+}
+#prevButton:hover,
+#nextButton:hover{
+	opacity: 1;
+}
+.buttons .dot{
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: #d6b757;
+	margin: 10px;
+	transition: all 0.2s ease-in-out;
+}
+.full{
+	background-color: #d6b757;
+	transform: scale(1.2, 1.2);
+}
+.all-topics{
+	background-color: #d6b757;
+	border-radius: 10px;
+	margin-top: 20px;
+	height: 70px;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.all-topics a{
+	font-size: 20px;
+	text-decoration: none;
+	color: #474747;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.all-topics a:hover{
+	background-color: #ba9e4c;
+	color: #eaeaea;
+}
+
+/*************************Week 1********************/
+#element2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.idea-video{
+	height: 80%;
+	width: 30%;
+	/*margin-left: 5%;*/
+	/*background-color: yellow;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#svg-animation-yt{
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+}
+.idea-text{
+	height: 80%;
+	width: 60%;
+	margin-left: 2%;
+	/*flex-grow: flex-fill;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*background-color: green;*/
+}
+.idea-title-box{
+	width: 100%;
+	height: 20%;
+	/*background-color: yellow;*/
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.idea-title-box h2{
+	font-size: 2vw;
+	color: #eaeaea;
+}
+.idea-date{
+	/*background-color: green;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 1vw;
+}
+.idea-date p{
+	color: #eaeaea;
+	font-size: 0.7vw;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*width: 100%;*/
+}
+.idea-description{
+	height: 75%;
+	width: 100%;
+	padding-top: 0.5vw;
+	/*padding-left: 2%;*/
+}
+.idea-description p{
+	color: #eaeaea;
+	font-size: 1.05vw;
+}
+
+@media screen and (max-width: 768px){
+	.iotw-title-container{
+		height: 100px;
+	}
+	#iotw-title{
+		font-size: 30px;
+	}
+	#iotw-title img{
+		height: 40px;
+		margin-right: 10px;
+	}
+	.recent-topics .recent-title{
+		height: 30px;
+		/*background-color: pink;*/
+	}
+	.recent-topics .recent-title h2{
+		font-size: 18px;
+		color: #4f8a96;
+	}
+	.recent-topics .carousel{
+		height: 100vw;
+	}
+	.carousel-slider .element{
+		width: 90vw;
+	}
+	#element2{
+		flex-direction: column;
+		position: relative;
+	}
+	.idea-video{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 45%;
+		width: 100%;
+	}
+	#svg-animation-yt{
+		width: 70vw;
+		height: 30vw;
+	}
+	.idea-text{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 55%;
+		margin-left: 0;
+	}
+	.idea-title-box{
+		margin-top: 5%;
+		width: 90%;
+		height: 30%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		/*background-color: green;*/
+	}
+	.idea-title-box h2{
+		font-size: 6vw;
+		text-align: center;
+		line-height: 120%;
+	}
+	.idea-description{
+		width: 90%;
+		height: 60%;
+		/*background-color: yellow;*/
+	}
+	.idea-description p{
+		margin-top: 5vw;
+		font-size: 2.5vw;
+		text-align: center;
+	}
+	.idea-date{
+		margin-top: 3vw;
+		width: 100%;
+	}
+	.idea-date p{
+		font-size: 2vw;
+		width: 60%;
+	}
+	.recent-topics .recent-title{
+		width: 90%;
 	}
 }

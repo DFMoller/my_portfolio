@@ -43,6 +43,7 @@ main{
 	align-items: center;
 	/*background-color: lightgrey;*/
 	height: 10vh;
+	margin-right: 20px;
 }
 #cone img{
 	height: 100%;
@@ -52,6 +53,8 @@ main{
 	justify-content: center;
 	align-items: center;
 	/*background-color: pink;*/
+	line-height: 250%;
+	
 }
 #text h1{
 	font-size: 5vh;
