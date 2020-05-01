@@ -28,11 +28,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				rightDot.classList.add('full');
 				midDot.classList.remove('full');
 				leftDot.classList.remove('full');
+				nextButton.classList.add('hidden');
 			}
 			if (counter == -1){
 				rightDot.classList.remove('full');
 				midDot.classList.add('full');
 				leftDot.classList.remove('full');
+				prevButton.classList.remove('hidden');
 			}
 			carouselSlide.style.transition = "transform 0.4s ease-in-out";
 			counter++;
@@ -44,11 +46,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				rightDot.classList.remove('full');
 				midDot.classList.remove('full');
 				leftDot.classList.add('full');
+				prevButton.classList.add('hidden');
 			}
 			if (counter == 1){
 				rightDot.classList.remove('full');
 				midDot.classList.add('full');
 				leftDot.classList.remove('full');
+				nextButton.classList.remove('hidden');
 			}
 			carouselSlide.style.transition = "transform 0.4s ease-in-out";
 			counter--;

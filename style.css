@@ -1288,13 +1288,14 @@ header section{
 
 
 #section5{
-	height: 200vh;
+	/*height: 200vh;*/
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 	background-color: #474747;
+	padding-bottom: 10vh;
 }
 .iotw-title-container{
 	width: 100%;
@@ -1396,6 +1397,10 @@ header section{
 	cursor: pointer;
 	transform: scaleX(-1);
 	opacity: 0.5;
+}
+.hidden{
+	transition: all 0.2s ease-in-out;
+	visibility: hidden;
 }
 #prevButton:hover,
 #nextButton:hover{
@@ -1531,7 +1536,7 @@ header section{
 		color: #4f8a96;
 	}
 	.recent-topics .carousel{
-		height: 100vw;
+		height: 110vw;
 	}
 	.carousel-slider .element{
 		width: 90vw;
@@ -1560,7 +1565,7 @@ header section{
 		margin-left: 0;
 	}
 	.idea-title-box{
-		margin-top: 5%;
+		margin-top: 15%;
 		width: 90%;
 		height: 30%;
 		display: flex;
