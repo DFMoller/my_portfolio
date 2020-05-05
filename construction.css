@@ -9,10 +9,10 @@ main{
 	font-family: 'Poppins', sans-serif;
 	background-color: #f4ad31;
 	display: grid;
-	grid-template-rows: 1fr 10vh 40vh 20vh;
+	grid-template-rows: 20vh 3fr 1fr 3fr 20vh;
 }
 #construction-vehicle{
-	grid-row: 3/4;
+	grid-row: 4/5;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -31,7 +31,7 @@ main{
 	border-radius: 5px;
 }
 #title{
-	grid-row: 1/2;
+	grid-row: 2/3;
 	display: flex;
 	/*flex-direction: column;*/
 	justify-content: center;
@@ -57,5 +57,21 @@ main{
 	
 }
 #text h1{
-	font-size: 5vh;
+	font-size: 5vw;
+}
+
+@media screen and (max-width: 768px){
+	#title{
+		flex-direction: column;
+	}
+	#text{
+		text-align: center;
+	}
+	#text h1{
+		font-size: 10vw;
+	}
+	#cone{
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
 }
