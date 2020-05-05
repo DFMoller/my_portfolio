@@ -14,12 +14,30 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	const midDot = document.querySelector('.mid-dot');
 	const rightDot = document.querySelector('.right-dot');
 
+	const elementWidth = $('.carousel .element').width();
+	const sliderWidth = $('.carousel-slider').width();
+
 	//counter
-	let counter = 0;
-	midDot.classList.add('full');
+	let counter = -1;
+
+	// Set initial position (depends on counter above)
+	if (counter == -1){
+		nextButton.classList.remove('hidden');
+		leftDot.classList.add('full');
+	}
+	if (counter == 0){
+		midDot.classList.add('full');
+		prevButton.classList.remove('hidden');
+		nextButton.classList.remove('hidden');
+	}
+	if (counter == 1){
+		prevButton.classList.remove('hidden');
+		rightDot.classList.add('full');
+	}
+	carouselSlide.style.transform = 'translateX(' + (-0.5*sliderWidth -counter*(elementWidth+80)) + 'px)';
+
+	// clicking buttons -- The if statement checks if the button is found on page, avoids errors.
 	if(nextButton){
-		const elementWidth = $('.carousel .element').width();
-		const sliderWidth = $('.carousel-slider').width()
 
 		//Button Listeners
 		nextButton.addEventListener('click', ()=>{
