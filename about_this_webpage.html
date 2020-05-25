@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=js"></script>
+	<link rel="stylesheet" type="text/css" href="about_this_webpage.css">
+	<script src="about_this_webpage.js"></script>
+	<title>About My Webpage</title>
+</head>
+<body>
+	<header>
+		<div class="fore">
+			<div class="namebox">
+				<h3><a href="index.html">Daniel Moller</a></h3>
+			</div>
+		</div>
+		
+	</header>
+	<main>
+		<nav class="newnav-box">
+			<div class="newnav">
+				
+				<h1>About This Webpage</h1>
+				
+				<ul class="options">
+					<li><a href="#the-why">The Why</a></li>
+					<li><a href="#lotw">Learning On The Web</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#source-code">Code</a></li>
+				</ul>
+			</div>
+		</nav>
+		<section class="topics">
+			<img src="img/gimp_design/laptop1.png" class="laptop">
+			<div class="topic the-why">
+				<a id="the-why" class="topic-anchor"></a>
+				<h1>The Why</h1>
+				<p>2020 gave us the Covid-19 lockdown in South Africa and it is no secret that this virus had impacted the lives of just about everyone on the planet in a substantial way. For those of us lucky enough to have been able to continue living cumfortably, albeit far from our normal lives, the lockdown has presented us with much time to reflect and explore new ideas. Therefore I think anyone in this fortunate position should be using the time to work on certain skills or learn new ones inside the boundaries of lockdown.<br><br>
+					This is the mindset that led me to want to expand some of my skills. A brief summary of the topics I engaged that were new to me during lockdown includes web development (front and back end), video editing (Davinci Resolve) and stock market trading.<br><br>
+				I was particularily interested in front end web development at first. Simply put, I had no idea how a website interface was built and wanted to find out. At this point I already knew that my end goal was to create my own portfolio website and regardless if I was going to use it as such or not, it was goint to be the best way to learn the skills I was looking for in the process. </p>
+			</div>
+
+			<div class="topic learning-on-the-web">
+
+				<h1>Learning on the Web</h1>
+				<a id="lotw" class="topic-anchor"></a>
+				<p>One big stepping stone that helped me to start learning web development is how I used a promotion code to gain two months' free access to <a href="https://www.skillshare.com/home">Skill Share</a>. The Skill Share platform offers hundreds of online video courses on a wide variety of topics and I started my HTML and CSS ventures by following one of these classes. There are many other sources of good content including <a href="https://www.youtube.com/">YouTube</a> and educational websites such as <a href="https://www.w3schools.com/">W3Schools</a>. I should mention that I rate YouTube extremely high because it's free and because of the large amount of content. However, you need to be willing to put in some effort at times to search around for the exact quality content you require, but it is out there.</p>
+
+				<h2>- Finding My Feet -</h2>
+				<p>As my first step forward, I started by watching a Skill Share course on HTML and CSS basics. I followed along by coding exactly what the teacher did and changing the css slightly, with my limited knowledge, to have my first web page (at least) looking unique. This course also did a fantastic job of explaining how <a href="https://github.com/">Github</a> and Github Desktop work together to have local changes in code pushed to the web. Knowing how to work with Github from the very beginning definitely gave me a big advantage over someone starting without that knowledge.<br><br>
+				Having completed my first Skill Share course on HTML and CSS, I had my very first website hosted through github. At this point, I had no idea how custom domains worked, but I was very pleased by how I could send someone a github link to a website I had coded myslef!<br><br>
+				My nexy big source of information was the YouTube channel, <a href="https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q/featured">Dev Ed</a> (his name is Ed). Ed has a fantastic channel with a bunch of videos each dedicated to a different web development topic. For the next chapter of my web development endeavours, I learned a lot from this channel and inevitably started building up a small library of website demos, each with the goal of understanding a particular subject. Some of these are mentioned below.<br><br>
+				First, I started with a follow-along project where I copied code from Ed as he was explaining it. This served as some much needed practice to cement what I had learned from Skill Share.<br><br>
+				Up to this point, I had only looked at static websites. As the next step, I did another one of Ed's follow along projects where he showed how dropdown lists are created, and the website I coded did nothing but that.<br><br>
+				Another one of these follow along projects was one I did because of my growing interest in website animations. I had some basic JavaScript experience, but had never implemented it to a website. This project taught me how to create animations such as that on my portfolio's <a class="home-link" href="index.html">home page</a>.<br><br>There were many others, but those mentioned above show how each one had a specific purpose. Having completed a bunch of these small projects, I was ready to start putting my new skills to work by starting to work on my portfolio website. The next section discusses the content of this website.</p>
+			</div>
+
+			<div class="topic features">
+				<a id="features" class="topic-anchor"></a>
+				<h1>Features</h1>
+				<p>This section discusses the different design choices that were made and features that I still want to add in the future.<br><br>
+				As mentioned earlier, I got the inspiration for the <b>animation on my cover page</b> from a Dev Ed tutorial. It checks if the document has loaded and then uses JavaScript to make changes to some CSS classes at certain time intervals to create the animation effect.<br><br>
+				Regarding the <b>navigation bar</b> at the top of the home page, there was some back and forth in the process of coding it. At first, I used a drop down menu that opened when a hamburger-icon was clicked, because its functionality was still very new to me and had my interest. This worked just as I wanted it to, but I soon realized that it was not necessarily the best way to do it. As I was learning how to use media queries at the time, it became clear that the hamburger-dropdown would work best on mobile devices, where the screen real estate was limited. That is why I decided rather to have the dropdown links spread out over the navigation bar for use with bigger screens, and make it switch to the dropdown effect when the screen width went below a certain number of pixels. This is all done in CSS, using media queries.<br><br>
+				I decided to use a website layout where most of the main content was stacked vertically on a single page. Subsequently, the next sections from 'About Me' to 'Idea of the Week' were layed out similarly and were not difficult to finish in a short amount of time. However, some of these contained trails of new things I learned along the way.<br><br>
+				'University' and 'Projects' use a JQUERY plugin, <b>ScrollMagic</b>, to let animations start depending on the scrolling input of the user. I tried to stay away from plugins for the most part, just so that I could learn the basics and not take too many short cuts. But I used ScrollMagic, because it is a very powerful tool if you know how to use it. It also taught me a bit about plugins in general. The animations added in these sections are the sliding effects.<br><br>
+				'Idea of the Week' is a section I wanted to add, because it would encourage me to keep working on the website in the future, even if it was just a bit every week. A new topic is added every Monday. The <b>carousel</b> used to display the past three topics, is another one of the things I learned along the way and which I was not planning to include initially. It uses vanilla JavaScript, no plugins and no JQUERY. Its workings are show in the code section below.</p>
+				<h2>- Future Additions -</h2>
+				<p>At the time of writing this, the contact page has not yet been included. I am currently looking into the complex back-end development world while learning php and MySQL. I don't simply want to follow a tutorial on how  a contact page in built. That would mean I could easily copy some code and have my page working fine, but there is a lot more to understand beyond that. As soon as I feel I know enough, I will attempt to add it myself and in this way I will always be able to trouble shoot future issues such as errors.<br><br>
+				After gaining a solid understanding of the above and databases in general, I would also love to improve the Idea of the Week section by connecting it to a database table. My goal here, is to be able to add every week's content without opening the HTML file itself.</p>
+			</div>
+
+			<div class="topic code">
+				<a id="source-code" class="topic-anchor"></a>
+				<h1>Source Code</h1>
+				<p>This section shares some code snippets of certain non-trivial parts of my website.</p>
+				<h2>- The Carousel -</h2>
+				<pre class="code-block">
+			    	<code class="prettyprint carousel-code">
+document.addEventListener('DOMContentLoaded', (event) => {
+
+	const carouselSlide = document.querySelector('.carousel-slider');
+	const carouselElements = document.querySelectorAll('.carouselslider .element');
+
+	const element1 = document.querySelector('#element1');
+	const element2 = document.querySelector('#element2');
+	const element3 = document.querySelector('#element3');
+
+	const prevButton = document.querySelector('#prevButton');
+	const nextButton = document.querySelector('#nextButton');
+
+	const leftDot = document.querySelector('.left-dot');
+	const midDot = document.querySelector('.mid-dot');
+	const rightDot = document.querySelector('.right-dot');
+
+	const elementWidth = $('.carousel .element').width();
+	const sliderWidth = $('.carousel-slider').width();
+
+	//counter
+	let counter = -1;
+
+	// Set initial position (depends on counter above)
+	if (counter == -1){
+		nextButton.classList.remove('hidden');
+		leftDot.classList.add('full');
+	}
+	if (counter == 0){
+		midDot.classList.add('full');
+		prevButton.classList.remove('hidden');
+		nextButton.classList.remove('hidden');
+	}
+	if (counter == 1){
+		prevButton.classList.remove('hidden');
+		rightDot.classList.add('full');
+	}
+	carouselSlide.style.transform = 'translateX(' + (-0.5*sliderWidth -counter*(elementWidth+80)) + 'px)';
+
+	// clicking buttons -- The if statement checks if the button is found on page, avoids errors.
+	if(nextButton){
+
+		//Button Listeners
+		nextButton.addEventListener('click', ()=>{
+			if(counter == 1) return;
+			if (counter == 0){
+				rightDot.classList.add('full');
+				midDot.classList.remove('full');
+				leftDot.classList.remove('full');
+				nextButton.classList.add('hidden');
+			}
+			if (counter == -1){
+				rightDot.classList.remove('full');
+				midDot.classList.add('full');
+				leftDot.classList.remove('full');
+				prevButton.classList.remove('hidden');
+			}
+			carouselSlide.style.transition = "transform 0.4s ease-in-out";
+			counter++;
+			carouselSlide.style.transform = 'translateX(' + (-0.5*sliderWidth -counter*(elementWidth+80)) + 'px)';
+		})
+		prevButton.addEventListener('click', ()=>{
+			if(counter == -1) return;
+			if (counter == 0){
+				rightDot.classList.remove('full');
+				midDot.classList.remove('full');
+				leftDot.classList.add('full');
+				prevButton.classList.add('hidden');
+			}
+			if (counter == 1){
+				rightDot.classList.remove('full');
+				midDot.classList.add('full');
+				leftDot.classList.remove('full');
+				nextButton.classList.remove('hidden');
+			}
+			carouselSlide.style.transition = "transform 0.4s ease-in-out";
+			counter--;
+			carouselSlide.style.transform = 'translateX(' + (-0.5*sliderWidth -counter*(elementWidth+80)) + 'px)';
+		})
+		console.log(rightDot.classList);
+		console.log(rightDot.classList);
+	}
+})
+				    </code>
+			  	</pre>
+				
+			</div>
+
+		</section>
+		
+	</main>
+	<footer></footer>
+</body>
+</html>
