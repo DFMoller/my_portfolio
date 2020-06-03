@@ -158,6 +158,13 @@ body{
 	color: #eaeaea;
 	font-size: 1.05vw;
 }
+.idea-description a{
+	text-decoration: none;
+	color: #d6b757;
+}
+.idea-description a:hover{
+	color: #4f8a96;
+}
 
 
 
