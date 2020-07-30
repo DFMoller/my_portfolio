@@ -50,7 +50,7 @@ $(document).ready(function(){
 	.setClassToggle('#project02-slider', 'slide-from-left') //add class to sun-top-half
 	.addTo(controller);
 
-
+//**********************************************vvvvvvvvvv******************TO BE UPDATED*************************
 // 	WORK EXPERIENCE
 	// Stone3
 	var stone3Slider = new ScrollMagic.Scene({
