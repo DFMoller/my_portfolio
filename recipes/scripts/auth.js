@@ -77,6 +77,26 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		const numIngredients = ingredients.childElementCount;
 		const steps = document.querySelector('#new-steps');
 		const numSteps = steps.childElementCount;
+		const addImg = document.querySelector('.upload-img-btn');
+
+		// // uploading image
+		// var imageName = ''; // for later use
+		// addImg.addEventListener('change', function(e){
+		// 	console.log('event has listened');
+		// 	// get file
+		// 	var file = e.target.files[0];
+		// 	imageName = file.name; // for later use
+
+		// 	// create storage ref
+		// 	var storageRef = firebase.storage().ref('recipe_pics/' + file.name);
+
+		// 	// upload file
+		// 	storageRef.put(file).then(() => {
+		// 		console.log("image uploaded");
+		// 	}).catch(err => {
+		// 		console.log("Image upload error: ", err);
+		// 	})
+		// })
 
 		// fetching newer ingredients from form
 		var i;
@@ -115,7 +135,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 	})
 
-	// Sign up a new user
+	// *********************************SIGN UP A NEW USER******************************
 	signupBtn.addEventListener('click', function(){
 		console.log('click');
 		signupContainer.classList.toggle('hidden');

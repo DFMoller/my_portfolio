@@ -50,7 +50,7 @@ const setupUI = (user) => {
 }
 
 
-// setup recipes from firebase to display
+// ****************************setup recipes from firebase to display******************************
 const setupRecipes = (data, user) => {
 
 	// same admin auth as in auth.js, just to govern delete button in recipe

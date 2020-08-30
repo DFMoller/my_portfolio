@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="manifest" href="/manifest.json">
 
 	<!-- ***********************************Firebase Connection************************************** -->
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -17,6 +18,7 @@
 	<!-- TODO: Add SDKs for Firebase products that you want to use
 	     https://firebase.google.com/docs/web/setup#available-libraries -->
 	<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-storage.js"></script>
 
 	<script>
 	  // Your web app's Firebase configuration
@@ -115,7 +117,7 @@
 				<label class="create-label" for="title">Title</label>
 				<input type="text" id="title" name="title" required>
 
-				<input type="file" id="img" name="img" accept="image/*">
+				<input type="file" class="upload-img-btn" id="img" name="img" accept="image/*">
 				<label class="img-label" for="img">Add a Photo</label>
 
 				<div class="add-ingredients">

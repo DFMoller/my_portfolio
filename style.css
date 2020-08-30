@@ -573,11 +573,12 @@ header section{
 
 
 #section3{
-	height:	200vh;
+	/*height:	200vh;*/
+	padding-bottom: 100px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	/*justify-content: flex-start;*/
 	align-items: center;
 	background-color: transparent;
 	position: relative;
@@ -757,7 +758,7 @@ header section{
 	grid-column: 2/3;
 }
 #project02{
-	margin-bottom: 10vh;
+	margin-bottom: 5vh;
 	grid-template-rows: 4fr 6fr;
 }
 #project02-image img{
@@ -806,8 +807,8 @@ header section{
 
 @media screen and (max-width: 768px){
 	#section3{
-		justify-content: flex-start;
-		height: 215vh;
+		/*justify-content: flex-start;*/
+		/*height: 215vh;*/
 	}
 	.project{
 		grid-template-columns: 1fr;
