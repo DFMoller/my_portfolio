@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- ***********************************Firebase Connection************************************** -->
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-functions.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+	<script>
+	  // Your web app's Firebase configuration
+	  var firebaseConfig = {
+	    apiKey: "AIzaSyCGpONt2qMAIGmQhTnlFHw6l4WmQ30DHZM",
+	    authDomain: "recipes-ea247.firebaseapp.com",
+	    databaseURL: "https://recipes-ea247.firebaseio.com",
+	    projectId: "recipes-ea247",
+	    storageBucket: "recipes-ea247.appspot.com",
+	    messagingSenderId: "839815479395",
+	    appId: "1:839815479395:web:0cf9569056bc211a1bb856",
+	    measurementId: "G-KZQVWD50QJ"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	  firebase.analytics();
+	  // make auth and firestore references - did this myself
+	  const auth = firebase.auth();
+	  const db = firebase.firestore();
+	  const functions = firebase.functions();
+
+	  // update firestore settings
+	  // db.settings({ timestampsInSnapshots: true });
+	</script>
+	<!-- *********************************************END****************************************** -->
+	<script src="scripts/auth.js"></script>
+	<script src="scripts/app.js"></script>
+	<title>Recipes</title>
+</head>
+<body>
+	<nav>
+		<h1>Some Kickass Recipes</h1>
+		<div class="admin-bar">
+			<div class="account-details-box">
+				<p class="admin hidden" style="color: white; margin-right: 3px;">Admin:</p>
+				<p id="account-details"></p>
+				<button class="admin-options">
+					<svg class="admin hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+				</button>
+				<div class="new-admin-dropdown">
+					<button>Add a new admin</button>
+				</div>
+			</div>
+			<a id="new-recipe-Btn" class="new-recipe-Btn signed-in hidden" href="#">Add Recipe</a>
+			<form id="login-form" class="login-form">
+				<input type="email" id="login-email" name="mail" placeholder="Email" required>
+				<input type="password" id="login-pwd" name="pwd" placeholder="Password" required>
+				<button type="submit">Log In</button>
+				<p class="error" style="color: white; font-size: 12px;"></p>
+			</form>
+			<a id="signup-link" class="sign-up-out-links" href="#">Sign Up</a>
+			<a id="signout-link" class="sign-up-out-links hidden" href="#">Sign Out</a>
+		</div>
+	</nav>
+	<main>
+<!-- *****************************ADD A NEW ADMIN********************************************* -->
+		<div class="add-admin-box hidden">
+			<form id="add-admin">
+				<input type="email" id="email-for-admin" placeholder="User Email" required>
+				<button type="submit">Make Admin</button>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
+			</form>
+		</div>
+<!-- ****************************ARE YOU SURE YOU WANT TO DELETE**************************** -->
+		<form class="confirm-delete-recipe hidden">
+			<h3>Are you sure?</h3>
+			<div>
+				<button class="delete-recipe-yes">Delete</button>
+				<button class="delete-recipe-no">Cancel</button>
+			</div>
+		</form>
+<!-- ********************************SIGN UP******************************************** -->
+		<div class="signup-container hidden">
+			<form id="signup-form" class="signup-form">
+				<div class="user-id-container">
+					<label for="user-name">Display Name</label>
+					<input type="text" id="user-name" name="uid" required>
+					<p>Anyone can see this</p>
+				</div>
+				<label for="signup-email">E-Mail</label>
+				<input type="email" id="signup-email" name="mail" required>
+				<label for="signup-password">Password</label>
+				<input type="password" id="signup-password" name="pwd" required>
+				<button class="submitBtn" type="submit">Sign Up</button>
+				<p class="error"></p>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
+			</form>
+		</div>
+		
+
+
+<!-- ***********************************CREATE NEW RECIPES****************************************** -->
+		<div class="create-container signed-in hidden">
+			<form id="create-form" class="create-form">
+				<h2>Add Recipe</h2>
+				<label class="create-label" for="title">Title</label>
+				<input type="text" id="title" name="title" required>
+
+				<input type="file" id="img" name="img" accept="image/*">
+				<label class="img-label" for="img">Add a Photo</label>
+
+				<div class="add-ingredients">
+					<label class="create-label" for="ingredient1">Ingredients</label>
+					<div id="new-ingredients">
+						<div class="ingredient1-box">
+							<label class="input-num" for="ingredient1">1</label>
+							<input type="text" id="ingredient1" name="ingredient1" required>
+						</div>
+					</div>
+				</div>
+				<svg id="add-ingredient-Btn" class="addBtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>
+
+				<div class="add-steps">
+					<label class="create-label" for="step1">Steps</label>
+					<div id="new-steps">
+						<div class="step1-box">
+							<label class="input-num" for="step1">1</label>
+							<input type="text" id="step1" name="step1" required>
+						</div>
+					</div>
+				</div>
+				<svg id="add-step-Btn" class="addBtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>
+
+				<button type="submit" class="submitBtn">Submit</button>
+				<svg class="exitCreate" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
+			</form>
+		</div>
+
+
+<!-- **************************************CONTENT************************************ -->
+		<ul class="all-recipes" id="all-recipes">
+			<!-- This is where content from firebase is put -->
+		</ul>
+				
+	</main>
+	<footer></footer>
+
+</body>
+</html>
