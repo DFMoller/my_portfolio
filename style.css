@@ -252,7 +252,7 @@ header section{
 	background: linear-gradient(to right, #4f8a96, #c19cb3);
 	z-index: -1;
 }
-#disclaimer{
+/*#disclaimer{
 	position: absolute;
 	left: 2%;
 	bottom: 5%;
@@ -264,10 +264,6 @@ header section{
 	justify-content: center;
 	align-content: center;
 	border-radius: 5px;
-
-	/*Animation*/
-	/*opacity: 0;*/
-	/*transform: translateY(130%);*/
 }
 #disclaimer h3{
 	text-align: center;
@@ -282,7 +278,7 @@ header section{
 	width: 90%;
 	font-size: 15px;
 	text-align: center;
-}
+}*/
 
 @media screen and (max-width: 768px) {
 	nav{
@@ -311,7 +307,7 @@ header section{
 		bottom: 10%;
 		font-size: 7vw;
 	}
-	#disclaimer{
+	/*#disclaimer{
 		height: 30vw;
 		width: 30vw;
 		left: 5%;
@@ -321,7 +317,7 @@ header section{
 	}
 	#disclaimer p{
 		display: none;
-	}
+	}*/
 }
 
 
