@@ -112,6 +112,7 @@ nav::after{
 	background-color: white;
 	display: block;
 	height: 4px;
+	border-radius: 2px;
 	width: 30px;
 	position: relative;
 	transition: all .2s ease-out;
@@ -125,6 +126,7 @@ nav::after{
 	position: absolute;
 	top: 9px;
 	transition: all .2s ease-out;
+	border-radius: 2px;
 }
 .menu-icon .menu-lines:after{
 	background-color: white;
@@ -135,6 +137,7 @@ nav::after{
 	position: absolute;
 	top: -9px;
 	transition: all .2s ease-out;
+	border-radius: 2px;
 }
 .menu-btn{
 	display: none;
@@ -288,7 +291,7 @@ header section{
 		height: 10vh;
 	}
 	.logo a{
-		font-size: 7vw;
+		font-size: 5vw;
 	}
 	.dropdown{
 		display: flex;
@@ -758,7 +761,8 @@ header section{
 	grid-template-rows: 4fr 6fr;
 }
 #project02-image img{
-	-webkit-filter: drop-shadow(2px 2px 5px);
+	/*-webkit-filter: drop-shadow(2px 2px 5px);*/
+	box-shadow: 0px 0px 8px 1px rgb(0,0,0, 0.5);
 	width: 80%;
 }
 #full-experiment-new-line{
@@ -785,6 +789,14 @@ header section{
 .project-slider-left.slide-from-left{
 	transform: translateX(0);
 }
+
+/******************************* Project 3 ***************************/
+
+#project03-img-box img{
+	box-shadow: 0px 0px 8px 1px rgb(0,0,0, 0.5);
+}
+
+
 	/************************Projects Footer*************************/
 .projects-footer{
 	position: absolute;

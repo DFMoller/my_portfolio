@@ -1,11 +1,14 @@
 $(document).ready(function(){
 //The following line comes from the imagesloaded.pkgd.min.js library. It checks that the cover image is loaded before animations start.
 	$('.cover').imagesLoaded(function(){ 
-		$('.cover').animate({height: '80%'}, 1000, 'swing')
 
 		function widthLimiter() {
 			if (x.matches){
+				$('.cover').animate({height: '80%'}, 1000, 'swing')
 				$('.cover').animate({width: '80%'}, 1200, 'swing')
+			}
+			else{
+				$('.cover').animate({height: '58%'}, 1000, 'swing')
 			}
 		}
 		var x = window.matchMedia("(min-width: 700px)")
