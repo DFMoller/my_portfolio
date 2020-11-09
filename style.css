@@ -600,9 +600,9 @@ header section{
 	align-items: center;
 	/*background: linear-gradient(to right, #4f8a96, #c19cb3);*/
 	background-color: var(--color-soft-white);
-	width: 40vw;
+	width: 52vw;
 	height: 10vw;
-	border-radius: 75px; 
+	border-radius: 5vw; 
 }
 #section3-title h1{
 	color: #4f8a96;
@@ -621,14 +621,15 @@ header section{
 
 @media screen and (max-width: 867px){
 	#section3-title{
-		width: 80vw;
+		width: 85vw;
 		height: 20vw;
+		border-radius: 10vw;
 	}
 	#section3-title h1{
-		font-size: 12.8vw;
+		font-size: 11vw;
 	}
 	#section3-icon{
-		height: 19vw;
+		height: 15vw;
 	}
 }
 
