@@ -183,7 +183,11 @@ body{
 		height: 40px;
 		margin-right: 10px;
 	}
+	.namebox a{
+		font-size: 5.5vw;
+		margin-left: 20px;
 
+	}
 	.element{
 		flex-direction: column;
 		position: relative;

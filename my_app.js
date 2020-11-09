@@ -8,13 +8,12 @@ $(document).ready(function(){
 				$('.cover').animate({width: '80%'}, 1200, 'swing')
 			}
 			else{
-				$('.cover').animate({height: '58%'}, 1000, 'swing')
+				$('.cover').animate({height: '100%'}, 1000, 'swing')
 			}
 		}
 		var x = window.matchMedia("(min-width: 700px)")
 		widthLimiter(x)
 		x.addListener(widthLimiter)
-
 		$('#slider1').delay(1000).animate({left: '100%'}, 1200, 'swing')
 	});
 	
@@ -106,3 +105,17 @@ $(document).ready(function(){
 	.setClassToggle('#wildclover-content', 'slide-up')
 	.addTo(controller);
 });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+	const menuLinks =  document.querySelectorAll('.options a');
+	const menuBtn = document.querySelector('.menu-btn');
+
+	menuLinks.forEach((menuLink) => {
+		menuLink.addEventListener('click', () => {
+			menuBtn.checked = false;
+		})
+	})
+})

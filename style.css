@@ -291,7 +291,7 @@ header section{
 		height: 10vh;
 	}
 	.logo a{
-		font-size: 5vw;
+		font-size: 5.5vw;
 	}
 	.dropdown{
 		display: flex;
@@ -303,11 +303,20 @@ header section{
 	.options{
 		/*top: 15vh;*/
 	}
+	.cover{
+		width: 100%;
+		background-image: url('img/cover_page/sunset.JPG');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+	}
 	.cover img{
-		height: 80%;
+		display: none;
 	}
 	.cover h1{
-		bottom: 10%;
+		bottom: 100px;
+		left: 10%;
 		font-size: 7vw;
 	}
 	/*#disclaimer{
