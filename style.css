@@ -305,7 +305,7 @@ header section{
 	}
 	.cover{
 		width: 100%;
-		background-image: url(img/cover_page/sunset.jpg);
+		background-image: url(img/cover_page/sunset_compressed.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
