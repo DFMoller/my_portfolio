@@ -1,0 +1,66 @@
+function mobile() {
+    console.log("Screen Changed");
+    if (window.innerWidth > 1080) {
+        const buttons = document.querySelectorAll(".project-button");
+        buttons.forEach((button) => {
+            const targetClass = button.dataset.target;
+            const target = document.querySelector(`.${targetClass}`);
+            button.addEventListener('click', function() {
+                // Make project visible
+                target.classList.remove("hidden");
+                // Close other projects
+                buttons.forEach((innerButton) => {
+                    if (innerButton.dataset.target != targetClass) {
+                        document.querySelector(`.${innerButton.dataset.target}`).classList.add("hidden");
+                        // Remove button style
+                        innerButton.classList.remove("button-selected");
+                    }
+                })
+                // Add button style
+                button.classList.add("button-selected");
+
+                // Ensure menu does not go away even if screen-size changes
+                document.querySelector("nav").classList.remove("slide-down");
+            })
+
+        })
+    } else {
+        const buttons = document.querySelectorAll(".project-button");
+        buttons.forEach((button) => {
+            const targetClass = button.dataset.target;
+            const target = document.querySelector(`.${targetClass}`);
+            button.addEventListener('click', function() {
+                // Make project visible
+                target.classList.remove("hidden");
+                // Close other projects
+                buttons.forEach((innerButton) => {
+                    if (innerButton.dataset.target != targetClass) {
+                        document.querySelector(`.${innerButton.dataset.target}`).classList.add("hidden");
+                        // Remove button style
+                        innerButton.classList.remove("button-selected");
+                    }
+                })
+                // Make menu go away
+                document.querySelector("nav").classList.add("slide-down");
+
+                // Ensure buttons dont animate even if screen-size changes
+                button.classList.remove("button-selected");
+
+            })
+
+        })
+    }
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+
+    const mobileHead = document.querySelector(".mobile-head");
+    
+    window.onresize = mobile();
+    mobile();
+
+    mobileHead.addEventListener("click", function () {
+        document.querySelector("nav").classList.remove("slide-down");
+    })    
+
+})

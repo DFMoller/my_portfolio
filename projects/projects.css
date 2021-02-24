@@ -1,0 +1,401 @@
+:root {
+  --color-blue: #4f8a96;
+  --color-blue-light: #5899a6;
+  --color-dark-grey: #474747;
+  --color-highlight: #d6b757;
+  --color-highlight-dark: #c9ac53;
+  --color-soft-white: #eaeaea;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  /*overflow-x: hidden;*/
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.hidden {
+  /* transition: all 0.2s ease-in-out; */
+  /* visibility: hidden; */
+  display: none;
+}
+.slide-down {
+  transform: translateY(100%);
+  transition: all 0.4s ease;
+}
+
+/**************************************    HEADER  ********************************************
+***********************************************************************************************/
+
+nav {
+  height: 100vh;
+  width: 25%;
+  /* padding-top: 30px; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-highlight);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 150px; */
+  /* background-color: var(--color-blue); */
+}
+
+.mobile-head-cloak {
+  display: none;
+}
+
+.home-box {
+  margin: 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-box img {
+  width: 20px;
+  margin-bottom: 3px;
+}
+
+.home-box a {
+  text-decoration: none;
+  color: var(--color-blue);
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+#title-box {
+  background-color: var(--color-blue);
+  height: 50px;
+  width: 200px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px 1px 5px -2px;
+}
+
+#title-box h1 {
+  color: #eaeaea;
+  font-size: 30px;
+}
+
+/***********************************  PROJECT BUTTONS **************************************
+******************************************************************************************** */
+
+menu {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.project-button {
+  padding: 10px 20px;
+  width: 85%;
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+.project-button:hover {
+  background-color: var(--color-highlight-dark);
+  cursor: pointer;
+}
+.project-button p {
+  color: var(--color-dark-grey);
+  font-size: 14px;
+  text-align: center;
+}
+
+.button-selected {
+  width: 100%;
+  padding: 10px 45px;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+  background-color: var(--color-blue);
+}
+.button-selected p {
+  color: var(--color-soft-white);
+}
+.button-selected:hover {
+  background-color: var(--color-blue);
+}
+
+/***************************  PROJECT CONTENT ***************************************
+************************************************************************************/
+
+main {
+  width: 75%;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--color-blue);
+}
+
+.cloak {
+  width: 85%;
+  margin-bottom: 80px;
+}
+
+.project {
+  width: 100%;
+  /* border-radius: 10px; */
+  box-shadow: -2px 2px 10px 0px rgba(0, 0, 0, 0.4);
+  background-color: var(--color-soft-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cover {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.cover1 {
+  /* min-height: 120px; */
+  height: 300px;
+  background-image: linear-gradient(
+      to bottom,
+      transparent 30%,
+      var(--color-soft-white)
+    ),
+    url("../img/projects/website-screenshot.PNG");
+}
+
+.cover2 {
+  height: 400px;
+  background-image: linear-gradient(
+      to bottom,
+      transparent 30%,
+      var(--color-soft-white)
+    ),
+    url("../img/projects/tracker-screenshot.PNG");
+}
+
+.cover3 {
+  height: 300px;
+  background-image: linear-gradient(
+      to bottom,
+      transparent 20%,
+      var(--color-soft-white)
+    ),
+    url("../img/projects/recipes_screenshot.PNG");
+}
+
+.cover4 {
+  height: 400px;
+  background-image: linear-gradient(
+      to bottom,
+      transparent 20%,
+      var(--color-soft-white)
+    ),
+    url("../img/projects/sensors.JPG");
+}
+
+.cover5 {
+  height: 400px;
+  background-image: linear-gradient(
+      to bottom,
+      transparent 20%,
+      var(--color-soft-white)
+    ),
+    url("../img/projects/ESP32_cover.jpg");
+}
+
+.cover6 {
+  height: 450px;
+  background-image: linear-gradient(
+      to bottom,
+      transparent 20%,
+      var(--color-soft-white)
+    ),
+    url("../img/projects/weather_cover.JPG");
+}
+
+.text {
+  width: 100%;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  padding: 30px 30px;
+  text-align: justify;
+}
+
+.title {
+  color: var(--color-blue);
+  font-size: 30px;
+  margin: 20px 12px 20px;
+  line-height: 120%;
+}
+
+.intro {
+  margin: 0px 25px;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--color-blue);
+}
+
+.paragraphs {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--color-blue);
+  margin: 12px;
+}
+.paragraphs a {
+  text-decoration: none;
+  color: var(--color-blue);
+  font-weight: bold;
+}
+.paragraphs a:hover {
+  color: var(--color-highlight);
+}
+
+/* *******************************  MEDIA QUERIES ******************************
+******************************************************************************** */
+
+@media screen and (max-width: 1080px) {
+  nav {
+    width: 100%;
+    z-index: 5;
+  }
+
+  main {
+    width: 100%;
+    padding-top: 2.5vw;
+  }
+
+  /* .button-selected {
+    transform: translateX(0px);
+  } */
+
+  .mobile-head-cloak {
+    display: block;
+    position: fixed;
+    /* width: 100%;
+    top: 0;
+    left: 0; */
+    /* background-color: pink; */
+  }
+
+  .mobile-head {
+    width: 250px;
+    height: 50px;
+    /* margin: 5px; */
+    border-radius: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-highlight);
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+
+  .mobile-head img {
+    height: 20px;
+    transform: rotate(180deg);
+  }
+
+  .mobile-head p {
+    font-size: 20px;
+    color: var(--color-soft-white);
+    margin-left: 10px;
+  }
+
+  /* ********************** PROJECTS CONTENT  ********************
+  *************************************************************** */
+
+  .cloak {
+    width: 95%;
+  }
+
+  .project {
+    border-radius: 0px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .cover3 {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cover2 {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .cover1 {
+    height: 230px;
+  }
+  .cover4 {
+    height: 300px;
+  }
+  .cover5 {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cover1 {
+    height: 120px;
+  }
+  .cover2 {
+    height: 180px;
+  }
+  .cover3 {
+    height: 140px;
+  }
+  .cover4 {
+    height: 150px;
+  }
+  .cover5 {
+    height: 150px;
+  }
+  .cover6 {
+    height: 200px;
+  }
+
+  /* *********************  PROJECT CONTENT ******************* */
+
+  .text {
+    padding: 15px 0px 0px 0px;
+  }
+}

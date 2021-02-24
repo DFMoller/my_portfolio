@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4f8a96" />
+
+    		<!-- To display on LinkedIn -->
+    <meta property='og:title' content='My Portfolio'/>
+    <meta property='og:image' content='img/featured_img.PNG'/>
+    <meta property='og:description' content='Some things about me...'/>
+    <meta property='og:url' content='https://danielmoller.co.za/'/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="projects.css">
+    <script src="projects.js"></script>
+
+    <title>Projects</title>
+</head>
+<body>
+
+    <nav>
+        <header>
+            <div class="home-box">
+                <img src="../img/home.png" alt="home_icon">
+                <a href="../index.html" target="_blank">Portfolio</a>
+            </div>
+            
+            <div id="title-box">
+                <!-- <div id="title-icon"><img src="../img/iconmonstr-archive-box-thin-240.png"></div> -->
+                <h1>PROJECTS</h1>
+            </div>
+        </header>
+
+        <menu>
+            <div class="project-button" data-target="cloak1"><p>Building my Portfolio Website</p></div>
+            <div class="project-button" data-target="cloak2"><p>Analyzing Vehicle Suspension</p></div>
+            <div class="project-button" data-target="cloak3"><p>Some Kickass Recipes</p></div>
+            <div class="project-button" data-target="cloak4"><p>Sensor Data Logging with Arduino and Blynk</p></div>
+            <div class="project-button" data-target="cloak5"><p>Stepper Motor Control with ESP32, Arduino and AWS IoT Core</p></div>
+            <div class="project-button" data-target="cloak6"><p>LCD Weather module with Arduino and OpenWeatherMap API</p></div>
+        </menu>
+
+    </nav>
+
+    <main>
+        <div class="mobile-head-cloak">
+            <div class="mobile-head">
+                <img src="../img/down-arrow.png" alt="hamburger">
+                <p>Select Project</p>
+            </div>
+        </div>
+        
+
+        <div class="hamburger-circle">
+            <label class="menu-icon">
+                <span class="menu-lines">
+                    <!-- <span class="hamburger-circle"></span> -->
+                </span>
+            </label>
+        </div>
+
+
+        <div class="cloak cloak1 hidden">
+             <section id="project1" class="project">
+                <div class="cover cover1">
+                    <!-- <img src="../img/projects/website-screenshot.PNG" class="cover" alt="website"> -->
+                </div>
+                <div class="text">
+                    <h1 class="title">Building my Portfolio Website</h1>
+                    <p class="intro">I decided to build a website to serve as my Mechatronic Engineering portfolio. This is how it happened.</p>
+                    <p class="paragraphs">2020 gave us the Covid-19 lockdown in South Africa and it is no secret that this virus impacted the lives of just about everyone on the planet in a substantial way. I was lucky enough to keep on living somewhat cumfortably and decided to work on some of my skills in the time before classes resumed at Stellenbosch Univerity.One of the topics I persued in this time was web development. I was particularily interested in front end web development. Simply put, I had no idea how a website interface was built and wanted to find out. At this point I already knew that my end goal was to create my own portfolio website and regardless of whether or not I was going to finish it, it was goint to be the best way to learn the skills I was looking for in the process.<br><br>
+                    
+                    I started learning by following different free example tutorials on <a href="https://www.youtube.com/">YouTube</a>, copying all the steps as I went along. When I understood the very basics, I moved to a <a href="https://www.skillshare.com/home">Skill Share</a> course which was very insightful. This is also how I learned to use Github repos and hosting. After that course, I felt I had enough knowledge to start making my own web pages and I spent most of my time following <a href="https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q/featured">Dev Ed</a>'s (his name is Ed) YouTube tutorials. He has a fantastic YouTube channel with many videos focusing on web development. That is where I learned how to make most of the little JavaScript animations seen on my website.<br><br>
+
+                    My favourite elements of my website are the sliding animations used in the 'University' and 'Projects' sections. They use a JQUERY plugin, <a href="#">ScrollMagic</a>, to let animations start depending on the scrolling input of the user. I tried to stay away from plugins for the most part, just so that I could learn the basics and not take too many short cuts. But I used ScrollMagic, because it is a very powerful tool if you know how to use it. It also taught me a bit about plugins in general.
+                    
+                    I have always wanted to know how websites are built from scratch and I have definitely exceeded my goal of gaining that understanding. My interest in web development has since led me to a different project, <a href="#">Some Kickass Recipes</a>, which is a PWA that can also be found in this projects library of mine.
+                    </p>
+                </div>
+            </section>
+        </div>
+       
+
+        <div class="cloak cloak2 hidden">
+            <section id="project2" class="project">
+                <div class="cover cover2"></div>
+                <div class="text">
+                    <h1 class="title">Analyzing Vehicle Suspension</h1>
+                    <p class="intro">In this modelling experiment, the goal was to determine the sping constant and dampening coefficient for the suspension of a given passenger vehicle through visual analysis.</p>
+                    <p class="paragraphs"></p>
+                </div>
+            </section>
+        </div>
+        
+        <div class="cloak cloak3 hidden">
+            <section id="project3" class="project">
+                <div class="cover cover3"></div>
+                <div class="text">
+                    <h1 class="title">Some Kickass Recipes</h1>
+                    <p class="intro">This is my first PWA (progressive web application) that I have built. Users can create an account, sign in and start uploading recipes. Recipes can be made public or private. Public recipes can be viewed in the community section.</p>
+                    <p class="paragraphs">This is my first functional PWA (Progressive Web Application). PWA's are web applications with additional advanced functionality that allow them to behave exactly like native apps. This includes the ability to cache data to improve the user experience. Loading times are decreased and this also allows a PWA to be used while offline. This is in strong contrast with standard web applications. Additionally, PWA's allow for the use of push notifications and they are able to access mobile device features such as the camera.<br><br>
+
+                    Building native applications traditionally requires of one to know programming languages other than HTML, CSS and JS (which are used for building websites). However, PWA's can be built using these three popular languages, which removes the need to learn a new language like Java altogether.<br><br>
+                        
+                    Building <a href="https://recipes-ea247.web.app/">Some Kickass Recipes</a> and all its functionality has taught me the skills required to expand existing web applications into PWA's and I am excited by the doors that have opened for me as a result.</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="cloak cloak4 hidden">
+            <section id="project4" class="project">
+                <div class="cover cover4"></div>
+                <div class="text">
+                    <h1 class="title">Sensor Data Logging with Arduino and Blynk</h1>
+                    <p class="intro">In this project, I used Blynk to log data being read from three different motion sensors and to export this data to Excel for analysis.</p>
+                    <p class="paragraphs"></p>
+                </div>
+            </section>
+        </div>
+
+        <div class="cloak cloak5 hidden">
+            <section id="project5" class="project">
+                <div class="cover cover5"></div>
+                <div class="text">
+                    <h1 class="title">Stepper Motor Control with ESP32, Arduino and AWS IoT Core</h1>
+                    <p class="intro">In this project, I controlled a stepper motor and driver using an ESP32 with the Arduino IDE. The ESP32 received input from its relevant topics on AWS Iot. Depending on these inputs, the microcontroller (ESP32) would either turn the motor to the desired location or publish buck to the topics on AWS Iot.</p>
+                    <p class="paragraphs"></p>
+                </div>
+            </section>
+        </div>
+
+        <div class="cloak cloak6 hidden">
+            <section id="project6" class="project">
+                <div class="cover cover6"></div>
+                <div class="text">
+                    <h1 class="title">LCD Weather module with Arduino and OpenWeatherMap API</h1>
+                    <p class="intro">This DIY weather hub is powered by an Arduino Nano 33 IoT, which displays weather information from the OpenWeatherMap API to a 20x4 LCD screen. The arduino fetches the temperature, wind and precipitation at a chosen time interval, for a pre-determined location.</p>
+                    <p class="paragraphs"></p>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+
+   
+    
+    
+</body>
+</html>

@@ -39,7 +39,7 @@ $(document).ready(function(){
 		// reverse: false
 		triggerHook: 0.9
 	})
-	.setClassToggle('#project01-slider', 'slide-from-right') //add class to sun-top-half
+	.setClassToggle('#project01-slider', 'slide-from-right') //add class
 	.addTo(controller);
 
 
@@ -49,7 +49,7 @@ $(document).ready(function(){
 		// reverse: false
 		triggerHook: 0.9
 	})
-	.setClassToggle('#project02-slider', 'slide-from-left') //add class to sun-top-half
+	.setClassToggle('#project02-slider', 'slide-from-left') //add class
 	.addTo(controller);
 
 
@@ -58,7 +58,15 @@ $(document).ready(function(){
 		// reverse: false
 		triggerHook: 0.9
 	})
-	.setClassToggle('#project03-slider', 'slide-from-right') //add class to sun-top-half
+	.setClassToggle('#project03-slider', 'slide-from-right') //add class
+	.addTo(controller);
+
+	var project04Slider = new ScrollMagic.Scene({
+		triggerElement: '#project04-slider',
+		// reverse: false
+		triggerHook: 0.9
+	})
+	.setClassToggle('#project04-slider', 'slide-from-left') //add class
 	.addTo(controller);
 
 //**********************************************vvvvvvvvvv******************TO BE UPDATED*************************
