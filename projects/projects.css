@@ -3,6 +3,7 @@
   --color-blue-light: #5899a6;
   --color-dark-grey: #474747;
   --color-highlight: #d6b757;
+  --color-highlight-light: #eecf6f;
   --color-highlight-dark: #c9ac53;
   --color-soft-white: #eaeaea;
 }
@@ -42,6 +43,7 @@ nav {
   top: 0;
   left: 0;
   background-color: var(--color-highlight);
+  /* background-color: white; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -117,17 +119,20 @@ menu {
   border-radius: 10px;
   margin: 5px;
   box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  background-color: var(--color-soft-white);
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease;
 }
 .project-button:hover {
-  background-color: var(--color-highlight-dark);
+  /* background-color: var(--color-highlight-dark); */
   cursor: pointer;
 }
 .project-button p {
-  color: var(--color-dark-grey);
+  /* color: var(--color-dark-grey); */
+  color: var(--color-blue);
+  /* color: var(--color-soft-white); */
   font-size: 14px;
   text-align: center;
 }
@@ -147,7 +152,7 @@ menu {
   background-color: var(--color-blue);
 }
 
-/***************************  PROJECT CONTENT ***************************************
+/***************************  PROJECTS CONTENT ***************************************
 ************************************************************************************/
 
 main {
@@ -158,6 +163,8 @@ main {
   justify-content: flex-start;
   align-items: center;
   background-color: var(--color-blue);
+  position: relative;
+  /* overflow-y: scroll; */
 }
 
 .cloak {
@@ -192,7 +199,7 @@ main {
       transparent 30%,
       var(--color-soft-white)
     ),
-    url("../img/projects/website-screenshot.PNG");
+    url("../img/projects/website/website-screenshot.PNG");
 }
 
 .cover2 {
@@ -222,7 +229,7 @@ main {
       transparent 20%,
       var(--color-soft-white)
     ),
-    url("../img/projects/sensors.JPG");
+    url("../img/projects/Sensors_bynk/Optimized-sensors.JPG");
 }
 
 .cover5 {
@@ -232,7 +239,7 @@ main {
       transparent 20%,
       var(--color-soft-white)
     ),
-    url("../img/projects/ESP32_cover.jpg");
+    url("../img/projects/ESP32_AWS/Optimized-ESP32_cover.jpg");
 }
 
 .cover6 {
@@ -242,7 +249,7 @@ main {
       transparent 20%,
       var(--color-soft-white)
     ),
-    url("../img/projects/weather_cover.JPG");
+    url("../img/projects/weather_module/Optimized-weather_cover.JPG");
 }
 
 .text {
@@ -268,18 +275,29 @@ main {
 }
 
 .paragraphs {
-  margin-top: 10px;
+  margin: 30px 10%;
   font-size: 14px;
   color: var(--color-blue);
-  margin: 12px;
 }
 .paragraphs a {
   text-decoration: none;
-  color: var(--color-blue);
+  color: var(--color-highlight);
   font-weight: bold;
 }
 .paragraphs a:hover {
-  color: var(--color-highlight);
+  color: var(--color-blue);
+}
+.inner-img-landscape {
+  width: 100%;
+  margin: 20px 0 20px;
+  filter: brightness(95%);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+.inner-img-portrait {
+  width: 30%;
+  margin: 20px 20px 20px 0;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  float: left;
 }
 
 /* *******************************  MEDIA QUERIES ******************************
@@ -303,6 +321,7 @@ main {
   .mobile-head-cloak {
     display: block;
     position: fixed;
+    z-index: 3;
     /* width: 100%;
     top: 0;
     left: 0; */
@@ -350,10 +369,25 @@ main {
 
   .title {
     text-align: center;
+    margin: 20px 10px;
   }
 
   .cover3 {
     height: 250px;
+  }
+
+  .text {
+    padding: 30px 10px;
+  }
+
+  .paragraphs {
+    margin: 30px 2.5%;
+  }
+
+  .inner-img-portrait {
+    width: 60%;
+    margin: 20px 20%;
+    float: none;
   }
 }
 
@@ -395,7 +429,7 @@ main {
 
   /* *********************  PROJECT CONTENT ******************* */
 
-  .text {
+  /* .text {
     padding: 15px 0px 0px 0px;
-  }
+  } */
 }

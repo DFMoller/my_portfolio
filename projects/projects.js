@@ -6,8 +6,15 @@ function mobile() {
             const targetClass = button.dataset.target;
             const target = document.querySelector(`.${targetClass}`);
             button.addEventListener('click', function() {
+                
                 // Make project visible
                 target.classList.remove("hidden");
+
+                // Scroll to top of project
+                document.querySelector("html").scrollTop = 0;
+                    // console.log(`${targetClass} offset: ${target.offsetTop}`);
+                    // target.scrollIntoView;
+
                 // Close other projects
                 buttons.forEach((innerButton) => {
                     if (innerButton.dataset.target != targetClass) {
@@ -32,6 +39,10 @@ function mobile() {
             button.addEventListener('click', function() {
                 // Make project visible
                 target.classList.remove("hidden");
+
+                // Scroll to top of target
+                document.querySelector("html").scrollTop = 0;
+
                 // Close other projects
                 buttons.forEach((innerButton) => {
                     if (innerButton.dataset.target != targetClass) {
