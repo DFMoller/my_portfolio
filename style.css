@@ -790,6 +790,7 @@ header section {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.4);
 
   /*animation*/
   transform: translateX(-100%);
