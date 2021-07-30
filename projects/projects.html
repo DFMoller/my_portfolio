@@ -36,6 +36,7 @@
         </header>
 
         <menu>
+            <div class="project-button" data-target="cloak0"><p>Depreciation Station</p></div>
             <div class="project-button" data-target="cloak1"><p>Building my Portfolio Website</p></div>
             <div class="project-button" data-target="cloak2"><p>Analyzing Vehicle Suspension</p></div>
             <div class="project-button" data-target="cloak3"><p>Some Kickass Recipes</p></div>
@@ -63,6 +64,22 @@
             </label>
         </div>
 
+        <div class="cloak cloak0 hidden">
+            <section id="project1" class="project">
+               <div class="cover cover0">
+                   <!-- <img src="../img/projects/website-screenshot.PNG" class="cover" alt="website"> -->
+               </div>
+               <div class="text">
+                   <h1 class="title">Depreciation Station</h1>
+                   <p class="intro">Depreciation Station is a full-stack web application that aims to learn what colour of car is most likely to hold its value for the longest time in South Africa.</p>
+                   <p class="paragraphs">The goal of <a href="http://dfmoller.pythonanywhere.com/" target="_blank">Depreciation Station</a> is to compare the rate at which different coloured cars depreciate and for this, data is obtained from Autotrader using Python and web scraping. The scraping is automated to run daily on a Raspberry Pi 4 model b while this web page is hosted on PythonAnywhere. Data is communicated between these two nodes using a Flask RESTful API and starting in July 2021, some time needs to pass for data to be accumulated before any insight can be gained into the depreciation rates of different coloured cars. Nonetheless, this project has been completed and now runs automatically.<br><br>
+                   
+                   The Raspberry Pi 4 model b used to do the web scraping is set up to launch the scraper on startup, which means it can simply be pluggen in without a monitor for everything to work. When active the Python script initiates the web scraping at 7am every morning and only requires a network connection. Libraries used in this Python app include BeautifulSoup, lxml, Pandas, requests, json and datetime.<br><br>
+
+                   The web page hosted on PythonAnywhere is built using Flask. This script is rather more complex than the one running on the Raspberry Pi, because it contains the database where all the data is stored as well as the code maintaining the Flask RESTful API that is used for communication with the RPI. On top of that it also needs to display this data in a meaningful way and PyGal is the plotting library used here. Other libraries used in this Python app include Flask, SQLAlchemy, Jinja2, keyboard, Pillow, requests, Flask-RESTful, scipy and Pandas. Feel free to visit the web page <a href="http://dfmoller.pythonanywhere.com/" target="_blank">here</a> to learn more about it.
+               </div>
+           </section>
+       </div>
 
         <div class="cloak cloak1 hidden">
              <section id="project1" class="project">
