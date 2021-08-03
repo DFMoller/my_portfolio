@@ -183,6 +183,12 @@ main {
   align-items: center;
 }
 
+.project iframe{
+  text-align: center;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+}
+
 .cover {
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
@@ -191,7 +197,7 @@ main {
   background-size: cover;
 }
 
-.cover0 {
+.cover7 {
   /* min-height: 120px; */
   height: 300px;
   background-image: linear-gradient(
@@ -202,7 +208,18 @@ main {
     url("../img/projects/depreciationStation/cover.PNG");
 }
 
-.cover1 {
+.cover6 {
+  /* min-height: 120px; */
+  height: 300px;
+  background-image: linear-gradient(
+      to bottom,
+      transparent 30%,
+      var(--color-soft-white)
+    ),
+    url("../img/projects/YikesBikes/Thumbnail.PNG");
+}
+
+.cover5 {
   /* min-height: 120px; */
   height: 300px;
   background-image: linear-gradient(
@@ -213,7 +230,7 @@ main {
     url("../img/projects/website/website-screenshot.PNG");
 }
 
-.cover2 {
+.cover4 {
   height: 400px;
   background-image: linear-gradient(
       to bottom,
@@ -233,7 +250,7 @@ main {
     url("../img/projects/recipes_screenshot.PNG");
 }
 
-.cover4 {
+.cover2 {
   height: 400px;
   background-image: linear-gradient(
       to bottom,
@@ -243,7 +260,7 @@ main {
     url("../img/projects/Sensors_bynk/Optimized-sensors.JPG");
 }
 
-.cover5 {
+.cover1 {
   height: 400px;
   background-image: linear-gradient(
       to bottom,
@@ -253,7 +270,7 @@ main {
     url("../img/projects/ESP32_AWS/Optimized-ESP32_cover.jpg");
 }
 
-.cover6 {
+.cover0 {
   height: 450px;
   background-image: linear-gradient(
       to bottom,

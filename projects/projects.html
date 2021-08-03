@@ -36,13 +36,14 @@
         </header>
 
         <menu>
-            <div class="project-button" data-target="cloak0"><p>Depreciation Station</p></div>
-            <div class="project-button" data-target="cloak1"><p>Building my Portfolio Website</p></div>
-            <div class="project-button" data-target="cloak2"><p>Analyzing Vehicle Suspension</p></div>
+            <div class="project-button" data-target="cloak7"><p>Depreciation Station</p></div>
+            <div class="project-button" data-target="cloak6"><p>YikesBikes</p></div>
+            <div class="project-button" data-target="cloak5"><p>Building my Portfolio Website</p></div>
+            <div class="project-button" data-target="cloak4"><p>Analyzing Vehicle Suspension</p></div>
             <div class="project-button" data-target="cloak3"><p>Some Kickass Recipes</p></div>
-            <div class="project-button" data-target="cloak4"><p>Sensor Data Logging with Arduino and Blynk</p></div>
-            <div class="project-button" data-target="cloak5"><p>Stepper Motor Control with ESP32, Arduino and AWS IoT Core</p></div>
-            <div class="project-button" data-target="cloak6"><p>LCD Weather module with Arduino and OpenWeatherMap API</p></div>
+            <div class="project-button" data-target="cloak2"><p>Sensor Data Logging with Arduino and Blynk</p></div>
+            <div class="project-button" data-target="cloak1"><p>Stepper Motor Control with ESP32, Arduino and AWS IoT Core</p></div>
+            <div class="project-button" data-target="cloak0"><p>LCD Weather module with Arduino and OpenWeatherMap API</p></div>
         </menu>
 
     </nav>
@@ -64,15 +65,15 @@
             </label>
         </div>
 
-        <div class="cloak cloak0 hidden">
-            <section id="project1" class="project">
-               <div class="cover cover0">
+        <div class="cloak cloak7 hidden">
+            <section id="project7" class="project">
+               <div class="cover cover7">
                    <!-- <img src="../img/projects/website-screenshot.PNG" class="cover" alt="website"> -->
                </div>
                <div class="text">
                    <h1 class="title">Depreciation Station</h1>
                    <p class="intro">Depreciation Station is a full-stack web application that aims to learn what colour of car is most likely to hold its value for the longest time in South Africa.</p>
-                   <p class="paragraphs">The goal of <a href="http://dfmoller.pythonanywhere.com/" target="_blank">Depreciation Station</a> is to compare the rate at which different coloured cars depreciate and for this, data is obtained from Autotrader using Python and web scraping. The scraping is automated to run daily on a Raspberry Pi 4 model b while this web page is hosted on PythonAnywhere. Data is communicated between these two nodes using a Flask RESTful API and starting in July 2021, some time needs to pass for data to be accumulated before any insight can be gained into the depreciation rates of different coloured cars. Nonetheless, this project has been completed and now runs automatically.<br><br>
+                   <p class="paragraphs">The goal of <a href="http://dfmoller.pythonanywhere.com/" target="_blank">Depreciation Station</a> is to compare the rate at which different coloured cars depreciate and for this, data is obtained from Autotrader using Python and web scraping. The scraping is automated to run daily on a Raspberry Pi 4 model b while the web page is hosted on PythonAnywhere. Data is communicated between these two nodes using a Flask RESTful API and starting in July 2021, some time needs to pass for data to be accumulated before any insight can be gained into the depreciation rates of different coloured cars. Nonetheless, this project has been completed and now runs automatically.<br><br>
                    
                    The Raspberry Pi 4 model b used to do the web scraping is set up to launch the scraper on startup, which means it can simply be pluggen in without a monitor for everything to work. When active the Python script initiates the web scraping at 7am every morning and only requires a network connection. Libraries used in this Python app include BeautifulSoup, lxml, Pandas, requests, json and datetime.<br><br>
 
@@ -81,9 +82,23 @@
            </section>
        </div>
 
-        <div class="cloak cloak1 hidden">
-             <section id="project1" class="project">
-                <div class="cover cover1">
+        <div class="cloak cloak6 hidden">
+            <section id="project6" class="project">
+               <div class="cover cover6">
+                   <!-- <img src="../img/projects/website-screenshot.PNG" class="cover" alt="website"> -->
+               </div>
+               <div class="text">
+                   <h1 class="title">YikesBikes</h1>
+                   <p class="intro">YikesBikes is a web shop that sells mountainbikes</p>
+                   <p class="paragraphs">YikesBikes is a fully functioning web shop that I created from the ground up for a course I took in 2021, at Reutlingen University, in Germany. The purpose of the video that I have linked to, is to show my proficiency in HTML, CSS, JavaScript, PHP, MYSQL and Python without going into too much detail. The web shop is not currently hosted on the web for you to explore, but in the video, I explain how it works:</p>
+               </div>
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/F3omUz-uIVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </section>
+       </div>
+
+        <div class="cloak cloak5 hidden">
+             <section id="project5" class="project">
+                <div class="cover cover5">
                     <!-- <img src="../img/projects/website-screenshot.PNG" class="cover" alt="website"> -->
                 </div>
                 <div class="text">
@@ -104,11 +119,10 @@
                 </div>
             </section>
         </div>
-       
 
-        <div class="cloak cloak2 hidden">
-            <section id="project2" class="project">
-                <div class="cover cover2"></div>
+        <div class="cloak cloak4 hidden">
+            <section id="project4" class="project">
+                <div class="cover cover4"></div>
                 <div class="text">
                     <h1 class="title">Analyzing Vehicle Suspension</h1>
                     <p class="intro">In this modelling experiment, the goal was to determine the sping constant and dampening coefficient for the suspension of a given passenger vehicle through visual analysis.</p>
@@ -134,9 +148,9 @@
             </section>
         </div>
 
-        <div class="cloak cloak4 hidden">
-            <section id="project4" class="project">
-                <div class="cover cover4"></div>
+        <div class="cloak cloak2 hidden">
+            <section id="project2" class="project">
+                <div class="cover cover2"></div>
                 <div class="text">
                     <h1 class="title">Sensor Data Logging with Arduino and Blynk</h1>
                     <p class="intro">In this project, I used Blynk to log data being read from three different motion sensors and to export this data to Excel for analysis.</p>
@@ -170,9 +184,9 @@
             </section>
         </div>
 
-        <div class="cloak cloak5 hidden">
-            <section id="project5" class="project">
-                <div class="cover cover5"></div>
+        <div class="cloak cloak1 hidden">
+            <section id="project1" class="project">
+                <div class="cover cover1"></div>
                 <div class="text">
                     <h1 class="title">Stepper Motor Control with ESP32, Arduino and AWS IoT Core</h1>
                     <p class="intro">In this project, I controlled a stepper motor and driver using an ESP32 with the Arduino IDE. The ESP32 received input from its relevant topics on AWS Iot. Depending on these inputs, the microcontroller (ESP32) would either turn the motor to the desired location or publish back to the topics on AWS Iot.</p>
@@ -190,9 +204,9 @@
             </section>
         </div>
 
-        <div class="cloak cloak6 hidden">
-            <section id="project6" class="project">
-                <div class="cover cover6"></div>
+        <div class="cloak cloak0 hidden">
+            <section id="project0" class="project">
+                <div class="cover cover0"></div>
                 <div class="text">
                     <h1 class="title">LCD Weather module with Arduino and OpenWeatherMap API</h1>
                     <p class="intro">This DIY weather hub is powered by an Arduino Nano 33 IoT, which displays weather information from the OpenWeatherMap API to a 20x4 LCD screen. The arduino fetches the temperature, wind and precipitation at a chosen time interval, for a pre-determined location.</p>
