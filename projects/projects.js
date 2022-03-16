@@ -72,6 +72,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     mobileHead.addEventListener("click", function () {
         document.querySelector("nav").classList.remove("slide-down");
-    })    
+    })
+
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var dest = url.searchParams.get("dest");
+    if(dest)
+    {
+        const auto_btn = document.getElementById(dest+"_btn");
+        auto_btn.click();
+    }
 
 })

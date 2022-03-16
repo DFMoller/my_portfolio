@@ -197,6 +197,17 @@ main {
   background-size: cover;
 }
 
+.cover8 {
+  /* min-height: 120px; */
+  height: 400px;
+  background-image: linear-gradient(
+      to bottom,
+      transparent 30%,
+      var(--color-soft-white)
+    ),
+    url("../img/projects/drone_transmitter/cover.JPG");
+}
+
 .cover7 {
   /* min-height: 120px; */
   height: 300px;
@@ -285,7 +296,7 @@ main {
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
   padding: 30px 30px;
-  text-align: justify;
+  text-align: left;
 }
 
 .title {
@@ -294,7 +305,10 @@ main {
   margin: 20px 12px 20px;
   line-height: 120%;
 }
-
+.heading{
+  margin: 30px 10%;
+  color: var(--color-blue);
+}
 .intro {
   margin: 0px 25px;
   font-size: 13px;
@@ -315,18 +329,24 @@ main {
 .paragraphs a:hover {
   color: var(--color-blue);
 }
-.inner-img-landscape {
-  width: 100%;
-  margin: 20px 0 20px;
+.text-list{
+  margin: 30px 10%;
+  padding: 0 30px;
+  font-size: 14px;
+  color: var(--color-blue);
+}
+.inline-img-landscape {
+  width: 70%;
+  margin: 20px 15%;
   filter: brightness(95%);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
 }
-.inner-img-portrait {
+.inline-img-portrait {
   width: 30%;
-  margin: 20px 20px 20px 0;
+  margin: 30px 35%;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
-  float: left;
 }
+
 
 /* *******************************  MEDIA QUERIES ******************************
 ******************************************************************************** */
@@ -408,13 +428,13 @@ main {
     padding: 30px 10px;
   }
 
-  .paragraphs {
+  .paragraphs, .text-list, .heading {
     margin: 30px 2.5%;
   }
 
-  .inner-img-portrait {
-    width: 60%;
-    margin: 20px 20%;
+  .inline-img-portrait, .inline-img-portrait-left-ts, .inline-img-portrait-right-ts {
+    width: 50%;
+    margin: 20px 25%;
     float: none;
   }
 }
@@ -433,6 +453,16 @@ main {
   }
   .cover5 {
     height: 300px;
+  }
+  .cover8{
+    height: 300px;
+  }
+  .inner-img-portrait-list{
+    width: 50%;
+    margin: 20px 25%;
+  }
+  iframe{
+    width: 90%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -453,6 +483,21 @@ main {
   }
   .cover6 {
     height: 200px;
+  }
+  .cover8{
+    height: 200px;
+  }
+  .inline-img-landscape{
+    width: 100%;
+    margin: 20px 0;
+  }
+  .heading{
+    text-align: center;
+  }
+  .inline-img-portrait, .inline-img-portrait-text-surround {
+    width: 60%;
+    margin: 20px 20%;
+    float: none;
   }
 
   /* *********************  PROJECT CONTENT ******************* */
