@@ -1,261 +1,494 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<meta name="theme-color" content="#4f8a96" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#4f8a96" />
 
-				<!-- To display on LinkedIn -->
-		<meta property='og:title' content='My Portfolio'/>
-		<meta property='og:image' content='img/projects/website/website-screenshot.PNG'/>
-		<meta property='og:description' content='Some things about me....'/>
-		<meta property='og:url' content='https://danielmoller.co.za/'/>
+    <!-- To display on LinkedIn -->
+    <meta property="og:title" content="My Portfolio" />
+    <meta
+      property="og:image"
+      content="img/projects/website/website-screenshot.PNG"
+    />
+    <meta property="og:description" content="Some things about me...." />
+    <meta property="og:url" content="https://danielmoller.co.za/" />
 
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-		
-		<script src="jquery-3.4.1.min.js"></script>
-		<script src="jquery.transit.min.js"></script>
-		<script src="imagesloaded.pkgd.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/jquery.ScrollMagic.min.js" integrity="sha256-vMplzCSo+pO4wcmz/as8FVtabF5gE9Gwqk5ER8jux3w=" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script>
-		
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-		
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="shortcut icon" type="img/png" href="img/favicons/favicon.png">
-		<script src="my_app.js"></script>
-		<script src="carousel.js"></script>
-		<title>Daniel Moller: Portfolio</title>
-	</head>
-	<body>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="jquery.transit.min.js"></script>
+    <script src="imagesloaded.pkgd.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+      integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/jquery.ScrollMagic.min.js"
+      integrity="sha256-vMplzCSo+pO4wcmz/as8FVtabF5gE9Gwqk5ER8jux3w="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
+      integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8="
+      crossorigin="anonymous"
+    ></script>
 
-		<header id="header">
-			<nav>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" type="img/png" href="img/favicons/favicon.png" />
+    <script src="my_app.js"></script>
+    <script src="carousel.js"></script>
+    <title>Daniel Moller: Portfolio</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <div class="dropdown">
+          <input type="checkbox" class="menu-btn" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"
+            ><span class="menu-lines"></span
+          ></label>
 
-				<div class="dropdown">
+          <ul class="options">
+            <li id="about-me">
+              <a href="#section1"
+                ><img src="img/mobile_dropdown_icons/about_me_icon.png" />About
+                Me</a
+              >
+            </li>
+            <li id="university">
+              <a href="#section2"
+                ><img
+                  src="img/mobile_dropdown_icons/university_icon.png"
+                />University</a
+              >
+            </li>
+            <li id="projects">
+              <a href="#section3"
+                ><img
+                  src="img/mobile_dropdown_icons/projects_icon.png"
+                />Projects</a
+              >
+            </li>
+            <li id="past-work-experience">
+              <a href="#section4"
+                ><img
+                  src="img/mobile_dropdown_icons/past_work_experience_icon.png"
+                />Past Work Experience</a
+              >
+            </li>
+            <!-- <li id="idea-of-the-week"><a href="#section5"><img src="img/mobile_dropdown_icons/idea_of_the_week_icon.png">Idea Of The Week</a></li> -->
+            <li id="about-this-webpage">
+              <a href="projects/projects.html?dest=portfolio"
+                ><img src="img/mobile_dropdown_icons/about_me_icon.png" />About
+                This Webpage</a
+              >
+            </li>
+            <!-- <li id="contact"><a href="construction/construction.html"><img src="img/mobile_dropdown_icons/contact_icon.png">Contact</a></li> -->
+          </ul>
+        </div>
 
-						<input type="checkbox" class="menu-btn" id="menu-btn">
-						<label class="menu-icon" for="menu-btn"><span class="menu-lines"></span></label>
-						
-						<ul class="options">
-							<li id="about-me"><a href="#section1"><img src="img/mobile_dropdown_icons/about_me_icon.png">About Me</a></li>
-							<li id="university"><a href="#section2"><img src="img/mobile_dropdown_icons/university_icon.png">University</a></li>
-							<li id="projects"><a href="#section3"><img src="img/mobile_dropdown_icons/projects_icon.png">Projects</a></li>
-							<li id="past-work-experience"><a href="#section4"><img src="img/mobile_dropdown_icons/past_work_experience_icon.png">Past Work Experience</a></li>
-							<!-- <li id="idea-of-the-week"><a href="#section5"><img src="img/mobile_dropdown_icons/idea_of_the_week_icon.png">Idea Of The Week</a></li> -->
-							<li id="about-this-webpage"><a href="projects/projects.html?dest=portfolio"><img src="img/mobile_dropdown_icons/about_me_icon.png">About This Webpage</a></li>
-							<!-- <li id="contact"><a href="construction/construction.html"><img src="img/mobile_dropdown_icons/contact_icon.png">Contact</a></li> -->
-						</ul>
+        <ul class="selection">
+          <li id="about-me"><a href="#section1">About Me</a></li>
+          <li id="university"><a href="#section2">University</a></li>
+          <li id="projects"><a href="#section3">Projects</a></li>
+          <li id="past-work-experience">
+            <a href="#section4">Past Work Experience</a>
+          </li>
+          <!-- <li id="idea-of-the-week"><a href="#section5">Idea Of The Week</a></li> -->
+          <li id="about-this-webpage">
+            <a href="projects/projects.html?dest=portfolio" target="_blank"
+              >About This Webpage</a
+            >
+          </li>
+          <!-- <li id="contact"><a href="construction/construction.html">Contact</a></li> -->
+        </ul>
 
-				</div>
+        <div class="logo">
+          <h3><a href="#">Daniel Moller</a></h3>
+        </div>
+      </nav>
+      <section>
+        <div class="cover">
+          <!-- <img src="img/cover_page/sunset.JPG" class="small-screen-cover"> -->
+          <!-- <img src="img/boat-and-airplane-optimized.jpg" class="big-screen-cover"> -->
+          <img src="img/canoe.gif" class="big-screen-cover" />
+          <h1>PORTFOLIO</h1>
+        </div>
+      </section>
+      <div id="slider1"></div>
+    </header>
 
-				<ul class="selection">
-					<li id="about-me"><a href="#section1">About Me</a></li>
-					<li id="university"><a href="#section2">University</a></li>
-					<li id="projects"><a href="#section3">Projects</a></li>
-					<li id="past-work-experience"><a href="#section4">Past Work Experience</a></li>
-					<!-- <li id="idea-of-the-week"><a href="#section5">Idea Of The Week</a></li> -->
-					<li id="about-this-webpage"><a href="projects/projects.html?dest=portfolio" target="_blank">About This Webpage</a></li>
-					<!-- <li id="contact"><a href="construction/construction.html">Contact</a></li> -->
-				</ul>
-				
-				<div class="logo">
-					<h3><a href="#">Daniel Moller</a></h3>
-				</div>
-			</nav>
-			<section>
-				<div class="cover">
-					<!-- <img src="img/cover_page/sunset.JPG" class="small-screen-cover"> -->
-					<!-- <img src="img/boat-and-airplane-optimized.jpg" class="big-screen-cover"> -->
-					<img src="img/canoe.gif" class="big-screen-cover">
-					<h1>PORTFOLIO</h1>
-				</div>
-				
-			</section>
-			<div id="slider1"></div>
-		</header>
+    <main>
+      <section id="section1">
+        <div class="block">
+          <div class="left-col">
+            <div class="head1">
+              <h1>About Me</h1>
+            </div>
+            <div class="text-content">
+              <p>
+                <img
+                  src="img/image-optimization/daniel_moller_2_cropped.png"
+                  id="pfp-small-media"
+                /><span><br /><br /></span>I am a final year Mechatronic
+                Engineering Student at Stellenbosch University. This degree
+                takes up most of what I do currently, but I enjoy learning new
+                things on the side in my own time. On this web page, you will find some of my projects and past work exerience.
+              </p>
+            </div>
+          </div>
 
-		<main>
-			<section id="section1">
-				<div class="block">
-					<div class="left-col">
-						<div class="head1">
-							<h1>About Me</h1>
-						</div>
-						<div class="text-content">
-							<p><img src="img/image-optimization/daniel_moller_2_cropped.png" id="pfp-small-media"><span><br><br></span>I am a 3rd year Mechatronic Engineering Student at Stellenbosch University. This degree takes up most of what I do currently, but I enjoy learning new things on the side in my own time. This webpage that I built from scratch is just one example of my side projects.</p>
-						</div>
-					</div>
-					
-					<!-- <div id="pfp"> -->
-					<img src="img/image-optimization/daniel_moller_2.png" id="pfp">
-					<!-- </div> -->
-				</div>
-			</section>
-			<section id="section2">
-				<div id="sun-top-half">
-					<div id="sun-logo">
-						<img src="img/stellenbosch-university-crest.png" alt="crest">
-					</div>
-					<!-- The below line only becomes active maxwidth: 768px! -->
-					<!-- <h1 id="sun-heading-small-screen">Stellenbosch University</h1> -->
-					<div id="sun-content">
-						<h1>Stellenbosch University</h1>
-						<p>Stellenbosch University is a world renowned university in South Africa. Its Engineering faculty and degrees are also recognised by top universities and institutions globally. For more information, please see <a href="http://www.sun.ac.za/english" target="_blank">SUN Home</a>.</p>
-					</div>
-				</div>
-				<div id="sun-rooiplein">
-					<img src="img/stellenbosch-university2-wide.jpg">
-					<p>The 'Rooiplein'</p>
-				</div>
-				<div id="slider2"></div>
-			</section>
-			<section id="section3">
+          <!-- <div id="pfp"> -->
+          <img src="img/image-optimization/daniel_moller_2.png" id="pfp" />
+          <!-- </div> -->
+        </div>
+      </section>
+      <section id="section2">
+        <div id="sun-top-half">
+          <div id="sun-logo">
+            <img src="img/stellenbosch-university-crest.png" alt="crest" />
+          </div>
+          <!-- The below line only becomes active maxwidth: 768px! -->
+          <!-- <h1 id="sun-heading-small-screen">Stellenbosch University</h1> -->
+          <div id="sun-content">
+            <h1>Stellenbosch University</h1>
+            <p>
+              Stellenbosch University is a world renowned university in South
+              Africa. Its Engineering faculty and degrees are also recognised by
+              top universities and institutions globally. For more information,
+              please see
+              <a href="http://www.sun.ac.za/english" target="_blank">SUN Home</a
+              >.
+            </p>
+          </div>
+        </div>
+        <div id="sun-rooiplein">
+          <img src="img/stellenbosch-university2-wide.jpg" />
+          <p>The 'Rooiplein'</p>
+        </div>
+        <div id="slider2"></div>
+      </section>
+      <section id="section3">
+        <div id="section3-title">
+          <div id="section3-icon">
+            <img src="img/iconmonstr-archive-box-thin-240.png" />
+          </div>
+          <h1>PROJECTS</h1>
+        </div>
 
-				<div id="section3-title">
-					<div id="section3-icon"><img src="img/iconmonstr-archive-box-thin-240.png"></div>
-					<h1>PROJECTS</h1>
-				</div>
+        <a
+          href="projects/projects.html"
+          class="projects-link"
+          id="projects-link-top"
+          target="_blank"
+          >All Projects<img src="img/icons/action_color/link.png" alt="link"
+        /></a>
 
-				<a href="projects/projects.html" class="projects-link" id="projects-link-top" target="_blank">All Projects<img src="img/icons/action_color/link.png" alt="link"></a>
-				
-				<!-- ****************************************PROJECT 01****************************************** -->
+        <!-- ****************************************PROJECT 01****************************************** -->
 
-				<div class="project" id="project01">
-					<div class="project-text">
-						<h2 class="project-title"><img src="img/iconmonstr-check-mark-4-240.png" alt="project-title-icon" class="inline-image">Building This Responsive Webpage</h2>
-						<p class="project-description">I built this webpage from scratch to be used as my portfolio. For more information, please have a look at <a href="projects/projects.html" class="projects-link-inner" target="_blank">• All Projects •</a></p>
-					</div>
-					<div class="project-image">
-						<img src="img/gimp_design/laptop1.png">
-					</div>
-					<div class="project-slider" id="project01-slider"></div>
-				</div>
+        <div class="project" id="project01">
+          <div class="project-text">
+            <h2 class="project-title">
+              <img
+                src="img/iconmonstr-check-mark-4-240.png"
+                alt="project-title-icon"
+                class="inline-image"
+              />Building This Responsive Webpage
+            </h2>
+            <p class="project-description">
+              I built this webpage from scratch to be used as my portfolio. For
+              more information, please have a look at
+              <a
+                href="projects/projects.html"
+                class="projects-link-inner"
+                target="_blank"
+                >• All Projects •</a
+              >
+            </p>
+          </div>
+          <div class="project-image">
+            <img src="img/gimp_design/laptop1.png" />
+          </div>
+          <div class="project-slider" id="project01-slider"></div>
+        </div>
 
-				<!-- <div id="slider3"></div> -->
+        <!-- <div id="slider3"></div> -->
 
-				<!-- *****************************************PROJECT 02************************************** -->
+        <!-- *****************************************PROJECT 02************************************** -->
 
-				<div class="project" id="project02">
-					<div class="project-text left-text">
-						<h2 class="project-title"><img src="img/iconmonstr-check-mark-4-240.png" alt="project-title-icon" class="inline-image">LCD Weather Module, OpenWeatherMap API</h2>
-						<p class="project-description">This DIY weather hub is powered by an Arduino Nano 33 IoT, which displays weather information from the OpenWeatherMap API to a 20x4 LCD screen. The arduino fetches the temperature, wind and precipitation at a chosen time interval, for a pre-determined location. Read more at <a href="projects/projects.html" class="projects-link-inner" target="_blank">• All Projects •</a></p>
-					</div>
-					<div class="project-image left-image">
-						<img class="project-img-shadow" src="img/projects/weather_module/Optimized-weather_cover.JPG">
-					</div>
-					<div class="project-slider-left" id="project02-slider"></div>
-				</div>
+        <div class="project" id="project02">
+          <div class="project-text left-text">
+            <h2 class="project-title">
+              <img
+                src="img/iconmonstr-check-mark-4-240.png"
+                alt="project-title-icon"
+                class="inline-image"
+              />LCD Weather Module, OpenWeatherMap API
+            </h2>
+            <p class="project-description">
+              This DIY weather hub is powered by an Arduino Nano 33 IoT, which
+              displays weather information from the OpenWeatherMap API to a 20x4
+              LCD screen. The arduino fetches the temperature, wind and
+              precipitation at a chosen time interval, for a pre-determined
+              location. Read more at
+              <a
+                href="projects/projects.html"
+                class="projects-link-inner"
+                target="_blank"
+                >• All Projects •</a
+              >
+            </p>
+          </div>
+          <div class="project-image left-image">
+            <img
+              class="project-img-shadow"
+              src="img/projects/weather_module/Optimized-weather_cover.JPG"
+            />
+          </div>
+          <div class="project-slider-left" id="project02-slider"></div>
+        </div>
 
-				<!-- **************************************PROJECT 3********************************************* -->
+        <!-- **************************************PROJECT 3********************************************* -->
 
-				<div class="project" id="project03">
-					<div class="project-text">
-						<h2 class="project-title"><img src="img/iconmonstr-check-mark-4-240.png" alt="project-title-icon" class="inline-image">Some Kickass Recipes</h2>
-						<p class="project-description"><b><a target="_blank" href="https://recipes-ea247.web.app">Some Kickass Recipes</a></b> is a progressive web application that have built. It is a platform that stores and displays recipes uploaded by users.</p>
-					</div>
-					<div class="project-image">
-						<img class="project-img-shadow" src="img/projects/recipes_screenshot.PNG">
-					</div>
-					<div class="project-slider" id="project03-slider"></div>
-				</div>
+        <div class="project" id="project03">
+          <div class="project-text">
+            <h2 class="project-title">
+              <img
+                src="img/iconmonstr-check-mark-4-240.png"
+                alt="project-title-icon"
+                class="inline-image"
+              />Some Kickass Recipes
+            </h2>
+            <p class="project-description">
+              <b
+                ><a target="_blank" href="https://recipes-ea247.web.app"
+                  >Some Kickass Recipes</a
+                ></b
+              >
+              is a progressive web application that have built. It is a platform
+              that stores and displays recipes uploaded by users.
+            </p>
+          </div>
+          <div class="project-image">
+            <img
+              class="project-img-shadow"
+              src="img/projects/recipes_screenshot.PNG"
+            />
+          </div>
+          <div class="project-slider" id="project03-slider"></div>
+        </div>
 
-				<!-- *************************************	PROJECT 4 **************************************** -->
+        <!-- *************************************	PROJECT 4 **************************************** -->
 
-				<div class="project" id="project04">
-					<div class="project-text left-text">
-						<h2 class="project-title"><img src="img/iconmonstr-check-mark-4-240.png" alt="project-title-icon" class="inline-image">Stepper Motor, ESP32, Arduino and AWS IoT Core</h2>
-						<p class="project-description">In this project, I controlled a stepper motor and driver using an ESP32 with the Arduino IDE. The ESP32 received input from its relevant topics on AWS Iot. Depending on these inputs, the microcontroller (ESP32) would either turn the motor to the desired location or publish buck to the topics on AWS Iot. Read more at <a href="projects/projects.html" class="projects-link-inner" target="_blank">• All Projects •</a></p>
-					</div>
-					<div class="project-image left-image">
-						<img class="project-img-shadow" src="img/projects/ESP32_AWS/Optimized-ESP32_cover.jpg">
-					</div>
-					<div class="project-slider-left" id="project04-slider"></div>
-				</div>
+        <div class="project" id="project04">
+          <div class="project-text left-text">
+            <h2 class="project-title">
+              <img
+                src="img/iconmonstr-check-mark-4-240.png"
+                alt="project-title-icon"
+                class="inline-image"
+              />Stepper Motor, ESP32, Arduino and AWS IoT Core
+            </h2>
+            <p class="project-description">
+              In this project, I controlled a stepper motor and driver using an
+              ESP32 with the Arduino IDE. The ESP32 received input from its
+              relevant topics on AWS Iot. Depending on these inputs, the
+              microcontroller (ESP32) would either turn the motor to the desired
+              location or publish buck to the topics on AWS Iot. Read more at
+              <a
+                href="projects/projects.html"
+                class="projects-link-inner"
+                target="_blank"
+                >• All Projects •</a
+              >
+            </p>
+          </div>
+          <div class="project-image left-image">
+            <img
+              class="project-img-shadow"
+              src="img/projects/ESP32_AWS/Optimized-ESP32_cover.jpg"
+            />
+          </div>
+          <div class="project-slider-left" id="project04-slider"></div>
+        </div>
 
-				<!-- **************************************	PROJECT 5 ****************************************** -->
+        <!-- **************************************	PROJECT 5 ****************************************** -->
 
-				
+        <!-- *****************************************Footer****************************************** -->
 
-				<!-- *****************************************Footer****************************************** -->
+        <div class="projects-footer">
+          <a
+            href="/projects/projects.html"
+            class="projects-link"
+            id="projects-link-bottom"
+            target="_blank"
+            >All Projects<img src="img/icons/action_color/link.png" alt="link"
+          /></a>
+          <p>-- More projects to be added soon --</p>
+        </div>
+      </section>
+      <section id="section4">
+        <div class="work-title-container">
+          <div id="work-title">
+            <div id="work-icon">
+              <img src="img/iconmonstr-flask-7-240.png" />
+            </div>
+            <h1>
+              <img
+                src="img/iconmonstr-flask-7-240.png"
+                id="work-icon-inline"
+              />PAST WORK EXPERIENCE
+            </h1>
+            <!-- <img src="img/brush-stroke-png-47329.png"> -->
+          </div>
+        </div>
 
-				<div class="projects-footer">
-					<a href="/projects/projects.html" class="projects-link" id="projects-link-bottom" target="_blank">All Projects<img src="img/icons/action_color/link.png" alt="link"></a>
-					<p>-- More projects to be added soon --</p>
-				</div>
-			</section>
-			<section id="section4">
-				<div class="work-title-container">
-					<div id="work-title">
-						<div id="work-icon"><img src="img/iconmonstr-flask-7-240.png"></div>
-						<h1><img src="img/iconmonstr-flask-7-240.png" id="work-icon-inline">PAST WORK EXPERIENCE</h1>
-						<!-- <img src="img/brush-stroke-png-47329.png"> -->
-					</div>
-				</div>
-				
-				<div class="experience">
+        <div class="experience">
+          <div class="job-box">
+            <div class="job">
+              <img
+                class="job-header"
+                src="img/work_experience/slideluvre_logo.png"
+              />
+              <div class="job-text">
+                <p class="job-dates">25 Jan 2021<br />until<br />19 Feb 2021</p>
+                <p class="job-description">
+                  <a href="https://www.slideluvre.com/" target="_blank"
+                    >- Slideluvre -</a
+                  >
+                  is a startup IoT company situated in Stellenbosch. They are a
+                  small team of professionals, often employing student interns
+                  and who focus primarily on their one prototype project. The
+                  team is working on an intelligent product that incorporates
+                  solar panals into a louvre system. The louvre slats can rotate
+                  to find a balance between three things depending on the
+                  client's need: tracking the sun for better efficiency,
+                  providing glare control and providing sound insulation.<br /><br />
+                  In my four weeks at Slideluvre, I was firstly given the task
+                  of finding the best sensor to be used in a particular
+                  application. Additionally, I helped with the setup of a
+                  Raspberry Pi to be used with Amazon's Greengrass service.
+                  Finally, I was tasked with building a replacement prototype
+                  circuit board using the ESP32 to control a stepper motor
+                  driver and programming it (Arduino IDE) to communicate through
+                  AWS IoT Core.
+                </p>
+              </div>
+            </div>
+          </div>
 
-					<div class="job-box">
-						<div class="job">
-							<img class="job-header" src="img/work_experience/slideluvre_logo.png">
-							<div class="job-text">
-								<p class="job-dates">25 Jan 2021<br>until<br>19 Feb 2021</p>
-								<p class="job-description"><a href="https://www.slideluvre.com/" target="_blank">- Slideluvre -</a> is a startup IoT company situated in Stellenbosch. They are a small team of professionals, often employing student interns and who focus primarily on their one prototype project. The team is working on an intelligent product that incorporates solar panals into a louvre system. The louvre slats can rotate to find a balance between three things depending on the client's need: tracking the sun for better efficiency, providing glare control and providing sound insulation.<br><br>
-								In my four weeks at Slideluvre, I was firstly given the task of finding the best sensor to be used in a particular application. Additionally, I helped with the setup of a Raspberry Pi to be used with Amazon's Greengrass service. Finally, I was tasked with building a replacement prototype circuit board using the ESP32 to control a stepper motor driver and programming it (Arduino IDE) to communicate through AWS IoT Core.</p>
-							</div>
-						</div>
-					</div>
+          <div class="job-box">
+            <div class="job">
+              <img
+                class="job-header"
+                id="yt-header"
+                src="img/yt-software.png"
+              />
+              <div class="job-text">
+                <p class="job-dates">
+                  9 - 13 DEC 2019<br />&<br />6 - 10 JAN 2020
+                </p>
+                <p class="job-description">
+                  <a
+                    href="https://www.yellowtailsoftware.co.za/"
+                    target="_blank"
+                    >- Yellowtail -</a
+                  >
+                  is a software developing company based in Cape Town, but also
+                  part of the larger international Yellowtail group. They
+                  specialise in business analysis, technology consulting, custom
+                  software development and complex integration while their focus
+                  lies with FinTech, Blockchain and retail solutions.<br /><br />I
+                  started my student work here not knowing much about dev ops,
+                  but wanted to learn by doing. By the end of the two weeks, I
+                  had built most of a Kubernetes Cluster by using a Virtual
+                  Machine on one of their laptops' disc (Commonly known as bare
+                  metal).
+                </p>
+              </div>
+            </div>
+          </div>
 
-					<div class="job-box">
-						<div class="job">
-							<img class="job-header" id="yt-header" src="img/yt-software.png">
-							<div class="job-text">
-								<p class="job-dates">9 - 13 DEC 2019<br>&<br>6 - 10 JAN 2020</p>
-								<p class="job-description"><a href="https://www.yellowtailsoftware.co.za/" target="_blank">- Yellowtail -</a> is a software developing company based in Cape Town, but also part of the larger international Yellowtail group. They specialise in business analysis, technology consulting, custom software development and complex integration while their focus lies with FinTech, Blockchain and retail solutions.<br><br>I started my student work here not knowing much about dev ops, but wanted to learn by doing. By the end of the two weeks, I had built most of a Kubernetes Cluster by using a Virtual Machine on one of their laptops' disc (Commonly known as bare metal).</p>
-							</div>
-						</div>
-					</div>
+          <div class="job-box">
+            <div class="job">
+              <img class="job-header-img" src="img/stone3-background.jpg" />
+              <div class="job-text">
+                <h3 class="job-title">STONE THREE</h3>
+                <p class="job-dates">
+                  14 - 25 JAN 2019<br />&<br />25 - 29 MARCH 2019
+                </p>
+                <p class="job-description">
+                  <a href="https://www.stonethree.com/" target="_blank"
+                    >- Stone Three -</a
+                  >
+                  is an IOT company in Somerset West. They provide solutions
+                  using technology to improve digital productivity, wokplace
+                  safety and healthcare.<br /><br />I was exposed to a project
+                  using AI in workplace safety and a lot of what I did was
+                  trivial sorting of data, but a big part also included moving
+                  data with Python and SQL.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="job-box">
+            <div class="job">
+              <img class="job-header" src="img/laanhof-logo.png" />
+              <div class="job-text">
+                <p class="job-dates">mid 2019</p>
+                <p class="job-description">
+                  <a href="https://www.laanhof.co.za/" target="_blank"
+                    >- Laanhof -</a
+                  >
+                  is a luxurious guest house located in the heart of
+                  Stellenbosch. It is really more of a complex containing one
+                  large house and a few seperate apartments that are all listed
+                  on
+                  <a
+                    href="https://www.booking.com/index.en-gb.html?label=gen173nr-1DCAEoggI46AdIM1gEaPsBiAEBmAEJuAEXyAEM2AED6AEBiAIBqAIDuALg3Yz5BcACAdICJDliZTVmMjAzLWZkODUtNDA1OS1iZTk3LTgzNGI5MWRmYzBkNtgCBOACAQ;keep_landing=1&sb_price_type=total&"
+                    target="_blank"
+                    >booking.com</a
+                  >
+                  and
+                  <a href="https://www.lekkeslaap.co.za/" target="_blank"
+                    >lekkeslaap.co.za</a
+                  >.<br /><br />I have been working there every once in a while
+                  as a stand-in manager when the owners were away. This includes
+                  taking bookings online, receiving guests, facilitating the
+                  necessary payments and other admin-related things.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="job-box">
+            <div class="job">
+              <img class="job-header" src="img/wild-clover-logo.png" />
+              <div class="job-text">
+                <p class="job-dates">SEPT 2017</p>
+                <p class="job-description">
+                  <a
+                    href="http://www.wildcloverbreweries.co.za/"
+                    target="_blank"
+                    >- Wild Clover Breweries -</a
+                  >
+                  is a beer brewery just outside Stellenbosch. They make their
+                  own wit, pilsner, ale and porter.<br /><br />I was a waiter at
+                  their brewery for two months around September 2017 in my
+                  Matric year, working weekends I had off.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-					<div class="job-box">
-						<div class="job">
-							<img class="job-header-img" src="img/stone3-background.jpg">
-							<div class="job-text">
-								<h3 class="job-title">STONE THREE</h3>
-								<p class="job-dates">14 - 25 JAN 2019<br>&<br>25 - 29 MARCH 2019</p>
-								<p class="job-description"><a href="https://www.stonethree.com/" target="_blank">- Stone Three -</a> is an IOT company in Somerset West. They provide solutions using technology to improve digital productivity, wokplace safety and healthcare.<br><br>I was exposed to a project using AI in workplace safety and a lot of what I did was trivial sorting of data, but a big part also included moving data with Python and SQL.</p>
-							</div>
-						</div>
-					</div>
-					<div class="job-box">
-						<div class="job">
-							<img class="job-header" src="img/laanhof-logo.png">
-							<div class="job-text">
-								<p class="job-dates">mid 2019</p>
-								<p class="job-description"><a href="https://www.laanhof.co.za/" target="_blank">- Laanhof -</a> is a luxurious guest house located in the heart of Stellenbosch. It is really more of a complex containing one large house and a few seperate apartments that are all listed on <a href="https://www.booking.com/index.en-gb.html?label=gen173nr-1DCAEoggI46AdIM1gEaPsBiAEBmAEJuAEXyAEM2AED6AEBiAIBqAIDuALg3Yz5BcACAdICJDliZTVmMjAzLWZkODUtNDA1OS1iZTk3LTgzNGI5MWRmYzBkNtgCBOACAQ;keep_landing=1&sb_price_type=total&" target="_blank">booking.com</a> and <a href="https://www.lekkeslaap.co.za/" target="_blank">lekkeslaap.co.za</a>.<br><br>I have been working there every once in a while as a stand-in manager when the owners were away. This includes taking bookings online, receiving guests, facilitating the necessary payments and other admin-related things.</p>
-							</div>
-							
-						</div>
-					</div>
-					<div class="job-box">
-						<div class="job">
-							<img class="job-header" src="img/wild-clover-logo.png">
-							<div class="job-text">
-								<p class="job-dates">SEPT 2017</p>
-								<p class="job-description"><a href="http://www.wildcloverbreweries.co.za/" target="_blank">- Wild Clover Breweries -</a> is a beer brewery just outside Stellenbosch. They make their own wit, pilsner, ale and porter.<br><br>I was a waiter at their brewery for two months around September 2017 in my Matric year, working weekends I had off.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</section>
-			
-
-			<section id="section6">
-				
-			</section>
-		</main>
-
-	</body>
+      <section id="section6"></section>
+    </main>
+  </body>
 </html>
