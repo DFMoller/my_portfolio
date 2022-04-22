@@ -363,7 +363,7 @@ header section {
   display: flex;
   align-items: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 4fr 3fr;
   background: linear-gradient(to right, var(--color-soft-white), transparent);
   position: relative;
 }
