@@ -65,11 +65,11 @@ nav::after {
 }
 .logo a {
   text-decoration: none;
-  font-size: 2.2vw;
+  font-size: 1.8vw;
   color: white;
 }
 .selection {
-  padding: 0 0 0 15%;
+  padding: 0 0 0 25%;
   grid-column: 3/4;
   display: flex;
   justify-content: space-between;
