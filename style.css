@@ -243,6 +243,23 @@ header section {
   bottom: 0;
   font-size: 50px;
 }
+.LI-profile-badge{
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  animation: fadeIn 4s;
+}
+@keyframes fadeIn{
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 #slider1 {
   position: absolute;
   top: 0;
@@ -284,8 +301,6 @@ header section {
 @media screen and (max-width: 768px) {
   nav {
     grid-template-columns: 10% 2fr 1fr 10%;
-  }
-  nav {
     height: 10vh;
   }
   .logo a {
@@ -300,6 +315,10 @@ header section {
   }
   .options {
     /*top: 15vh;*/
+  }
+  .LI-profile-badge{
+    left: 1rem;
+    bottom: 1rem;
   }
   .cover {
     width: 100%;
@@ -495,7 +514,7 @@ header section {
 }
 
 #sun-top-half {
-  height: 300px;
+  height: 22rem;
   width: 80%;
   display: flex;
   align-items: center;
@@ -561,16 +580,18 @@ header section {
 
   z-index: -1;
 }
+@media screen and (max-width: 1180px) {
+  #sun-logo {
+    display: none;
+  }
+  #sun-rooiplein p{
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   #sun-top-half {
     width: 90%;
-  }
-  #sun-logo {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    width: 100%;
-    display: none;
-  }
+  } 
   #sun-logo img {
     width: 75%;
   }
@@ -623,10 +644,10 @@ header section {
 #section3-title h1 {
   color: #4f8a96;
   margin-left: 5%;
-  font-size: 6.4vw;
+  font-size: 5vw;
 }
 #section3-icon {
-  height: 9.5vw;
+  height: 6.5vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -701,13 +722,13 @@ header section {
   align-items: center;
 }
 .inline-image {
-  width: 2vw;
+  width: 1.5vw;
   display: inline-block;
   vertical-align: middle;
   margin: 0 10px 5px;
 }
 .project-title {
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   color: #4f8a96;
   text-align: center;
   line-height: 115%;
@@ -717,7 +738,7 @@ header section {
   text-align: center;
   width: 90%;
   /*background-color: pink;*/
-  font-size: 1.2vw;
+  font-size: 1rem;
   color: #4f8a96;
 }
 .project-description a {
@@ -735,8 +756,8 @@ header section {
   flex: 1;
 }
 .project-image img {
-  width: 90%;
-  border-radius: 5px;
+  width: 100%;
+  border-radius: 10px;
   z-index: 1;
 }
 .project-img-shadow {
@@ -773,11 +794,6 @@ header section {
 .left-image {
   order: 1;
 }
-
-#project02-image img {
-  box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.4);
-  /* width: 80%; */
-}
 .project-slider-left {
   position: absolute;
   /*I did the math to center the slider in the project with the 20%*/
@@ -801,18 +817,7 @@ header section {
   transform: translateX(0);
 }
 
-/******************************* Project 3 ***************************/
 
-#project03-img-box img {
-  box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.4);
-}
-
-/****************************** Project 4 *****************************/
-
-#project04-image img {
-  box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.4);
-  width: 70%;
-}
 
 /************************Projects Footer*************************/
 .projects-footer {
@@ -899,13 +904,13 @@ header section {
   border-color: var(--color-soft-white);
 }
 #work-title h1 {
-  font-size: 5.5vw;
+  font-size: 5vw;
   color: var(--color-soft-white);
   white-space: nowrap;
   margin-left: 2%;
 }
 #work-icon {
-  height: 6vw;
+  height: 5.5vw;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -39,6 +39,9 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Linkedin Widget -->
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="shortcut icon" type="img/png" href="img/favicons/favicon.png" />
     <script src="my_app.js"></script>
@@ -120,6 +123,8 @@
           <img src="img/canoe.gif" class="big-screen-cover" />
           <!-- <h1>PORTFOLIO</h1> -->
         </div>
+        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="daniel-moller-20b197195" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://za.linkedin.com/in/daniel-moller-20b197195?trk=profile-badge"></a></div>
+              
       </section>
       <div id="slider1"></div>
     </header>
@@ -197,6 +202,62 @@
                 src="img/iconmonstr-check-mark-4-240.png"
                 alt="project-title-icon"
                 class="inline-image"
+              />DIY Drone Radio Transmitter
+            </h2>
+            <p class="project-description">
+              In this project, a broken XBOX 360 controller is converted into a fully functioning Drone Radio Transmitter. Basic I/O of the devic is handled using an Arduino Nano while an NRF24L01 module is used for the radio transmission. See this project and more at
+              <a
+                href="projects/projects.html"
+                class="projects-link-inner"
+                target="_blank"
+                >• All Projects •</a
+              >
+            </p>
+          </div>
+          <div class="project-image">
+            <img src="img/projects/drone_transmitter/cover.JPG" class="project-img-shadow" />
+          </div>
+          <div class="project-slider" id="project01-slider"></div>
+        </div>
+
+        <!-- *****************************************PROJECT 02************************************** -->
+
+        <div class="project" id="project02">
+          <div class="project-text left-text">
+            <h2 class="project-title">
+              <img
+                src="img/iconmonstr-check-mark-4-240.png"
+                alt="project-title-icon"
+                class="inline-image"
+              />Depreciation Station
+            </h2>
+            <p class="project-description">
+              <a href="http://dfmoller.pythonanywhere.com/" class="projects-link-inner" target="_blank">Depreciation Station</a> is a full-stack web application that aims to learn which colour of car is most likely to hold its value for the longest time in South Africa. A Raspberry Pi 4 Model B runs an automated python script that uses web scraping to collect data from Auto Trader daily and send it to a flask server via custom API endpoints. You can read more at <a
+              href="projects/projects.html"
+              class="projects-link-inner"
+              target="_blank"
+              >• All Projects •</a
+            >
+            </p>
+          </div>
+          <div class="project-image left-image">
+            <img
+              class="project-img-shadow"
+              src="img/projects/depreciationStation/DepreciationStationScreenshot.jpg"
+            />
+          </div>
+          <div class="project-slider-left" id="project02-slider"></div>
+        </div>
+
+        <!-- **************************************PROJECT 3********************************************* -->
+
+        <div class="project">
+          <div class="project-text">
+            <h2 class="project-title">
+              <img
+                src="img/iconmonstr-check-mark-4-240.png"
+                alt="project-title-icon"
+                class="inline-image"
               />Building This Responsive Webpage
             </h2>
             <p class="project-description">
@@ -213,72 +274,6 @@
           <div class="project-image">
             <img src="img/gimp_design/laptop1.png" />
           </div>
-          <div class="project-slider" id="project01-slider"></div>
-        </div>
-
-        <!-- <div id="slider3"></div> -->
-
-        <!-- *****************************************PROJECT 02************************************** -->
-
-        <div class="project" id="project02">
-          <div class="project-text left-text">
-            <h2 class="project-title">
-              <img
-                src="img/iconmonstr-check-mark-4-240.png"
-                alt="project-title-icon"
-                class="inline-image"
-              />LCD Weather Module, OpenWeatherMap API
-            </h2>
-            <p class="project-description">
-              This DIY weather hub is powered by an Arduino Nano 33 IoT, which
-              displays weather information from the OpenWeatherMap API to a 20x4
-              LCD screen. The arduino fetches the temperature, wind and
-              precipitation at a chosen time interval, for a pre-determined
-              location. Read more at
-              <a
-                href="projects/projects.html"
-                class="projects-link-inner"
-                target="_blank"
-                >• All Projects •</a
-              >
-            </p>
-          </div>
-          <div class="project-image left-image">
-            <img
-              class="project-img-shadow"
-              src="img/projects/weather_module/Optimized-weather_cover.JPG"
-            />
-          </div>
-          <div class="project-slider-left" id="project02-slider"></div>
-        </div>
-
-        <!-- **************************************PROJECT 3********************************************* -->
-
-        <div class="project" id="project03">
-          <div class="project-text">
-            <h2 class="project-title">
-              <img
-                src="img/iconmonstr-check-mark-4-240.png"
-                alt="project-title-icon"
-                class="inline-image"
-              />Some Kickass Recipes
-            </h2>
-            <p class="project-description">
-              <b
-                ><a target="_blank" href="https://recipes-ea247.web.app"
-                  >Some Kickass Recipes</a
-                ></b
-              >
-              is a progressive web application that have built. It is a platform
-              that stores and displays recipes uploaded by users.
-            </p>
-          </div>
-          <div class="project-image">
-            <img
-              class="project-img-shadow"
-              src="img/projects/recipes_screenshot.PNG"
-            />
-          </div>
           <div class="project-slider" id="project03-slider"></div>
         </div>
 
@@ -294,11 +289,10 @@
               />Stepper Motor, ESP32, Arduino and AWS IoT Core
             </h2>
             <p class="project-description">
-              In this project, I controlled a stepper motor and driver using an
-              ESP32 with the Arduino IDE. The ESP32 received input from its
-              relevant topics on AWS Iot. Depending on these inputs, the
-              microcontroller (ESP32) would either turn the motor to the desired
-              location or publish buck to the topics on AWS Iot. Read more at
+              In this project, a stepper motor and driver is controlled using an
+              ESP32 with code written in the Arduino IDE. The ESP32 receives input from its
+              relevant topics on AWS Iot. Depending on the input message received, the ESP32 either turns the motor to the desired
+              location or publishes system information back to the topics on AWS Iot. Read more at<br>
               <a
                 href="projects/projects.html"
                 class="projects-link-inner"
@@ -348,6 +342,20 @@
         </div>
 
         <div class="experience">
+          <div class="job-box">
+            <div class="job">
+              <img
+                class="job-header-img"
+                src="img/work_experience/bosch-ebike-logo-shortened.png"
+              />
+              <div class="job-text">
+                <p class="job-dates">1 Sept 2021<br />until<br />31 Jan 2022</p>
+                <p class="job-description">
+                  <a href="https://www.bosch-ebike.com/en/" target="_blank">- BOSCH EBIKE -</a> is located in Kusterdingen, Baden-Württemberg, Germany and is a leading supplier of e-bike components. Companies such as TREK and SPECIALIZED use Bosch's e-bike batteries, drive units, remotes, dispays and recently, even their ABS units. My 5-month experience of being part of the development team responsible for their ABS software gave me excellent insight into the world of agile software engineering.<br><br> The ebike components communicate using CAN-FD and the system only works if all the components are connected. Their integrated testing framework (ITF) uses custom Python tooling to allow single components to be tested individually by having it's CAN-FD communication lines connected to a pc while the pc simulates the other components. One of my responsibilities was to write new test cases for the ITF to aid in finding (and fixing) bugs sooner when new ABS software versions were released.<br><br>I also gained some more experience using Matlab and Simulink with their Drive Unit team. Simulink models are compiled into C++ code using the MathWorks Coders extention before then being compiled with other C++ source code into the final software deliverables for the Drive Unit.
+                </p>
+              </div>
+            </div>
+          </div>
           <div class="job-box">
             <div class="job">
               <img
