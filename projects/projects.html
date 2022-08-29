@@ -48,13 +48,23 @@
       </header>
 
       <menu>
-        <div id="drone_transmitter_btn" class="project-button" data-target="cloak8">
+        <div
+          id="drone_transmitter_btn"
+          class="project-button"
+          data-target="cloak8"
+        >
           <p>DIY Drone Transmitter</p>
         </div>
-        <div id="depreciation_station_btn" class="project-button" data-target="cloak7">
+        <div
+          id="depreciation_station_btn"
+          class="project-button"
+          data-target="cloak7"
+        >
           <p>Depreciation Station</p>
         </div>
-        <div id="yikesbikes_btn" class="project-button" data-target="cloak6"><p>YikesBikes</p></div>
+        <div id="yikesbikes_btn" class="project-button" data-target="cloak6">
+          <p>YikesBikes</p>
+        </div>
         <div id="portfolio_btn" class="project-button" data-target="cloak5">
           <p>Building my Website</p>
         </div>
@@ -64,7 +74,11 @@
         <div id="recipes_btn" class="project-button" data-target="cloak3">
           <p>Some Kickass Recipes</p>
         </div>
-        <div id="sensor_logging_btn" class="project-button" data-target="cloak2">
+        <div
+          id="sensor_logging_btn"
+          class="project-button"
+          data-target="cloak2"
+        >
           <p>Sensor Data Logging with Arduino and Blynk</p>
         </div>
         <div id="esp32_stepper_btn" class="project-button" data-target="cloak1">
@@ -239,7 +253,11 @@
                 joysticks) and watched the Blynk app on their phone to confirm
                 that the transmission has been received.
               </li>
-              <img class="inline-img-portrait" src="../img/projects/drone_transmitter/blynk.jpg" alt="Blynk">
+              <img
+                class="inline-img-portrait"
+                src="../img/projects/drone_transmitter/blynk.jpg"
+                alt="Blynk"
+              />
               <li>
                 By repeating the above step, a maximum range can be determined
                 for the transmitter.
@@ -257,7 +275,8 @@
               Although a maximum range was not found, it is confirmed to be at
               least 600 meters which exceeds the requirements for this simple
               hobby project. This controller is also adapted to work with drone
-              simulation games. One simply connects the Arduino in the transmitter to a PC via USB. <br /><br />
+              simulation games. One simply connects the Arduino in the
+              transmitter to a PC via USB. <br /><br />
               It is planned to find a new location to test the device in the
               future and find its actual maximum range. Importantly, I am also
               planning to build en entire drone from scratch, implementing a PID
@@ -290,7 +309,7 @@
               web scraping. The scraping is automated to run daily on a
               Raspberry Pi 4 model b while the web page is hosted on
               PythonAnywhere. Data is communicated between these two nodes using
-              a Flask RESTful API and starting in July 2021, some time needs to
+              a Flask RESTful API and starting in April 2022, some time needs to
               pass for data to be accumulated before any insight can be gained
               into the depreciation rates of different coloured cars.
               Nonetheless, this project has been completed and now runs
@@ -306,21 +325,21 @@
               The Raspberry Pi 4 model b used to do the web scraping is set up
               to launch the scraper on startup, which means it can simply be
               plugged in without a monitor for everything to work. When active
-              the Python script initiates the web scraping at 7am every morning
-              and only requires a network connection. Libraries used in this
-              Python app include BeautifulSoup, lxml, Pandas, requests, json and
-              datetime.<br /><br />
+              the Python script initiates the web scraping in the early hours
+              each morning and only requires a network connection.<br /><br />
 
               The web page hosted on PythonAnywhere is built using Flask. This
               script is rather more complex than the one running on the
               Raspberry Pi, because it contains the database where all the data
               is stored as well as the code maintaining the Flask RESTful API
               that is used for communication with the RPI. On top of that it
-              also needs to display this data in a meaningful way and PyGal is
-              the plotting library used here. Other libraries used in this
-              Python app include Flask, SQLAlchemy, Jinja2, keyboard, Pillow,
-              requests, Flask-RESTful, scipy and Pandas. Feel free to visit the
-              web page
+              also needs to display this data in a meaningful way. Initially,
+              PyGal was the python plotting library being used, but after
+              switching to Chart.js in August 2022, a significant amount of
+              JavaScript has also been introduced which helped to decrease
+              loading times a little. Other libraries used in this Python app
+              include Flask, SQLAlchemy, Jinja2, keyboard, Pillow, requests,
+              Flask-RESTful, scipy and Pandas. Feel free to visit the web page
               <a href="http://dfmoller.pythonanywhere.com/" target="_blank"
                 >here</a
               >
@@ -351,7 +370,7 @@
             </p>
           </div>
           <iframe
-          class="inline-img-landscape"
+            class="inline-img-landscape"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F3omUz-uIVs"
@@ -375,66 +394,20 @@
               Engineering portfolio. This is how it happened.
             </p>
             <p class="paragraphs">
-              2020 gave us the Covid-19 lockdown in South Africa and it is no
-              secret that this virus impacted the lives of just about everyone
-              on the planet in a substantial way. I was lucky enough to keep on
-              living somewhat cumfortably and decided to work on some of my
-              skills in the time before classes resumed at Stellenbosch
-              Univerity. One of the topics I persued in this time was web
-              development and I was particularily interested in front end web
-              development. Simply put, I had no idea how a website interface was
-              built and wanted to find out. At this point I already knew that my
-              end goal was to create my own website and regardless of
-              whether or not I was going to finish it, it was going to be the
-              best way to learn the skills I was looking for.<br /><br />
+              2020 gave us the Covid-19 lockdown in South Africa and I was lucky
+              enough to gain some free time while the University made the switch
+              to remote learning. At the time, I had very little experience in
+              software and decided to start by learning web development. This
+              website is the result of my efforts in that time and is what
+              sparked my interest in programming.<br /><br />
 
-              I started learning by following different free example tutorials
-              on <a href="https://www.youtube.com/" target="_blank">YouTube</a>,
-              copying all the steps as I went along. When I understood the very
-              basics, I moved to a
+              <a href="https://www.youtube.com/" target="_blank">YouTube</a> and
               <a href="https://www.skillshare.com/home" target="_blank"
                 >Skill Share</a
               >
-              course which was very insightful. This is also where I first learned about Git, Github and hosting. After that course, I felt I had
-              enough knowledge to start making my own web pages and I spent most
-              of my time following
-              <a
-                href="https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q/featured"
-                target="_blank"
-                >Dev Ed</a
-              >'s (his name is Ed) YouTube tutorials. He has a fantastic YouTube
-              channel with many videos focusing on web development. That is
-              where I learned how to use the little JavaScript animations seen
-              on my website.<br /><br />
+              taught me all I needed to know back then and are great tools for
+              beginners. Here, I also learned about Git, Github and hosting. HTML, CSS and JavaScript were all that I needed to build this static site and the understanding I gained using those languages proved to be very helpful when I learned PHP and Python's Flask at a later stage.<br /><br />
 
-              My favourite elements of my website are the sliding animations
-              used in the 'University' and 'Projects' sections. They use a
-              JQUERY plugin, <a href="#">ScrollMagic</a>, to let animations
-              start depending on the scrolling input of the user. I tried to
-              stay away from plugins for the most part, just so that I could
-              learn the basics and not take too many short cuts. But I used
-              ScrollMagic, because it is a very powerful tool if you know how to
-              use it. It also taught me a bit about plugins in general.<br /><br />
-
-              Something else I really enjoyed making, was my cover page gif (Not
-              on mobile version of website). I did the drawing and animation of
-              the bird using an Ipad app called Procreate. I never realized it was so easy
-              to illustrate and animate something simple like the bird you can
-              see below.<br />
-
-              <img
-                src="../img/projects/website/canoe.gif"
-                class="inline-img-landscape"
-                alt="Canoe_gif"
-              />
-
-              I have always wanted to know how websites are built from scratch
-              and I have definitely succeeded in gaining that understanding. My
-              interest in web development has since led me to a different
-              project,
-              <a href="https://recipes-ea247.web.app/" target="_blank"
-                >Some Kickass Recipes</a
-              >, which is a PWA that can also be found in this projects library.
             </p>
           </div>
         </section>
@@ -483,7 +456,7 @@
             <p class="paragraphs">
               This is my first functional PWA (Progressive Web Application).
               PWA's are web applications with additional advanced functionality
-              that allow them to behave exactly like native apps. This includes
+              that allow them to behave similarly to native apps. This includes
               the ability to cache data to improve the user experience. Loading
               times are decreased and this also allows a PWA to be used while
               offline. This is in strong contrast with standard web
@@ -495,15 +468,14 @@
               programming languages other than HTML, CSS and JS (which are used
               for building websites). However, PWA's can be built using these
               three popular languages, which removes the need to learn a new
-              language like Java altogether.<br /><br />
+              language like Java or Kotlin altogether.<br /><br />
 
               Building
               <a href="https://recipes-ea247.web.app/" target="_blank"
                 >Some Kickass Recipes</a
               >
-              and all its functionality has taught me the skills required to
-              expand existing web applications into PWA's and I am excited by
-              the doors that have opened for me as a result.
+              and all its functionality taught me the skills required to
+              expand existing web applications into PWA's and to understand the gains that can be made accordingly.
             </p>
           </div>
         </section>
@@ -545,12 +517,12 @@
               they needed to be held securely and all at the same height for it
               to be a fair experiment. I also fixed a breadboard and the Arduino
               to the tripod, because there was no need to find a more permanent
-              solution.<br>
+              solution.<br />
               <img
-              src="../img/projects/Sensors_bynk/Optimized-sensors-setup.JPG"
-              class="inline-img-portrait"
-              alt="Setup"
-            /><br>
+                src="../img/projects/Sensors_bynk/Optimized-sensors-setup.JPG"
+                class="inline-img-portrait"
+                alt="Setup"
+              /><br />
               Blynk provides some good documentation for most of its services,
               which made it very easy to write code for the Arduino to connect
               to the mobile Blynk app which is where the data would be
@@ -558,18 +530,17 @@
               concept called Virtual Pins (VPs) which work similarly to harware
               pins, but are obviously virtual. This meanse that there is almost
               no limit to the number of virtual pins one can use. These pins are
-              a way for the Arduino to interface with the Blynk cloud.
-
-              I used Blynk's free app with its VPs to build a project layout
-              that listened for input to these VPs from the Arduino. This app
-              gives the user control over exactly what kind of controls or
-              interfaces he/she want to see in the project layout and I set it
-              up as follows:<br /><br />
+              a way for the Arduino to interface with the Blynk cloud. I used
+              Blynk's free app with its VPs to build a project layout that
+              listened for input to these VPs from the Arduino. This app gives
+              the user control over exactly what kind of controls or interfaces
+              he/she want to see in the project layout and I set it up as
+              follows:<br /><br />
               <img
                 src="../img/projects/Sensors_bynk/blynk_app.png"
                 class="inline-img-portrait"
                 alt="Blynk_App"
-              /><br/>
+              /><br />
 
               In the upper section of the layout, there are three LEDs that
               light up whenever its respective sensor senses movement. This all
