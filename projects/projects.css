@@ -473,6 +473,9 @@ main {
   .cover8{
     height: 300px;
   }
+  .cover9{
+    height: 200px;
+  }
   .inner-img-portrait-list{
     width: 50%;
     margin: 20px 25%;
@@ -502,6 +505,9 @@ main {
   }
   .cover8{
     height: 200px;
+  }
+  .cover9{
+    height: 140px;
   }
   .inline-img-landscape{
     width: 100%;
