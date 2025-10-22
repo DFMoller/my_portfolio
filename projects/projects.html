@@ -102,7 +102,6 @@
       <div class="cloak cloak8 hidden">
         <section id="project8" class="project">
           <div class="cover cover8">
-            <!-- <img src="../img/projects/website-screenshot.PNG" class="cover" alt="website"> -->
           </div>
           <div class="text">
             <h1 class="title">XBOX 360 Controller Converted to Drone Radio Transmitter</h1>
@@ -242,40 +241,22 @@
           <div class="text">
             <h1 class="title">Depreciation Station</h1>
             <p class="intro">
-              Depreciation Station is a full-stack web application that aims to learn what colour of car is most likely
+              Depreciation Station (not actively maintained) is a full-stack web application that aims to learn what colour of car is most likely
               to hold its value for the longest time in South Africa.
             </p>
             <p class="paragraphs">
               The goal of
               <a href="http://dfmoller.pythonanywhere.com/" target="_blank">Depreciation Station</a>
               is to compare the rate at which different coloured cars depreciate and for this, data is obtained from
-              Autotrader using Python and web scraping. The scraping is automated to run daily on a Raspberry Pi 4 model
-              b while the web page is hosted on PythonAnywhere. Data is communicated between these two nodes using a
-              Flask RESTful API and starting in April 2022, some time needs to pass for data to be accumulated before
-              any insight can be gained into the depreciation rates of different coloured cars. Nonetheless, this
-              project has been completed and now runs automatically.
-
+              Autotrader using Python and web scraping. The scraping is automated to run daily on a Raspberry Pi
+              while the web page is hosted on PythonAnywhere. Data is communicated between these two nodes using a
+              Flask API. The scraper has since become outdated and I currently have no plans to update it, so the data
+              has become stale. You can view the app <a href="http://dfmoller.pythonanywhere.com/" target="_blank">here</a>.
               <img
                 class="inline-img-landscape"
                 src="../img/projects/depreciationStation/raspberrypi.JPG"
                 alt="raspberrypi"
               />
-
-              <br /><br />
-              The Raspberry Pi 4 model b used to do the web scraping is set up to launch the scraper on startup, which
-              means it can simply be plugged in without a monitor for everything to work. When active the Python script
-              initiates the web scraping in the early hours each morning and only requires a network connection.<br /><br />
-
-              The web page hosted on PythonAnywhere is built using Flask. This script is rather more complex than the
-              one running on the Raspberry Pi, because it contains the database where all the data is stored as well as
-              the code maintaining the Flask RESTful API that is used for communication with the RPI. On top of that it
-              also needs to display this data in a meaningful way. Initially, PyGal was the python plotting library
-              being used, but after switching to Chart.js in August 2022, a significant amount of JavaScript has also
-              been introduced which helped to decrease loading times a little. Other libraries used in this Python app
-              include Flask, SQLAlchemy, Jinja2, keyboard, Pillow, requests, Flask-RESTful, scipy and Pandas. Feel free
-              to visit the web page
-              <a href="http://dfmoller.pythonanywhere.com/" target="_blank">here</a>
-              to learn more about it.
             </p>
           </div>
         </section>
@@ -496,16 +477,16 @@
                 class="inline-img-landscape"
               /><br />
 
-              The software side of the problem included writing the arduino script that would be flashed to the ESP.
-              This script had to facilitate the communication with AWS IoT core while controlling the motor's angle and
+              The software side of the problem included writing the arduino code that would be flashed to the ESP.
+              It had to facilitate the communication with AWS IoT core while controlling the motor's angle and
               speed, but fortunately, connecting to AWS proved to be a simpler task than I had thought, owing to
               <a
                 href="https://aws.amazon.com/blogs/compute/building-an-aws-iot-core-device-using-aws-serverless-and-an-esp32/"
                 target="_blank"
                 >this</a
               >
-              helpful guide AWS has published specifically for the ESP32 board. Another thing to consider when writing
-              the script is the math involved with calculating how many pulses to send to the driver and at what
+              helpful guide AWS has published specifically for the ESP32 board. Another thing to consider when programming
+              the Arduino is the math involved with calculating how many pulses to send to the driver and at what
               frequency, depending on the step-size that was chosen. A higher frequency will casue the motor to turn
               faster and more pulses cause it to turn further.<br /><br />
               In conclusion, considering that I started this project with little knowledge about AWS IoT Core or
