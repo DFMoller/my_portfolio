@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,26 +9,13 @@
     <!-- To display on LinkedIn -->
     <meta property="og:title" content="My Projects" />
     <meta property="og:image" content="img/projects/projects-screenshot.PNG" />
-    <meta
-      property="og:description"
-      content="A library of my personal projects."
-    />
-    <meta
-      property="og:url"
-      content="https://danielmoller.co.za/projects/projects.html"
-    />
+    <meta property="og:description" content="A library of my personal projects." />
+    <meta property="og:url" content="https://danielmoller.co.za/projects/projects.html" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="projects.css" />
-    <link
-      rel="shortcut icon"
-      type="img/png"
-      href="../img/favicons/favicon.png"
-    />
+    <link rel="shortcut icon" type="img/png" href="../img/favicons/favicon.png" />
     <script src="projects.js"></script>
 
     <title>Projects</title>
@@ -48,19 +35,14 @@
       </header>
 
       <menu>
-        <div
-          id="drone_transmitter_btn"
-          class="project-button"
-          data-target="cloak8"
-        >
-          <p>DIY Drone Transmitter</p>
+        <div id="drone_transmitter_btn" class="project-button" data-target="cloak9">
+          <p>Groceries price tracking</p>
         </div>
-        <div
-          id="depreciation_station_btn"
-          class="project-button"
-          data-target="cloak7"
-        >
+        <div id="depreciation_station_btn" class="project-button" data-target="cloak7">
           <p>Depreciation Station</p>
+        </div>
+        <div id="drone_transmitter_btn" class="project-button" data-target="cloak8">
+          <p>DIY Drone Transmitter</p>
         </div>
         <div id="yikesbikes_btn" class="project-button" data-target="cloak6">
           <p>YikesBikes</p>
@@ -74,11 +56,7 @@
         <div id="recipes_btn" class="project-button" data-target="cloak3">
           <p>Some Kickass Recipes</p>
         </div>
-        <div
-          id="sensor_logging_btn"
-          class="project-button"
-          data-target="cloak2"
-        >
+        <div id="sensor_logging_btn" class="project-button" data-target="cloak2">
           <p>Sensor Data Logging with Arduino and Blynk</p>
         </div>
         <div id="esp32_stepper_btn" class="project-button" data-target="cloak1">
@@ -106,28 +84,38 @@
         </label>
       </div>
 
+      <div class="cloak cloak9 hidden">
+        <section id="project9" class="project">
+          <div class="cover cover9">
+          </div>
+          <div class="text">
+            <h1 class="title">Groceries price tracking and store comparison (early pre-release)</h1>
+            <p class="intro">
+              This is a full-stack web application that tracks grocery prices from various stores in South Africa
+              and allows you to compare them. It is under active development and far from complete. No mobile support yet.
+              <a href="https://groceries.lunarlab.co.za" target="_blank">View the app here!</a>
+            </p>
+          </div>
+        </section>
+      </div>
+
       <div class="cloak cloak8 hidden">
         <section id="project8" class="project">
           <div class="cover cover8">
             <!-- <img src="../img/projects/website-screenshot.PNG" class="cover" alt="website"> -->
           </div>
           <div class="text">
-            <h1 class="title">
-              XBOX 360 Controller Converted to Drone Radio Transmitter
-            </h1>
+            <h1 class="title">XBOX 360 Controller Converted to Drone Radio Transmitter</h1>
             <p class="intro">
-              In this project, a broken XBOX 360 controller is converted into a
-              fully functioning Drone Radio Transmitter. Basic I/O of the devic
-              is handled using an Arduino Nano while an NRF24L01 module is used
-              for the radio transmission.
+              In this project, a broken XBOX 360 controller is converted into a fully functioning Drone Radio
+              Transmitter. Basic I/O of the devic is handled using an Arduino Nano while an NRF24L01 module is used for
+              the radio transmission.
             </p>
             <h2 class="heading">Overview</h2>
             <p class="paragraphs">
-              A broken console controller is still very useful as long as the
-              joysticks are working. This project discards most of the internals
-              of the XBOX controller, but utilizes the body and the existing
-              joysticks in an excellent display of repurposing. The components
-              required to do this conversion are:
+              A broken console controller is still very useful as long as the joysticks are working. This project
+              discards most of the internals of the XBOX controller, but utilizes the body and the existing joysticks in
+              an excellent display of repurposing. The components required to do this conversion are:
             </p>
             <ul class="text-list">
               <li>XBOX 360 controller</li>
@@ -140,8 +128,8 @@
               <li>Relevalnt tools for soldering etc.</li>
             </ul>
             <p class="paragraphs">
-              For the purposes of testing the completed transmitter, a receiving
-              device is built using the following components:
+              For the purposes of testing the completed transmitter, a receiving device is built using the following
+              components:
             </p>
             <ul class="text-list">
               <li>Proto-board</li>
@@ -150,8 +138,8 @@
               <li>NRF24L01 RF Transceiver Module</li>
             </ul>
             <p class="paragraphs">
-              The completed transmitter and receiver are shown below
-              (Transmitter cover removed and antenna cropped out):
+              The completed transmitter and receiver are shown below (Transmitter cover removed and antenna cropped
+              out):
               <img
                 class="inline-img-landscape"
                 src="../img/projects/drone_transmitter/transmitter_and_receiver.JPG"
@@ -160,49 +148,33 @@
             </p>
             <h2 class="heading">Build Considerations</h2>
             <p class="paragraphs">
-              As these console controllers are built for a specialized use-case,
-              there are plenty of components that cannot be reused and the first
-              step of the project is to seperate the useful from everything
-              else. As shown in the image below, the joysticks are initially
-              soldered onto a pcb that neatly houses all the components of the
-              device and the first step is to de-solder these joysticks.
-              <img
-                src="../img/projects/drone_transmitter/pcb.JPG"
-                class="inline-img-landscape"
-                alt="pcb"
-              />
-              To be able to reuse the housing of the controller, a piece of
-              proto-board needs to be cut out to match the shape of the existing
-              pcb, allowing the assembly to fit snugly. Next, it is important to
-              ensure that both joysticks line up exactly as they did initially
-              when they are soldered onto the proto-board. <br /><br />
+              As these console controllers are built for a specialized use-case, there are plenty of components that
+              cannot be reused and the first step of the project is to seperate the useful from everything else. As
+              shown in the image below, the joysticks are initially soldered onto a pcb that neatly houses all the
+              components of the device and the first step is to de-solder these joysticks.
+              <img src="../img/projects/drone_transmitter/pcb.JPG" class="inline-img-landscape" alt="pcb" />
+              To be able to reuse the housing of the controller, a piece of proto-board needs to be cut out to match the
+              shape of the existing pcb, allowing the assembly to fit snugly. Next, it is important to ensure that both
+              joysticks line up exactly as they did initially when they are soldered onto the proto-board. <br /><br />
 
-              Without getting into too much detail regarding the rest of the
-              build, it follows these steps:
+              Without getting into too much detail regarding the rest of the build, it follows these steps:
             </p>
             <ol class="text-list">
               <li>
-                Mount the Arduino Nano and the NRF transmitter module in an
-                orinentation that will allow the assembly to fit. Note how they
-                were mounted underneath the proto-board to maximize the
-                available space. (Arduino on the right and NRF24 on the left)
+                Mount the Arduino Nano and the NRF transmitter module in an orinentation that will allow the assembly to
+                fit. Note how they were mounted underneath the proto-board to maximize the available space. (Arduino on
+                the right and NRF24 on the left)
               </li>
               <img
                 class="inline-img-landscape"
                 src="../img/projects/drone_transmitter/mounting_nano.JPG"
                 alt="Mounting Nano"
               />
+              <li>Design and build the voltage regulator circuit for the 9V input voltage coming from the battery.</li>
+              <li>Test the supply before connecting it to the system to avoid frying components.</li>
               <li>
-                Design and build the voltage regulator circuit for the 9V input
-                voltage coming from the battery.
-              </li>
-              <li>
-                Test the supply before connecting it to the system to avoid
-                frying components.
-              </li>
-              <li>
-                Consider where there is space available in the device and use
-                that to route the wiring between components.
+                Consider where there is space available in the device and use that to route the wiring between
+                components.
               </li>
               <img
                 class="inline-img-landscape"
@@ -210,78 +182,53 @@
                 alt="Mounting Nano"
               />
               <li>
-                Build the receiver circuit (voltage regulator, arduino and
-                receiver module) on a seperate piece of proto-board, considering
-                which pins of the Arduino are required for I2C communication
-                with the receiver module.
+                Build the receiver circuit (voltage regulator, arduino and receiver module) on a seperate piece of
+                proto-board, considering which pins of the Arduino are required for I2C communication with the receiver
+                module.
               </li>
+              <li>Test all connections of the transmitter and receiver using a multimeter.</li>
               <li>
-                Test all connections of the transmitter and receiver using a
-                multimeter.
-              </li>
-              <li>
-                Use the Arduino IDE to write suitable code for both Arduinos.
-                The arduino in the transmitter needs to read the joystick inputs
-                and communicate those values to the NRF24 transmitter module.
-                The arduino in the receiver needs to read what is received by
-                the transceiver module.
+                Use the Arduino IDE to write suitable code for both Arduinos. The arduino in the transmitter needs to
+                read the joystick inputs and communicate those values to the NRF24 transmitter module. The arduino in
+                the receiver needs to read what is received by the transceiver module.
               </li>
             </ol>
             <h2 class="heading">Testing the Transmitter</h2>
             <p class="paragraphs">
-              Testing is first done indoors to verify the expected behaviour.
-              Thereafter, the same procedure is carried out in a field at
-              increasing transmission range. Testing is done as follows:
+              Testing is first done indoors to verify the expected behaviour. Thereafter, the same procedure is carried
+              out in a field at increasing transmission range. Testing is done as follows:
             </p>
             <ol class="text-list">
               <li>
-                The receiver is placed at one side of a field and the Arduino
-                Nano 33 IoT has an internet connection.
+                The receiver is placed at one side of a field and the Arduino Nano 33 IoT has an internet connection.
+              </li>
+              <li>The operator has the radio transmitter in hand as well as their cellphone.</li>
+              <li>
+                The Arduino Nano 33 Iot in the receiver uses Blynk to send the received data to the Blynk server which
+                can be viewed on a mobile device that has an internt connection.
               </li>
               <li>
-                The operator has the radio transmitter in hand as well as their
-                cellphone.
+                As the operator moves incrementally further away from the receiver, he/she continually sends a
+                transmissin (moves the joysticks) and watched the Blynk app on their phone to confirm that the
+                transmission has been received.
               </li>
-              <li>
-                The Arduino Nano 33 Iot in the receiver uses Blynk to send the
-                received data to the Blynk server which can be viewed on a
-                mobile device that has an internt connection.
-              </li>
-              <li>
-                As the operator moves incrementally further away from the
-                receiver, he/she continually sends a transmissin (moves the
-                joysticks) and watched the Blynk app on their phone to confirm
-                that the transmission has been received.
-              </li>
-              <img
-                class="inline-img-portrait"
-                src="../img/projects/drone_transmitter/blynk.jpg"
-                alt="Blynk"
-              />
-              <li>
-                By repeating the above step, a maximum range can be determined
-                for the transmitter.
-              </li>
+              <img class="inline-img-portrait" src="../img/projects/drone_transmitter/blynk.jpg" alt="Blynk" />
+              <li>By repeating the above step, a maximum range can be determined for the transmitter.</li>
             </ol>
             <h2 class="heading">Results</h2>
             <p class="paragraphs">
-              By repeating step 4 of the testing procedure above, it is found
-              that the transmitter performes extremely well and at a range of
-              600 meters, there was no more space on that field to move further
-              away from the receiver.
+              By repeating step 4 of the testing procedure above, it is found that the transmitter performes extremely
+              well and at a range of 600 meters, there was no more space on that field to move further away from the
+              receiver.
             </p>
             <h2 class="heading">Conclusion</h2>
             <p class="paragraphs">
-              Although a maximum range was not found, it is confirmed to be at
-              least 600 meters which exceeds the requirements for this simple
-              hobby project. This controller is also adapted to work with drone
-              simulation games. One simply connects the Arduino in the
-              transmitter to a PC via USB. <br /><br />
-              It is planned to find a new location to test the device in the
-              future and find its actual maximum range. Importantly, I am also
-              planning to build en entire drone from scratch, implementing a PID
-              control system and expanding on the receiver that is already
-              built.
+              Although a maximum range was not found, it is confirmed to be at least 600 meters which exceeds the
+              requirements for this simple hobby project. This controller is also adapted to work with drone simulation
+              games. One simply connects the Arduino in the transmitter to a PC via USB. <br /><br />
+              It is planned to find a new location to test the device in the future and find its actual maximum range.
+              Importantly, I am also planning to build en entire drone from scratch, implementing a PID control system
+              and expanding on the receiver that is already built.
             </p>
           </div>
         </section>
@@ -295,25 +242,18 @@
           <div class="text">
             <h1 class="title">Depreciation Station</h1>
             <p class="intro">
-              Depreciation Station is a full-stack web application that aims to
-              learn what colour of car is most likely to hold its value for the
-              longest time in South Africa.
+              Depreciation Station is a full-stack web application that aims to learn what colour of car is most likely
+              to hold its value for the longest time in South Africa.
             </p>
             <p class="paragraphs">
               The goal of
-              <a href="http://dfmoller.pythonanywhere.com/" target="_blank"
-                >Depreciation Station</a
-              >
-              is to compare the rate at which different coloured cars depreciate
-              and for this, data is obtained from Autotrader using Python and
-              web scraping. The scraping is automated to run daily on a
-              Raspberry Pi 4 model b while the web page is hosted on
-              PythonAnywhere. Data is communicated between these two nodes using
-              a Flask RESTful API and starting in April 2022, some time needs to
-              pass for data to be accumulated before any insight can be gained
-              into the depreciation rates of different coloured cars.
-              Nonetheless, this project has been completed and now runs
-              automatically.
+              <a href="http://dfmoller.pythonanywhere.com/" target="_blank">Depreciation Station</a>
+              is to compare the rate at which different coloured cars depreciate and for this, data is obtained from
+              Autotrader using Python and web scraping. The scraping is automated to run daily on a Raspberry Pi 4 model
+              b while the web page is hosted on PythonAnywhere. Data is communicated between these two nodes using a
+              Flask RESTful API and starting in April 2022, some time needs to pass for data to be accumulated before
+              any insight can be gained into the depreciation rates of different coloured cars. Nonetheless, this
+              project has been completed and now runs automatically.
 
               <img
                 class="inline-img-landscape"
@@ -322,27 +262,19 @@
               />
 
               <br /><br />
-              The Raspberry Pi 4 model b used to do the web scraping is set up
-              to launch the scraper on startup, which means it can simply be
-              plugged in without a monitor for everything to work. When active
-              the Python script initiates the web scraping in the early hours
-              each morning and only requires a network connection.<br /><br />
+              The Raspberry Pi 4 model b used to do the web scraping is set up to launch the scraper on startup, which
+              means it can simply be plugged in without a monitor for everything to work. When active the Python script
+              initiates the web scraping in the early hours each morning and only requires a network connection.<br /><br />
 
-              The web page hosted on PythonAnywhere is built using Flask. This
-              script is rather more complex than the one running on the
-              Raspberry Pi, because it contains the database where all the data
-              is stored as well as the code maintaining the Flask RESTful API
-              that is used for communication with the RPI. On top of that it
-              also needs to display this data in a meaningful way. Initially,
-              PyGal was the python plotting library being used, but after
-              switching to Chart.js in August 2022, a significant amount of
-              JavaScript has also been introduced which helped to decrease
-              loading times a little. Other libraries used in this Python app
-              include Flask, SQLAlchemy, Jinja2, keyboard, Pillow, requests,
-              Flask-RESTful, scipy and Pandas. Feel free to visit the web page
-              <a href="http://dfmoller.pythonanywhere.com/" target="_blank"
-                >here</a
-              >
+              The web page hosted on PythonAnywhere is built using Flask. This script is rather more complex than the
+              one running on the Raspberry Pi, because it contains the database where all the data is stored as well as
+              the code maintaining the Flask RESTful API that is used for communication with the RPI. On top of that it
+              also needs to display this data in a meaningful way. Initially, PyGal was the python plotting library
+              being used, but after switching to Chart.js in August 2022, a significant amount of JavaScript has also
+              been introduced which helped to decrease loading times a little. Other libraries used in this Python app
+              include Flask, SQLAlchemy, Jinja2, keyboard, Pillow, requests, Flask-RESTful, scipy and Pandas. Feel free
+              to visit the web page
+              <a href="http://dfmoller.pythonanywhere.com/" target="_blank">here</a>
               to learn more about it.
             </p>
           </div>
@@ -356,17 +288,12 @@
           </div>
           <div class="text">
             <h1 class="title">YikesBikes</h1>
-            <p class="intro">
-              YikesBikes is a web shop that sells mountainbikes
-            </p>
+            <p class="intro">YikesBikes is a web shop that sells mountainbikes</p>
             <p class="paragraphs">
-              YikesBikes is a fully functioning web shop that I created from the
-              ground up for a course I took in 2021, at Reutlingen University,
-              in Germany. The purpose of the video that I have linked to, is to
-              show my proficiency in HTML, CSS, JavaScript, PHP, MYSQL and
-              Python without going into too much detail. The web shop is not
-              currently hosted on the web for you to explore, but in the video,
-              I explain how it works:
+              YikesBikes is a fully functioning web shop that I created from the ground up for a course I took in 2021,
+              at Reutlingen University, in Germany. The purpose of the video that I have linked to, is to show my
+              proficiency in HTML, CSS, JavaScript, PHP, MYSQL and Python without going into too much detail. The web
+              shop is not currently hosted on the web for you to explore, but in the video, I explain how it works:
             </p>
           </div>
           <iframe
@@ -390,24 +317,20 @@
           <div class="text">
             <h1 class="title">Building my Website</h1>
             <p class="intro">
-              I decided to build a website to serve as my Mechatronic
-              Engineering portfolio. This is how it happened.
+              I decided to build a website to serve as my Mechatronic Engineering portfolio. This is how it happened.
             </p>
             <p class="paragraphs">
-              2020 gave us the Covid-19 lockdown in South Africa and I was lucky
-              enough to gain some free time while the University made the switch
-              to remote learning. At the time, I had very little experience in
-              software and decided to start by learning web development. This
-              website is the result of my efforts in that time and is what
-              sparked my interest in programming.<br /><br />
+              2020 gave us the Covid-19 lockdown in South Africa and I was lucky enough to gain some free time while the
+              University made the switch to remote learning. At the time, I had very little experience in software and
+              decided to start by learning web development. This website is the result of my efforts in that time and is
+              what sparked my interest in programming.<br /><br />
 
               <a href="https://www.youtube.com/" target="_blank">YouTube</a> and
-              <a href="https://www.skillshare.com/home" target="_blank"
-                >Skill Share</a
-              >
-              taught me all I needed to know back then and are great tools for
-              beginners. Here, I also learned about Git, Github and hosting. HTML, CSS and JavaScript were all that I needed to build this static site and the understanding I gained using those languages proved to be very helpful when I learned PHP and Python's Flask at a later stage.<br /><br />
-
+              <a href="https://www.skillshare.com/home" target="_blank">Skill Share</a>
+              taught me all I needed to know back then and are great tools for beginners. Here, I also learned about
+              Git, Github and hosting. HTML, CSS and JavaScript were all that I needed to build this static site and the
+              understanding I gained using those languages proved to be very helpful when I learned PHP and Python's
+              Flask at a later stage.<br /><br />
             </p>
           </div>
         </section>
@@ -419,23 +342,18 @@
           <div class="text">
             <h1 class="title">Analyzing Vehicle Suspension</h1>
             <p class="intro">
-              In this modelling experiment, the goal was to determine the sping
-              constant and dampening coefficient for the suspension of a given
-              passenger vehicle through visual analysis.
+              In this modelling experiment, the goal was to determine the sping constant and dampening coefficient for
+              the suspension of a given passenger vehicle through visual analysis.
             </p>
             <p class="paragraphs">
-              The vehicle was set up by parking one wheel elevated on three
-              garden tiles. The data was captured by reversing off the tiles
-              while recording from a camera on a tripod to the side and the
-              video footage was analyzed in a program called Tracker. This
-              software can track and plot fixed points from frame to frame,
-              which is why there were two stickers on the side of the car at the
-              start of the experiment. One on the body of the car and one in the
-              center of the wheel.<br /><br />
+              The vehicle was set up by parking one wheel elevated on three garden tiles. The data was captured by
+              reversing off the tiles while recording from a camera on a tripod to the side and the video footage was
+              analyzed in a program called Tracker. This software can track and plot fixed points from frame to frame,
+              which is why there were two stickers on the side of the car at the start of the experiment. One on the
+              body of the car and one in the center of the wheel.<br /><br />
 
-              With the data from tracker, MatLab was used to subtract the height
-              plots of the two dots from each other and form a new plot. At this
-              point, the data was in a workable state and modelling formulas and
+              With the data from tracker, MatLab was used to subtract the height plots of the two dots from each other
+              and form a new plot. At this point, the data was in a workable state and modelling formulas and
               calculations were used to determine the required parameters.
             </p>
           </div>
@@ -448,34 +366,26 @@
           <div class="text">
             <h1 class="title">Some Kickass Recipes</h1>
             <p class="intro">
-              This is my first PWA (progressive web application) that I have
-              built. Users can create an account, sign in and start uploading
-              recipes. Recipes can be made public or private. Public recipes can
-              be viewed in the community section.
+              This is my first PWA (progressive web application) that I have built. Users can create an account, sign in
+              and start uploading recipes. Recipes can be made public or private. Public recipes can be viewed in the
+              community section.
             </p>
             <p class="paragraphs">
-              This is my first functional PWA (Progressive Web Application).
-              PWA's are web applications with additional advanced functionality
-              that allow them to behave similarly to native apps. This includes
-              the ability to cache data to improve the user experience. Loading
-              times are decreased and this also allows a PWA to be used while
-              offline. This is in strong contrast with standard web
-              applications. Additionally, PWA's allow for the use of push
-              notifications and they are able to access mobile device features
-              such as the camera.<br /><br />
+              This is my first functional PWA (Progressive Web Application). PWA's are web applications with additional
+              advanced functionality that allow them to behave similarly to native apps. This includes the ability to
+              cache data to improve the user experience. Loading times are decreased and this also allows a PWA to be
+              used while offline. This is in strong contrast with standard web applications. Additionally, PWA's allow
+              for the use of push notifications and they are able to access mobile device features such as the
+              camera.<br /><br />
 
-              Building native applications traditionally requires of one to know
-              programming languages other than HTML, CSS and JS (which are used
-              for building websites). However, PWA's can be built using these
-              three popular languages, which removes the need to learn a new
-              language like Java or Kotlin altogether.<br /><br />
+              Building native applications traditionally requires of one to know programming languages other than HTML,
+              CSS and JS (which are used for building websites). However, PWA's can be built using these three popular
+              languages, which removes the need to learn a new language like Java or Kotlin altogether.<br /><br />
 
               Building
-              <a href="https://recipes-ea247.web.app/" target="_blank"
-                >Some Kickass Recipes</a
-              >
-              and all its functionality taught me the skills required to
-              expand existing web applications into PWA's and to understand the gains that can be made accordingly.
+              <a href="https://recipes-ea247.web.app/" target="_blank">Some Kickass Recipes</a>
+              and all its functionality taught me the skills required to expand existing web applications into PWA's and
+              to understand the gains that can be made accordingly.
             </p>
           </div>
         </section>
@@ -487,99 +397,67 @@
           <div class="text">
             <h1 class="title">Sensor Data Logging with Arduino and Blynk</h1>
             <p class="intro">
-              In this project, I used Blynk to log data being read from three
-              different motion sensors and to export this data to Excel for
-              analysis.
+              In this project, I used Blynk to log data being read from three different motion sensors and to export
+              this data to Excel for analysis.
             </p>
             <p class="paragraphs">
-              <a href="https://blynk.io/" target="_blank">Blynk</a> is a
-              "hardware agnostic IoT platform" useful with device management,
-              data analytics, machine learning and more. Finding blynk has been
-              one of my best discoveries considering how much it has helped me
-              and I am amazed by how easy it makes it to perform IoT tasks.
-              Blynk supports over 400 hardware modules including all Arduino
-              boars and more. As an exercise to play around with different
-              features, I decided I would conduct an experiment to determine
-              which of three motion sensors that were available to me was the
-              best at different ranges.<br /><br />
+              <a href="https://blynk.io/" target="_blank">Blynk</a> is a "hardware agnostic IoT platform" useful with
+              device management, data analytics, machine learning and more. Finding blynk has been one of my best
+              discoveries considering how much it has helped me and I am amazed by how easy it makes it to perform IoT
+              tasks. Blynk supports over 400 hardware modules including all Arduino boars and more. As an exercise to
+              play around with different features, I decided I would conduct an experiment to determine which of three
+              motion sensors that were available to me was the best at different ranges.<br /><br />
 
-              The three sensors I had were the SR602 mini PIR sensor, the
-              HC-SR501 PIR sensor and the RCWL-0516 Microwave Radar Sensor. I
-              used the Arduino Nano 33 Iot to connect to Blynk's servers and to
-              read data from these sensors. The experiment was set up as
-              follows:
+              The three sensors I had were the SR602 mini PIR sensor, the HC-SR501 PIR sensor and the RCWL-0516
+              Microwave Radar Sensor. I used the Arduino Nano 33 Iot to connect to Blynk's servers and to read data from
+              these sensors. The experiment was set up as follows:
               <img
                 src="../img/projects/Sensors_bynk/Optimized-sensors.JPG"
                 class="inline-img-landscape"
                 alt="Sensors"
               />
-              I used an old camera tripod to mount the sensors onto, because
-              they needed to be held securely and all at the same height for it
-              to be a fair experiment. I also fixed a breadboard and the Arduino
-              to the tripod, because there was no need to find a more permanent
-              solution.<br />
+              I used an old camera tripod to mount the sensors onto, because they needed to be held securely and all at
+              the same height for it to be a fair experiment. I also fixed a breadboard and the Arduino to the tripod,
+              because there was no need to find a more permanent solution.<br />
               <img
                 src="../img/projects/Sensors_bynk/Optimized-sensors-setup.JPG"
                 class="inline-img-portrait"
                 alt="Setup"
               /><br />
-              Blynk provides some good documentation for most of its services,
-              which made it very easy to write code for the Arduino to connect
-              to the mobile Blynk app which is where the data would be
-              displayed. As opposed to normal GPIO Pins, Blynk makes use of a
-              concept called Virtual Pins (VPs) which work similarly to harware
-              pins, but are obviously virtual. This meanse that there is almost
-              no limit to the number of virtual pins one can use. These pins are
-              a way for the Arduino to interface with the Blynk cloud. I used
-              Blynk's free app with its VPs to build a project layout that
-              listened for input to these VPs from the Arduino. This app gives
-              the user control over exactly what kind of controls or interfaces
-              he/she want to see in the project layout and I set it up as
-              follows:<br /><br />
-              <img
-                src="../img/projects/Sensors_bynk/blynk_app.png"
-                class="inline-img-portrait"
-                alt="Blynk_App"
-              /><br />
+              Blynk provides some good documentation for most of its services, which made it very easy to write code for
+              the Arduino to connect to the mobile Blynk app which is where the data would be displayed. As opposed to
+              normal GPIO Pins, Blynk makes use of a concept called Virtual Pins (VPs) which work similarly to harware
+              pins, but are obviously virtual. This meanse that there is almost no limit to the number of virtual pins
+              one can use. These pins are a way for the Arduino to interface with the Blynk cloud. I used Blynk's free
+              app with its VPs to build a project layout that listened for input to these VPs from the Arduino. This app
+              gives the user control over exactly what kind of controls or interfaces he/she want to see in the project
+              layout and I set it up as follows:<br /><br />
+              <img src="../img/projects/Sensors_bynk/blynk_app.png" class="inline-img-portrait" alt="Blynk_App" /><br />
 
-              In the upper section of the layout, there are three LEDs that
-              light up whenever its respective sensor senses movement. This all
-              happens in real-time, which feels a bit like magic.<br /><br />
+              In the upper section of the layout, there are three LEDs that light up whenever its respective sensor
+              senses movement. This all happens in real-time, which feels a bit like magic.<br /><br />
 
-              Just below that, I decided to use Blynk's SuperChart widget to
-              display the amount of motion every sensor senses over time. This
-              data is what I was interested in and after completing testing,
-              this data can be exported to CSV format, perfect for analyzing in
-              Excel.<br /><br />
+              Just below that, I decided to use Blynk's SuperChart widget to display the amount of motion every sensor
+              senses over time. This data is what I was interested in and after completing testing, this data can be
+              exported to CSV format, perfect for analyzing in Excel.<br /><br />
 
-              The lower half of the screen contains a table which is also
-              updated live and shows the number of times every sensor was
-              triggered and what each sensor's delay time was when it was last
-              triggered.<br /><br />
+              The lower half of the screen contains a table which is also updated live and shows the number of times
+              every sensor was triggered and what each sensor's delay time was when it was last triggered.<br /><br />
 
-              Having set up the experiment, I started testing by repeating a
-              series of movements infront of these sensors from various
-              distances. After each iteration, I exported the data and repeated
-              the process at the new distance. I knew all three sensors worked
-              almost identically well at the datum, 0.5m away. In this way, I
-              could use the data to compare how each sensor performs against its
-              own datum at different distances.<br /><br />
+              Having set up the experiment, I started testing by repeating a series of movements infront of these
+              sensors from various distances. After each iteration, I exported the data and repeated the process at the
+              new distance. I knew all three sensors worked almost identically well at the datum, 0.5m away. In this
+              way, I could use the data to compare how each sensor performs against its own datum at different
+              distances.<br /><br />
 
-              I used Excel to convert the data into a workable format and
-              plotted the results in the graph below:<br /><br />
-              <img
-                src="../img/projects/Sensors_bynk/graph.PNG"
-                class="inline-img-landscape"
-                alt="Graph"
-              /><br />
+              I used Excel to convert the data into a workable format and plotted the results in the graph below:<br /><br />
+              <img src="../img/projects/Sensors_bynk/graph.PNG" class="inline-img-landscape" alt="Graph" /><br />
 
-              Clearly, the HC-SR501 PIR sensor works best at a longer range,
-              unlike the other two. The results of this experiment may not be
-              extemely useful to me (until I find an appropriate use case), but
-              the goal was to test the capabilities of Blynk and I am very happy
-              with it. Everything that I used it for could be done locally
-              within the arduino script, but the power of Blynk really shows
-              when you want to add wireless control to IoT projects.
+              Clearly, the HC-SR501 PIR sensor works best at a longer range, unlike the other two. The results of this
+              experiment may not be extemely useful to me (until I find an appropriate use case), but the goal was to
+              test the capabilities of Blynk and I am very happy with it. Everything that I used it for could be done
+              locally within the arduino script, but the power of Blynk really shows when you want to add wireless
+              control to IoT projects.
             </p>
           </div>
         </section>
@@ -589,38 +467,28 @@
         <section id="project1" class="project">
           <div class="cover cover1"></div>
           <div class="text">
-            <h1 class="title">
-              Stepper Motor Control with ESP32, Arduino and AWS IoT Core
-            </h1>
+            <h1 class="title">Stepper Motor Control with ESP32, Arduino and AWS IoT Core</h1>
             <p class="intro">
-              In this project, I controlled a stepper motor and driver using an
-              ESP32 with the Arduino IDE. The ESP32 received input from its
-              relevant topics on AWS Iot. Depending on these inputs, the
-              microcontroller (ESP32) would either turn the motor to the desired
-              location or publish back to the topics on AWS Iot.
+              In this project, I controlled a stepper motor and driver using an ESP32 with the Arduino IDE. The ESP32
+              received input from its relevant topics on AWS Iot. Depending on these inputs, the microcontroller (ESP32)
+              would either turn the motor to the desired location or publish back to the topics on AWS Iot.
             </p>
             <p class="paragraphs">
               <img
                 class="inline-img-portrait"
                 src="../img//projects/ESP32_AWS/Optimized-ESP32_wiring_annotated.jpg"
                 alt=""
-              /><br />The goal of this project was to communicate to the ESP32
-              board from AWS IoT core. A typical message that would be sent to
-              the board would include an angle that the ESP would have to
-              extract before instructing the stepper motor to move to that exact
-              angle. The motor driver used in this project is the A4988 stepper
-              motor driver. It includes 3 pins that are used to select the motor
-              step size, which allows for a lot of control over the motor's
-              accuracy and speed.<br /><br />
+              /><br />The goal of this project was to communicate to the ESP32 board from AWS IoT core. A typical
+              message that would be sent to the board would include an angle that the ESP would have to extract before
+              instructing the stepper motor to move to that exact angle. The motor driver used in this project is the
+              A4988 stepper motor driver. It includes 3 pins that are used to select the motor step size, which allows
+              for a lot of control over the motor's accuracy and speed.<br /><br />
 
-              As with most of my electronics projects, there is a hardware and
-              software side to the problem.<br /><br />
+              As with most of my electronics projects, there is a hardware and software side to the problem.<br /><br />
 
-              In this case, the hardware problem was figuring out the correct
-              wiring from the ESP to the stepper driver while ensuring the motor
-              voltage and current would stay inside a safe boundary. This was my
-              first time working with a stepper motor and I thoroughly enjoyed
-              learning how to control it.<br />
+              In this case, the hardware problem was figuring out the correct wiring from the ESP to the stepper driver
+              while ensuring the motor voltage and current would stay inside a safe boundary. This was my first time
+              working with a stepper motor and I thoroughly enjoyed learning how to control it.<br />
 
               <img
                 src="../img/projects/ESP32_AWS/Optimized-ESP32_soldering.jpg"
@@ -628,26 +496,21 @@
                 class="inline-img-landscape"
               /><br />
 
-              The software side of the problem included writing the arduino
-              script that would be flashed to the ESP. This script had to
-              facilitate the communication with AWS IoT core while controlling
-              the motor's angle and speed, but fortunately, connecting to AWS
-              proved to be a simpler task than I had thought, owing to
+              The software side of the problem included writing the arduino script that would be flashed to the ESP.
+              This script had to facilitate the communication with AWS IoT core while controlling the motor's angle and
+              speed, but fortunately, connecting to AWS proved to be a simpler task than I had thought, owing to
               <a
                 href="https://aws.amazon.com/blogs/compute/building-an-aws-iot-core-device-using-aws-serverless-and-an-esp32/"
                 target="_blank"
                 >this</a
               >
-              helpful guide AWS has published specifically for the ESP32 board.
-              Another thing to consider when writing the script is the math
-              involved with calculating how many pulses to send to the driver
-              and at what frequency, depending on the step-size that was chosen.
-              A higher frequency will casue the motor to turn faster and more
-              pulses cause it to turn further.<br /><br />
-              In conclusion, considering that I started this project with little
-              knowledge about AWS IoT Core or controlling stepper motors, I have
-              thoroughly enjoyed the learning curve and it has increased my
-              interest in power electronics as a whole.
+              helpful guide AWS has published specifically for the ESP32 board. Another thing to consider when writing
+              the script is the math involved with calculating how many pulses to send to the driver and at what
+              frequency, depending on the step-size that was chosen. A higher frequency will casue the motor to turn
+              faster and more pulses cause it to turn further.<br /><br />
+              In conclusion, considering that I started this project with little knowledge about AWS IoT Core or
+              controlling stepper motors, I have thoroughly enjoyed the learning curve and it has increased my interest
+              in power electronics as a whole.
             </p>
           </div>
         </section>
@@ -657,38 +520,28 @@
         <section id="project0" class="project">
           <div class="cover cover0"></div>
           <div class="text">
-            <h1 class="title">
-              LCD Weather module with Arduino and OpenWeatherMap API
-            </h1>
+            <h1 class="title">LCD Weather module with Arduino and OpenWeatherMap API</h1>
             <p class="intro">
-              This DIY weather hub is powered by an Arduino Nano 33 IoT, which
-              displays weather information from the OpenWeatherMap API to a 20x4
-              LCD screen. The arduino fetches the temperature, wind and
-              precipitation at a chosen time interval, for a pre-determined
-              location.
+              This DIY weather hub is powered by an Arduino Nano 33 IoT, which displays weather information from the
+              OpenWeatherMap API to a 20x4 LCD screen. The arduino fetches the temperature, wind and precipitation at a
+              chosen time interval, for a pre-determined location.
             </p>
             <p class="paragraphs">
-              The goal of this project was for me to learn how API calls are
-              made from an Arduino, to learn how LCD screens are used with
-              Arduinos and to practice my soldering.<br /><br />
-              Writing code to display to the LCD screen was really very easy
-              once it was wired correctly. This is made possible by the library,
-              LiquidCrystal.h, which includes intuitive functions like
-              lcd.clear() and lcd.setCursor(). Below is a diagram for wiring the
-              LCD screen correctly:<br />
+              The goal of this project was for me to learn how API calls are made from an Arduino, to learn how LCD
+              screens are used with Arduinos and to practice my soldering.<br /><br />
+              Writing code to display to the LCD screen was really very easy once it was wired correctly. This is made
+              possible by the library, LiquidCrystal.h, which includes intuitive functions like lcd.clear() and
+              lcd.setCursor(). Below is a diagram for wiring the LCD screen correctly:<br />
               <img
                 src="../img/projects/weather_module/LCD_Wiring.png"
                 alt="LCD_Wiring"
                 class="inline-img-landscape"
               /><br />
-              The potentiometer is useful for adjusting the screen's
-              contrast.<br /><br />
-              Some additional features that I have added to this simple diagram
-              are a PIR motion sensor and a BC547 Transistor. These are used to
-              switch the backlight of the LCD on when the sensor is triggered
-              and off again 10 seconds later and the transistor is connected to
-              the anode and cathode pins on the very right of the LCD's diagram
-              above (Transistor not in diagram).<br />
+              The potentiometer is useful for adjusting the screen's contrast.<br /><br />
+              Some additional features that I have added to this simple diagram are a PIR motion sensor and a BC547
+              Transistor. These are used to switch the backlight of the LCD on when the sensor is triggered and off
+              again 10 seconds later and the transistor is connected to the anode and cathode pins on the very right of
+              the LCD's diagram above (Transistor not in diagram).<br />
               <img
                 src="../img/projects/weather_module/Optimized-overview-annotated-procreate.jpg"
                 alt="weather_module"
@@ -699,15 +552,12 @@
                 alt="nano-33-iot_scale"
                 class="inline-img-landscape"
               /><br />
-              The most tricky part of this project was figuring out how to make
-              an API call and deserialize the received Json data. This was made
-              particularly difficult by the fact that the code is different
-              depending on the board you are using. The board I used, the Nano
-              33 IoT, is still a relatively new product which is why it lacks
-              the kind of online support that can be found for older wireless
-              boards like the ESP8266. However, the effort I had to put in to
-              write working code has taught me much more than I would have
-              learned otherwise.
+              The most tricky part of this project was figuring out how to make an API call and deserialize the received
+              Json data. This was made particularly difficult by the fact that the code is different depending on the
+              board you are using. The board I used, the Nano 33 IoT, is still a relatively new product which is why it
+              lacks the kind of online support that can be found for older wireless boards like the ESP8266. However,
+              the effort I had to put in to write working code has taught me much more than I would have learned
+              otherwise.
             </p>
           </div>
         </section>

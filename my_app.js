@@ -32,42 +32,46 @@ $(document).ready(function(){
 	// .addIndicators({})
 	.addTo(controller);
 
+    var project05Slider = new ScrollMagic.Scene({
+		triggerElement: '#project05-slider',
+		// reverse: false
+		triggerHook: 0.9
+	})
+	.setClassToggle('#project05-slider', 'slide-from-right')
+	.addTo(controller);
 
+    var project04Slider = new ScrollMagic.Scene({
+		triggerElement: '#project04-slider',
+		// reverse: false
+		triggerHook: 0.9
+	})
+	.setClassToggle('#project04-slider', 'slide-from-left')
+	.addTo(controller);
+
+    var project03Slider = new ScrollMagic.Scene({
+		triggerElement: '#project03-slider',
+		// reverse: false
+		triggerHook: 0.9
+	})
+	.setClassToggle('#project03-slider', 'slide-from-right')
+	.addTo(controller);
+
+    var project02Slider = new ScrollMagic.Scene({
+		triggerElement: '#project02-slider',
+		// reverse: false
+		triggerHook: 0.9
+	})
+	.setClassToggle('#project02-slider', 'slide-from-left')
+	.addTo(controller);
 
 	var project01Slider = new ScrollMagic.Scene({
 		triggerElement: '#project01-slider',
 		// reverse: false
 		triggerHook: 0.9
 	})
-	.setClassToggle('#project01-slider', 'slide-from-right') //add class
+	.setClassToggle('#project01-slider', 'slide-from-right')
 	.addTo(controller);
 
-
-
-	var project02Slider = new ScrollMagic.Scene({
-		triggerElement: '#project02-slider',
-		// reverse: false
-		triggerHook: 0.9
-	})
-	.setClassToggle('#project02-slider', 'slide-from-left') //add class
-	.addTo(controller);
-
-
-	var project03Slider = new ScrollMagic.Scene({
-		triggerElement: '#project03-slider',
-		// reverse: false
-		triggerHook: 0.9
-	})
-	.setClassToggle('#project03-slider', 'slide-from-right') //add class
-	.addTo(controller);
-
-	var project04Slider = new ScrollMagic.Scene({
-		triggerElement: '#project04-slider',
-		// reverse: false
-		triggerHook: 0.9
-	})
-	.setClassToggle('#project04-slider', 'slide-from-left') //add class
-	.addTo(controller);
 
 //**********************************************vvvvvvvvvv******************TO BE UPDATED*************************
 // 	WORK EXPERIENCE

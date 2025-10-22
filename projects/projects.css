@@ -197,6 +197,17 @@ main {
   background-size: cover;
 }
 
+.cover9 {
+  /* min-height: 120px; */
+  height: 400px;
+  background-image: linear-gradient(
+      to bottom,
+      transparent 30%,
+      var(--color-soft-white)
+    ),
+    url("../img/projects/groceries-lunarlab.png");
+}
+
 .cover8 {
   /* min-height: 120px; */
   height: 400px;
@@ -314,6 +325,11 @@ main {
   font-size: 13px;
   font-style: italic;
   color: var(--color-blue);
+}
+.intro a {
+  text-decoration: none;
+  color: var(--color-highlight);
+  font-weight: bold;
 }
 
 .paragraphs {
